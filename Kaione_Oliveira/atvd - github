@@ -1,0 +1,11 @@
+Questão 01. O que é o git? Como você definiria o github?
+É um sistema no qual é possível compartilhar simultaneamente arquivos. Um site no qual é possível organizar um projeto ou trabalho no qual componentes simultâneos deixam suas contribuições no trabalho.
+
+Questão 02. O que você pôde notar de diferente? Comente.
+É mais acessível e de fácil uso, facilitando o compartilhamento de informações. 
+
+Questão 03. Existe um conceito muito importante no github chamado de branch (ramo em inglês). Defina branch no âmbito do github. Por que você utilizaria branches? Para qual branch                            você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de diferente?
+É um ponteiro no qual informa um local para se enviar arquivos especificando. Para ter uma melhor organização de ordem. Enviei o arquivo para o 2017-i43. Selecionaria o atalho “Branch” e escolheria qual local eu iria enviar.
+
+Questão 04. Que tipo de informação o git apresenta de forma que te permita saber que há diferenças entre branches?
+Cada branch tem um nome, de forma a deixar claro a especificação daquele local.
