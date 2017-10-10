@@ -1,0 +1,36 @@
+Questão 01. Descreva os tipos de rede quanto à topologia, colocando as vantagens e desvantagens de cada uma delas. 
+R- 
+Ponto a Ponto: Une dois computadores, através de um meio de transmissão qualquer. Vantagens: Baixo Custo; fácil implementação; Sistema simples de cabeamento; Desvantagens: Baixa segurança; A rede terá problemas para crescer de tamanho. 
+Topologia Barramento: Todos os computadores são indiretamente ligados em um mesmo barramento. Vantagens: Uso de cabo é econômico; Mídia é Barata, fácil de trabalhar e instalar. Desvantagens: Rede pode ficar extremamente lenta; Problemas são difíceis de identificar; Falha no cabo paralisa a rede inteira. 
+Topologia Estrela: a topologia em estrela utiliza cabos de par trançado e um concentrador como ponto central (um hub ou um SWITCH). Vantagens: A adição de novas maquinas é simples; Falha de um computador não afeta o restante da rede. Desvantagem: Uma falha no dispositivo central para a rede inteira. 
+Topologia Anel: Na topologia em anel os dispositivos são conectados em série, formando um anel fechado. Vantagens: Todos os computadores acessam a rede da mesma forma; Desempenho é independente da quantidade de maquinas conectados. Desvantagens: Falha de um computador pode afetar o restante da rede; Problemas são difíceis de identificar. 
+
+Questão 02.Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças. 
+R- 
+Internet: É um conjunto de redes global que utilizam um conjunto próprio de protocolos. 
+Intranet: Utiliza dos mesmos princípios da internet porem seu espaço é privado. 
+Extranet: É uma intranet que pode ser acessada pela internet somente por seus usuários. 
+
+Questão 03. Quais são as principais funções das 7 camadas do Modelo OSI?
+R- 
+Camada Física: O sinal chega à camada física em formato de pulsos elétricos e se transforma em bits. 
+Camadas de acesso: Agrupam pacotes LLC (Logical link control) que controla o acesso dizendo quando um dado pode sair da placa de redee identifica erros. Utiliza equipamentos como o switch para enviar os dados para endeeços corretamente usando o endereço MAC. 
+Camada de rede (Internet): Decide qual o melhor caminho para os dados. 
+Camada de transporte: É responsável pela entrega cheando se os dados enviados foram recebidos. 
+Camada de sessão: Responsável pela comunicação e trocade dados. 
+Camada de apresentação: Ela traduz os dados fazendo com que duas ou mais redes se comuniquem. 
+Camada aplicação: promove a interação entre máquinae usuário através de software, como: transferência de arquivos, envio de email, terminal virtual, entre outros. 
+
+Questão 04. Quais são as camadas do padrão TCP/IP esuas funções correspondentes? 
+R- 
+Camada deAplicação : Esta camada faz a comunicação entre os aplicativos e o rotocolo de transporte. 
+Camada de Transporte :Esta camada é responsável por receber os dados enviados pela camada de aplicação e transformá-los em pacotes, a serem repassados para a camada de Internet. 
+Camada de rede: Recebe os pacotes e dá um IP que vai definir quem enviou e para onde. 
+Camada de Interface: Essa camada é responsável pela comunicação do hardware. 
+
+Questão 05. Conceitue hub, switch e roteador. Comente sobre eles no contexto do modelo OSI. 
+R-
+HUB: Ele tem a função de receber sinais e repassar para outros dispositivos, atuando como a camada física do OSI. 
+SHITCH: tem como função enviar pacote de dados através dos diversos nós da rede, opera na camada de acesso do OSI. 
+ROTEADORES: É um dispositivo que envia dados entre as redes de computadores. 
+O roteador trabalha na camada de redes do OSI, pois ele que decide para qual caminho enviar os dados

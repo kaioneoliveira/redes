@@ -1,0 +1,21 @@
+IFBA – campus Jequié Disciplina: Redes de Computadores
+Estudante: Elai Emylle Matos de Lima TI 431
+
+1.
+Na topologia Barramento todos os computadores estão conectados em um mesmo barramento físico de dados. Algumas de suas principais vantagens são a simplicidade e relativa confiança, facilidade em instalar, manipular e expandi-la e custo barato dos cabos. Uma desvantagem é que, se houver muitos dispositivos conectados, a rede fica lenta. E também é difícil isolar alguns problemas, pois os dados são enviados para um mesmo barramento. Uma falha no cabo de barramento prejudica toda a rede.
+A topologia em estrela conecta todos os dispositivos da rede em um dispositivo central, que recebe e envia para outros dispositivos conectados. Isso permite um melhor gerenciamento e, consequentemente, uma melhor localização dos erros no sistema; e, se um computador parar, a rede toda não será afetada. Também há uma facilidade em adicionar novos dispositivos à rede. No entanto, se o dispositivo central falhar, a rede toda cai.
+Na topologia em anel os dispositivos são conectados uns nos outros, de modo a formar um anel fechado, daí o nome. Se houver muitos usuários, não há perda de rendimento da rede e há um acesso igualitário de todos os computadores conectados à rede. Dentre os problemas da topologia em anel estão a falha da rede se um dispositivo falhar e a dificuldade em identificar problemas nessa topologia.
+Ponto a ponto é a topologia de redes que cada dispositivo recebe e repassa os dados. É a mais simples e tem preço barato e fácil instalação. É utilizada em redes menores. Há problemas para aumentar e rede dessa topologia, que tem baixa segurança.
+A topologia mista ou híbrida é uma junção de duas ou mais topologias e é a mais utilizada. Essa topologia tem melhor resistência a erros e conecta várias redes, porém tem instalação e manutenção muito caras. Também possui flexibilidade, ou seja, pode-se organizar a rede de acordo com as necessidades do requerente. E a conexão não é uniforme entre os dispositivos.
+
+2.
+Internet é um conjunto de redes que conecta todo o mundo para transmissão de dados a grandes distâncias, ou seja, comunicação. Já a intranet, é uma rede restrita a um público específico. Ela tem os mesmos usos da internet, porém com o acesso limitado dos usuários. A extranet é uma espécie de extensão da intranet. Ela é restrita, mas utiliza a internet para acessá-la de qualquer parte do mundo.
+
+3.
+O Modelo OSI possui sete camadas: camada física, que recebe e transmite bits por um meio físico; camada de vínculo de dados, que verifica os erros de rede; camada de rede, que gerencia a rede, a via a informação deve seguir; camada de transporte, que conecta a fonte ao destino e envia os pacotes; camada de sessão, que faz o diálogo entre as máquinas; camada de apresentação, que monta a interface formatando os dados e convertendo caracteres e códigos; camada de aplicação, que exibe a interface e é onde o usuário acessa.
+
+4.
+As camadas do padrão TCP/IP são Acesso de Rede, que faz o controle da distribuição de dados; Internet, que transmite os pacotes de dados; Transporte, que cria e encaminha os pacotes de dados para os dispositivos; e Aplicação, a interface que o usuário utiliza para acessar a rede e também manda os dados para a camada de transporte.
+
+5.
+Hub é um dispositivo que conecta os dispositivos da rede e opera na camada física do modelo OSI. A transmissão ocorre somente em uma via, ou seja, quando o hub está retransmitindo dados, o usuário não pode enviar. O switch tem a mesma função do hub, porém ele pode transmitir e receber dados simultaneamente. Isso ocorre porque ele cria canais únicos para cada emissor e receptor. Ele opera na camada de dados do modelo OSI, mas também existem os que podem funcionar na camada de rede. Já o roteador opera na camada de rede e de maneira semelhante ao switch, porém tem a vantagem de poder escolher o melhor caminho para a informação chegar ao seu destino mais rapidamente.

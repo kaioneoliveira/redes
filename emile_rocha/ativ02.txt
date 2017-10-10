@@ -1,0 +1,3 @@
+Uma rede sem fio (também conhecido pelo termo em inglês wireless network) é uma infraestrutura das comunicações sem fio que permite a transmissão de dados e informações sem a necessidade do uso de cabos – sejam eles telefónicos, coaxiais ou óticos. Isso é possível graças ao uso, por exemplo, de equipamentos de radiofrequência (comunicações via ondas de rádio), de comunicações via infravermelho (como em dispositivos compatíveis com IrDA) etc.
+
+Essa infraestrutura tecnológica inclui desde o uso de transceptores de rádio (como walkie-talkies) até satélites artificiais no espaço sideral. Seu uso mais comum é em redes de computadores, servindo como meio de acesso à internet através de locais remotos como um escritório, um bar, um aeroporto, um parque, em casa etc.

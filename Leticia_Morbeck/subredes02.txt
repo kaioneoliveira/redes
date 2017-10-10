@@ -1,0 +1,40 @@
+1)2^n = 8
+     n=3
+mascara vai ser 19, pois a mascara padrão é 16 + os 3 as mais 19;
+varia no terceiro octeto (256-224 = 32), ou seja, vai variar de 32 a 32
+3ª subred começa em 64 e termina em 95
+entâo o hoste esta entre 65 e 94, por isso as corretas são as alternativas A, C e D.
+
+2)alternativas A, C e D, ja que, se a mascara é 27, teram 27 uns, por tanto os 3 primeiros octetos estão completos, logo no quarto sobra 3(224-256 = 32) uns e 5 zeros
+
+3)(2^n)-2=120, n=7 logo, no último octeto vai variar de 128 em 128. Letra B para o Network e para o Link---- tem 27 uns, ou seja os 3 primeiros octetos estão completos, no ultimo tem 3 uns(256-224=32), o link a letra D
+
+4) LETRAS E e F (letra A sera endereço de rede e a b também, maacara  da A 27, sobras 3 uns, 256 - 224 = 32(que é a variaçao) e a maacara da B (256 - 254 = 2), 
+
+5) Letra B,pois classe A (10.0.0.0) e classe B ( 172.16) e classe c ( 192.168) não podem ser usados para redes de internet
+
+6) Os endereços:  IP de subrede e o de Broadcast que são alguns dos endereços que não podem ser usados para DHCP, alternativas A e B.
+
+7) O 2º-11hosts, 3º-16 hosts, 5º-6 hosts, 1º para o Floss SO/0 IP
+2^n -2 >= 11 ----- n >= 4 (mascara padrâo classe c é /24), se tem 4 zeros na poçao de host tem 4 uns, mascara /28
+2^n -2 >= 16 ----- n >= 5 (mascara padrâo classe c é /24), se tem 5 zeros na poçao de host tem 3 uns, mascara /27
+2^n -2 >= 6 ----- n >= 3 (mascara padrâo classe c é /24), se tem 3 zeros na poçao de host tem 5 uns, mascara /29
+testando os outros tes deu o primeiro para para o Floss SO/0 IP, o quarto é endereço de rede.
+
+8) 6º -105 hosts, 1º-49 hosts, 5º-12 host, 4º para Vans SO/0 IP
+2^n -2 >= 105 ----- n >= 7 (mascara padrâo classe c é /24), se tem 7 zeros na poçao de host tem 1 um, mascara /25
+2^n -2 >= 49 ----- n >= 6 (mascara padrâo classe c é /24), se tem 6 zeros na poçao de host tem 2 uns, mascara /26
+2^n -2 >= 12 ----- n >= 4 (mascara padrâo classe c é /24), se tem 4 zeros na poçao de host tem 4 uns, mascara /28
+192.168.197.72 é endereço de rede 192.168.197.73 é o de host (tem 6 uns a mais, (252-256 = 4)varia de 4 em 4) para Vans SO/0 IP
+
+9) 5º-42 hosts, 6º-6 hosts, 1º-14 hosts, 3º e 2º para Gum SO/1 IP Gum FsO/0
+2^n -2 >= 42 ----- n >= 6 (mascara padrâo classe c é /24), se tem 6 zeros na poçao de host tem 2 uns, mascara /26
+2^n -2 >= 6 ----- n >= 3 (mascara padrâo classe c é /24), se tem 3 zeros na poçao de host tem 5 uns, mascara /29
+2^n -2 >= 14 ----- n >= 4 (mascara padrâo classe c é /24), se tem 4 zeros na poçao de host tem 4 uns, mascara /28
+192.168.124.31/27(broadcast) e  192.168.124.60/30 (rede) os de host é  192.168.124.61/30 e  192.168.124.51/29 
+
+
+
+
+
+

@@ -1,0 +1,65 @@
+RESPOSTAS
+1ª QUESTÃO –
+Ponto a Ponto é a topologia que une dois computadores, através de um meio de transmissão qualquer.
+Barramento é uma topologia que possui um alto poder de expansão. Todos os nós estão ligados a uma espécie de barra que é compartilhada entre todos os processadores. O controle pode ser centralizado ou distribuído. O custo de instalação é mais barato, porém quanto mais computadores na rede mais lenta ela fica.
+Anel é conhecido pelo formato de um circuito fechado, semelhante a um anel. Essa rede trabalha com os computadores ligados em série.
+Estrela é a topologia mais utilizada hoje em dia, nela todas as estações são conectadas por um concentrador principal, porém para a montagem dessa topologia gera um alto custo, pois cada máquina precisa utilizar um cabo, mas cada estação se comunica diretamente com o nó central e facilita a manutenção de rede, tornando assim viável.
+Estruturas Mistas é a mistura de várias topologias interligadas em uma rede.
+2ª QUESTÃO 
+Internet: são várias redes locais espalhadas pelo mundo, que torna realizável a interligação entre os computadores utilizando o protocolo TCP/IP.
+Intranet: é um espaço restrito a determinado público para compartilhar informações.
+Extranet: é como a intranet, mas com possibilidade de acesso pela internet.
+3ª QUESTÃO 
+-Camada Física
+Como citei anteriormente, é onde se inicia o todo processo. O sinal que vem do meio (Cabos UTP,  por exemplo), chega à camada física em formato de sinais elétricos e se transforma em bits (0 e 1). Como no cabo, navega apenas sinais elétricos de baixa frequência, a camada física identifica como 0 sinal elétrico com –5 volts e 1 como sinal elétrico com +5 volts. Veja na figura abaixo, o exemplo com a Senóide.
+A camada física trata de coisas, tipo distância máxima dos cabos (por exemplo no caso do UTP onde são 90m), conectores físicos (tipo BNC do coaxial ou RJ45 do UTP), pulsos elétricos (no caso de cabo metálico) ou pulsos de luz .(no caso da fibra ótica), etc. Resumindo, ela recebe os dados e começa o processo, ou insere os dados finalizando o processo, de acordo com a ordem. Podemos associa-la a cabos e conectores.  Exemplo de alguns dispositivos que atuam na camada física são os Hubs, tranceivers, cabos, etc. Sua PDU são os BITS.
+Camada de Enlace
+Após a camada física ter formatado os dados de maneira que a camada de enlace os entenda, inicia-se a segunda parte do processo.  Um aspecto interessante é que a camada de enlace já entende um endereço, o endereço físico (MAC Address – Media Access Control ou controle de acesso a mídia) – a partir daqui sempre que eu me referir a endereço físico estou me referindo ao MAC “Address”. 
+Sem querer sair do escopo da camada, acho necessário uma breve ideia a respeito do MAC: MAC address é um endereço Hexadecimal de 48 bits, tipo FF-C6-00-A2-05-D8.
+Na próxima parte do processo, quando o dado é enviado à camada de rede esse endereço vira endereço IP.
+Uma curiosidade, é que o MAC address possui a seguinte composição:
+A camada e enlace tratam as topologias de rede, dispositivos como Switche, placa de rede, interfaces, etc., e é responsável por todo o processo de switching. Após o recebimento dos bits, ela os converte de maneira inteligível, os transforma em unidade de dado, subtrai o endereço físico e encaminha para a camada de rede que continua o processo. Sua PDU é o QUADRO.
+Camada de Rede
+Pensando em WAN, é a camada que mais atua no processo. A camada 3 é responsável pelo tráfego no processo de internetworking. A partir de dispositivos como roteadores, ela decide qual o melhor caminho para os dados no processo, bem como estabelecimento das rotas. A camada 3  já entende o endereço físico, que o converte para endereço lógico (o endereço IP). Exemplo de protocolos de endereçamento lógico são o IP e o IPX. A partir daí, a PDU da camada de enlace, o quadro, se transforma em unidade de dado de camada 3. Exemplo de dispositivo atuante nessa camada é o roteador, que sem dúvida é o principal agente no processo de internetworking, pois este determina as melhores rotas baseados nos seus critérios, endereça os dados pelas redes, e gerencia suas tabelas de roteamento. A PDU da camada 3 é o PACOTE.
+Camada de transporte
+A camada de transporte é responsável pela qualidade na entrega/recebimento dos dados. Após os dados já endereçados virem da camada 3, é hora de começar o transporte dos mesmos. A camada 4 gerencia esse processo, para assegurar de maneira confiável o sucesso no transporte dos dados, por exemplo, um serviço bastante interessante que atua de forma interativa nessa camada é o Q.O.S ou Quality of Service (Qualidade de Serviço), que é um assunto bastante importante é fundamental no processo de internetworking, e mais adiante vou aborda-lo de maneira bem detalhada. Então, após os pacotes virem da camada de rede, já com seus “remetentes/destinatários”, é hora de entrega-los, como se as cartas tivessem acabados de sair do correio (camada 3), e o carteiro fosse as transportar (camada 4). Junto dos protocolos de endereçamento (IP e IPX), agora entram os protocolos de transporte (por exemplo, o TCP e o SPX). A PDU da camada 4 é o SEGMENTO.
+Camada de sessão
+Após a recepção dos bits, a obtenção do endereço, e a definição de um caminho para o transporte, se inicia então a sessão responsável pelo processo da troca de dados/comunicação. A camada 5 é responsável por iniciar, gerenciar e terminar a conexão entre hosts. Para obter êxito no processo de comunicação, a camada de seção têm que se preocupar com a sincronização entre hosts, para que a sessão aberta entre eles se mantenha funcionando. Exemplo de dispositivos, ou mais especificamente, aplicativos que atuam na camada de sessão é o ICQ, ou o MIRC. A partir daí, a camada de sessão e as camadas superiores vão tratar como PDU os DADOS..
+4ª QUESTÃO 
+Camada de Transporte – 
+Esta camada é responsável por captar os dados enviados pela camada de aplicação e transformá-los em pacotes, a serem repassados para a camada de Internet.
+No protocolo TCP/IP a camada de transporte utiliza um esquema de multiplexação, onde é possível transmitir simultaneamente dados das mais diferentes aplicações. Na verdade, ocorre o conceito de intercalamento de pacotes; vários programas poderão estar a comunicar com a rede ao mesmo tempo, mas os pacotes gerados serão enviados à rede de forma intercalada, não sendo preciso terminar um tipo de aplicação de rede para então começar outra. Isso é possível graças ao uso do conceito de portas, explicado na camada de aplicação, já que dentro do pacote há a informação da porta de origem e de destino do dado.
+Nesta camada operam dois protocolos: o TCP (Transmission Control Protocol) e o UDP(User Datagram Protocol). Ao contrário do TCP, este segundo protocolo não verifica se o dado chegou ou não ao destino. Por esse motivo, o protocolo mais usado na transmissão de dados é o TCP, enquanto que o UDP é tipicamente usado na transmissão de informações de controle.
+Na recepção de dados, a camada de transporte capta os pacotes passados pela camada Internet e trata de colocá-los em ordem e verificar se todos chegaram correctamente. Além disso, o protocolo IP, que é o protocolo mais conhecido da camada de Internet, não verifica se o pacote de dados enviado chegou ou não ao destino; é o protocolo de transporte (o TCP) que, ao remontar a ordem dos pacotes recebidos, verifica se está a faltar algum, pedindo, então, uma retransmissão do pacote que não chegou.
+Camada de Internet – 
+Há vários protocolos que podem operar nesta camada: IP(Internet Protocol), ICMP (Internet Control Message Protocol), ARP (Address Resolution Protocol) e RARP (Reverse Address Resolution Protocol).
+Na transmissão de um dado de programa, o pacote de dados recebidos da camada TCP é dividido em pacotes chamados datagramas. Os datagramas 
+são enviados para a camada de interface com a rede, onde são transmitidos pelo cabeamento da rede através de quadros. Esta camada não verifica se os datagramas chegaram ao destino, isto é feito pelo TCP.
+Esta camada é responsável pelo roteamento de pacotes, isto é, adiciona ao datagrama informações sobre o caminho que ele deverá percorrer.
+Camada de Interface com a Rede – 
+Esta camada é responsável por enviar o datagrama recebido pela camada de Internet em forma de um quadro através da rede.
+Tem como principal função, a interface do modelo TCP/IP com os diversos tipos de redes (X.25, ATM, FDDI, Ethernet, Token Ring, Frame Relay, etc.) e transmitir os datagramas pelo meio físico, tem a função de encontrar o caminho mais curto e confiável.
+
+5ª QUESTÃO
+Hub
+O hub é um equipamento bem antigo, sendo um dos primeiros a serem usados pelas empresas em redes locais. Basicamente, ele conecta os computadores de uma rede e possibilita a transmissão das informações entre eles. Porém, é exatamente nesta transmissão que está o seu ponto fraco: ao pegar a informação de um computador para enviar, ele passa as informações por todos os computadores até encontrar o destinatário final.  Isto causa um tráfego enorme, além de expor os dados a qualquer um que esteja conectado nela, gerando um sério problema de segurança.
+
+Switch
+Criado principalmente para resolver os problemas que o hub apresentava, o switch é um equipamento que apresenta basicamente a mesma função executada de uma maneira diversa. Diferente de seu antecessor, um comutador, como também é chamado, recebe a informação a ser transmitida e a repassa apenas para o destinatário, evitando expô-la a outros computadores.
+O processo é realizado decodificando o cabeçalho do pacote e localizando as informações do receptor dos dados. O aparelho guarda os endereços dos destinatários em uma tabela na sua memória. Desta forma, ele consegue entregar as informações unicamente à máquina destinada e, assim, consegue ainda diminuir o tráfego da rede.
+Vale lembrar que mesmo em uma rede com um switch ainda é possível capturar informações, através de técnicas de sniffer. É necessário que o equipamento tenha algum tipo de proteção especial para evitar este tipo de roubo.
+Quanto aos recursos, os comutadores podem ser classificados como gerenciáveis e não gerenciáveis. A principal diferença entre eles é que o primeiro se limita a apenas conectar dispositivos e transmitir dos dados dentro da rede, enquanto o segundo, além de fazer isso, conta com ferramentas que permitem administrá-lo remotamente ou até mesmo ver relatórios sobre determinados aspectos da rede e seu uso.
+
+
+Roteador
+O roteador é um equipamento que faz o papel de um intermediador, possibilitando a troca de pacotes entre redes separadas. Este trabalho é realizado seguindo um conjunto de regras que são encontradas na tabela de roteamento.
+O uso de aparelhos do gênero é comum em situações em que é necessário interligar redes diferentes, mas que, ao mesmo tempo, é preciso mantê-las isoladas. Na prática, quem está em uma delas não consegue enxergar diretamente a outra, a menos que utilize o dispositivo como “caminho”para isso.
+Roteadores podem ser encontrados na forma de equipamentos fechados ou como computadores com mais de uma placa de rede, usando um sistema operacional configurado para esta função. Nesse último caso, boa parte dos PCs usados como firewall também atuam como roteador por causa do inerente trabalho de segurança desse tipo de funcionalidade.
+
+
+Referencias:
+http://www.techtudo.com.br/artigos/noticia/2013/05/entenda-diferenca-entre-hub-switch-roteador-e-modem.html
+https://pt.wikipedia.org/wiki/TCP/IP
+https://repositorio.ufsc.br/bitstream/handle/123456789/85087/198733.pdf?sequence=1
+http://www.infoescola.com/informatica/topologias-de-redes/
+

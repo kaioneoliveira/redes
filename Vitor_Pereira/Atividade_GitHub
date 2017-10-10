@@ -1,0 +1,11 @@
+Questão 01. O que é o git? Como você definiria o github?
+GitHub pode ser considerado como um site com a função de publicar projetos em git que é o controlador de arquivos.
+
+Questão 02. O que você pôde notar de diferente? Comente.
+Foi possível o acesso da plataforma GitHub pelo terminal do Linux.
+
+Questão 03. Existe um conceito muito importante no github chamado de branch (ramo em inglês). Defina branch no âmbito do github. Por que você utilizaria branches? Para qual branch você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de diferente?
+Branch pode ser defino por ramificações de um projeto no qual você poderá definir dados específicos a cada projeto. Enviei para o branch 2017-i431. Se eu quisesse usar outro branch faria o mesmo passo a passo para publicar o projeto a partir de outro branch.
+
+Questão 04. Que tipo de informação o git apresenta de forma que te permita saber que há diferenças entre branches?
+Existe uma caixa de texto com o nome branch que você pode selecionar o branch ou até mesmo criar um novo branch.

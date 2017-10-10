@@ -1,0 +1,62 @@
+IFBA
+Aluna-Rebeca de Jesus Brandão                          TI-431
+1)Descreva os tipos de rede quanto à topologia, colocando as vantagens e
+desvantagens de cada uma delas.
+Ponto-a-ponto é um tipo de topologia que utiliza uma ligação direta unindo dois computadores através de um meio de transmissão, através dela podem-se ser criadas novas topologias.
+Vantagens: 
+Baixo custo;
+Fácil implementação;
+Cabeamento simples;
+Os micros funcionam mesmo desligados da rede.
+Desvantagens;
+Baixa segurança;
+É uma rede muito simples e por isso há uma certa dificuldade em expansão.
+A topologia em anel consiste em consiste em uma série de dispositivos conectados em série formando um circuito fechado entre eles.
+Vantagens:
+É uma rede uniforme;
+É possível que  dois anéis funcionem ao mesmo tempo e caso haja defeito em um dos dois o outro continuará funcionando.
+Desvantagens:
+Como é um sistema uniforme não é possível isolar somente um dispositivo;
+Em caso de ampliação da rede ou do aumento do número  ela também deixará de ter o mesmo desempenho.
+A topologia em barramento consiste em um conjunto de máquinas ligadas a um único tipo de barramento de dados que possuem nós, dessa maneira o controle pode ser centralizado ou distribuído.
+Vantagens:
+É bidirecional;
+Possui um baixo custo;
+Desvantagens:
+É muito difícil isolar somente uma parte da rede;
+Uma falha em um cabo pode implicar na paralisação da mesma;
+A inserção de novas máquinas pode afetar a performance;
+Na topologia em estrela todos os dispositivos são conectados a uma fonte principal que fica responsável por todas as situações , determina a velocidade da transmissão e quando necessário converte sinais de protocolos diferentes.
+Vantagens:
+É fácil isolar uma parte responsável por uma falha no sistema;
+Pode-se acrescentar novos dispositivos sem total interferência na performance;
+Baixo investimento.
+Desvantagens:
+Não é muito confiável em relação a outras redes;
+Como há somente um conectador pode haver sobrecarga.
+Na topologia mista há uma mistura de vários tipos de rede e é a mais utilizada em grandes redes .
+Vantagens:
+É a mais recomendável para grandes redes, pois adequa-se a demanda do ambiente;
+Sua performance compensa o custo;
+Desvantagens:
+Adquire as mesmas desvantagens das topologias utilizadas ,assim como as vantagens.
+2)Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
+A intranet é um tipo de rede que está direcionada a um local físico e é restrita a uma única organização que geralmente é voltada para empresas que precisam se comunicar entre departamentos, a extranet é uma extensão da intranet e ultrapassa as  barreiras físicas da intranet e conta com o uso externo para seções selecionadas. Já a internet é a rede mundial de computadores.
+3)Quais são as principais funções das 7 camadas do Modelo OSI?
+Camada 1(física)-É a camada que estabelece uma conexão real e física, é lá que os bits são transmitidos e recebidos como correntes elétricas. 
+Camada 2(enlace)-É a camada que fica responsável  pelo controle de tráfego e também possui uma tabela de endereçamento, já que a partir desse momento ela já entende os bits e trabalha com as topologias de rede ,dispositivos como switches e o processo switching.
+Camada 3(redes)-Essa camada fica responsável pelo tráfego(internetworking),cujo irá decidir qual o melhor caminho para transmitir as informações e também é onde a parte tcp/ip se realiza.
+Camada 4(transporte)-Nessa camada os dados começam a ser entregues em seus determinados destinos, fornece confiança para que o processo seja realizado.
+Camada 5(sessão)-É responsável por iniciar e encerrar as conexões de rede.
+Camada 6(apresentação)-Apresenta os dados da camada 5 para a camada 7,funciona como uma espécie de camada intermediária.
+Camada7(apresentação)-É a camada onde ficam disponíveis serviços e protocolos dos aplicativos
+4)Quais são as camadas do padrão TCP/IP e suas funções correspondentes?
+Camada 1(aplicação)-Faz a comunicação entre as aplicações e os protocolos que por sua vez já estão agrupados.
+ Camada 2(transporte)-Garante o encaminhamento dos dados de tal forma queeles possam ser capturados e transformados em uma espécie de pacotes.
+ Camada 3(internet)-Recebe os pacotes da camada 2 e os transforma em datagramas que são enviados para a camada 4.
+ Camada 4(network)-Especifica e envia os dados(datagramas) ,em forma de quadros, através da rede.
+5)Conceitue hub, switch e roteador. Comente sobre eles no contexto do modelo
+OSI.
+Hub é um dispositivo que realiza a conexão entre todos os equipamentos da rede porém apesar de realizar essas conexões ele não fazem nada além disso e por isso são conhecidos com “burros, ele trabalha na primeira camada do modelo OSI, fazendo conexão com os dispositivos.
+Switche é um dispositivo que tem uma função parecida com o hub ,porém eles são inteligentes e oferecem vários  recursos dependendo do dispositivo. Ele é bem preciso no enlace da camada 2 do modelo OSI, pois contém uma tabela de endereçamento e realiza o direcionamento de dados para o destinatário.
+Roteadores exercem a função de comunicação entre dispositivos diferentes ele é capaz de enviar pacote de dados entre eles, trabalha na terceira camada do modelo OSI no plano da conexão de redes.

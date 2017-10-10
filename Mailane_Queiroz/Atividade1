@@ -1,0 +1,13 @@
+1-	Barramento: compartilha o mesmo cabo, permite um fluxo de dados bidirecional e tem como principal vantagem o alto poder de expansão. Porém possui desvantagens como, se um dos nós cair a rede inteira é comprometida e se duas maquinas tentarem enviar dados ao mesmo tempo pode ocorrer colisões de dados.
+Anel: Os dados circulam em uma única direção, cada estação é um repetidor de sinal. Ela é muito cara e possui baixa velocidade.
+Estrela: Se uma das maquinas falhar não interfere no funcionamento das demais e estão conectadas a um nó central que limita a quantidade de maquinas que pode haver nessa rede. É extremamente dependente do nó central.
+2-	A Internet é a rede mundial de computadores que permite a troca de dados fácil e rápida de computadores espalhados por todo o mundo, usada principalmente para compartilhamento de arquivos em escala mundial e comunicação rápida a longa distância. Intranet é uma rede de computadores local que funciona nos limites de uma instituição e tem como objetivo facilitar a comunicação e proteção dos arquivos compartilhados nesse local. Já a Extranet é a interligação de duas ou mais Intranets, permite o acesso de pessoas fora do ambiente da instituição e é muito utilizado em empresas que estabelecem comunicação com seus cliente, fornecedores e parceiros.
+3-	1. Camada física: estabelece uma conexão física entre o sistema e a rede. Funciona através de sinais elétricos.
+    2. Camada de enlace de dados: as informações são transformadas em frames e transmitida através de um fio ou outro meio.
+    3. Camada de rede: é feio o roteamento dos dados através da rede.
+    4. Camada de transporte: efetua processos de sequenciamento.
+    5. Camada de sessão: começa e finaliza enlaces de comunicação.
+    6. Camada de apresentação: conversação dos dados para um formato universal.
+    7. Camada de aplicação: camada de interface entre os processos de comunicação de rede e as aplicações do usuário.
+4-	O conjunto de protocolos TCP/IP em quatro camadas, aplicação que executa as aplicações, transporte que controla o fluxo e endereça as aplicações, a rede roteia os acessos e endereça os equipamentos e interface que entrelaça com tecnologia de rede usada. 
+5-	O Hub é uma peça central que recebe que transmite sinais de outras estações para as demais. O Switch interliga hubs e pode funcionar como um hub mais eficaz pois estrega o pacote para a estação certa. Já o roteador encaminha pacotes entre redes de computador.

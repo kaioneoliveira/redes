@@ -1,0 +1,33 @@
+IFBA
+ALUNA-MARTHA MEIRA MONTEIRO
+1)dois elevaado a n = 8
+
+n=3
+
+mascara vai ser 19
+
+varia no terceiro octeto 224 -256 = 32
+
+vai variar de 32 a 32
+
+3 subred começa em 64 e termina em 95
+
+em o hoste esta entre 65 e94
+
+A,C, D
+
+2)a c d
+
+Com /27 o ultimo octeto
+
+3)2 ^n-2=120, n=7 logo, no último octeto vai variar de 128 em 128. Letra B e D
+
+5) B pois 10.0.0.0 e 172.16 e 192.168 não podem ser usados para redes de internet
+
+6) A e B, o endereço IP de subrede e o de Broadcast são uns dos endereços que não podem ser usados para DHCP
+
+7)2-11, 3-16, 5-6, 1
+
+8) 6- 105, 1-49, 5-12, 4
+
+9) 5-42, 6-6, 1-14, 3 PRO SOZINHO, 2 PRO SOZINHO

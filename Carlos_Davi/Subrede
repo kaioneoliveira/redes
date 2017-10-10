@@ -1,0 +1,323 @@
+Questão 1) Para a rede abaixo: (Use 192.168.10.X/24).
+a. Distribua endereços IP para 5 hosts de forma que estejam na mesma subrede.
+b. Qual o endereço de rede (ID de Rede).
+c. Qual o endereço de broadcast.
+d. Qual o Range de endereços IP para esta rede.
+e. Qual o domínio de broadcast (nº de hosts) desta rede.
+
+a) Host:
+ 2^n-2>=5
+ n=3 - número de 0
+ 2^3-2=6
+    
+    
+ Último octeto: 11111000 = 248
+ 192.168.10.248
+ 256-248= 8 (variação da subrede)
+ 
+ 5 Host na mesma subrede:
+ 192.168.10.1
+ 192.168.10.2
+ 192.168.10.3
+ 192.168.10.4
+ 192.168.10.5
+
+b) Id Rede: 192.168.10.0
+
+c) Id Broadcast: 192.168.10.7
+ 
+d) Range: 192.168.10.1 à 192.168.10.6
+
+***************************************
+Questão 2) Uma rede com IP CLASSE C precisa ser dividida em 2 subredes responda: (Use
+200.143.165.X).
+a. Qual a máscara de subrede utilizada.
+b. Qual o número máximo de hosts por subrede.
+c. Para cada subrede responda:
+i. Qual o endereço de rede (ID de Rede).
+ii. Qual o endereço de broadcast.
+iii. Qual o range de endereços IP.
+
+
+subrede: 2^n=2
+ n=1   
+ 24+1=25
+ 200.143.165.X/25
+
+a) Classe C 
+ O último octeto:10000000 = 128
+ Mask: 255.255.255.128
+
+b) Host 
+  2^n-2
+  10000000=128
+  n = 7
+ Logo:
+  2^7-2=126
+
+c)Subrede 1:
+ 	Rede: 200.143.165.0
+ 	Broadcast:200.143.165.127
+ 	Range: 200.143.165.1 à 200.143.165.126
+
+Subrede 2:
+ 	Rede: 200.143.165.128
+ 	Broadcast:200.143.165.255
+ 	Range: 200.143.165.129 à 200.143.165.254
+
+***************************************
+Questão 3) Uma rede com IP CLASSE C precisa ser dividida em 8 subredes responda: (Use
+195.108.10.X).
+a. Qual a máscara de subrede utilizada.
+b. Qual o número máximo de hosts por subrede.
+c. Para cada subrede responda:
+i. Qual o endereço de rede (ID de Rede).
+ii. Qual o endereço de broadcast.
+iii. Qual o range de endereços IP.
+
+subrede: 2^n=8
+ n=3   
+ 24+3=27
+ 200.143.165.X/27
+
+a) Classe C 
+ O último octeto é :11100000 = 224
+ Mask: 255.255.255.224
+
+b) Host 
+ 2^n-2
+ O último octeto contem cinco números zeros :11100000
+ n = 5
+ 2^5-2=30
+
+c)  Subrede 1:
+    	Rede: 195.108.10.0
+    	Broadcast:195.108.10.31
+    	Range: 195.108.10.1 à 195.108.10.30
+
+    Subrede 2:
+    	Rede: 195.108.10.32
+    	Broadcast:195.108.10.63
+    	Range: 195.108.10.33 à 195.108.10.62
+
+    Subrede 3:
+    	Rede: 195.108.10.64
+    	Broadcast:195.108.10.95
+    	Range: 195.108.10.65 à 195.108.10.94
+
+    Subrede 4:
+    	Rede: 195.108.10.96
+    	Broadcast:195.108.10.127
+    	Range: 195.108.10.97 à 195.108.10.126
+    
+    Subrede 5:
+    	Rede: 195.108.10.128
+    	Broadcast:195.108.10.159
+    	Range: 195.108.10.129 à 195.108.10.158
+
+    Subrede 6:
+    	Rede: 195.108.10.160
+    	Broadcast: 195.108.10.191
+    	Range: 195.108.10.161 à 195.108.10.190
+    
+    Subrede 7:
+    	Rede: 195.108.10.192
+    	Broadcast: 195.108.10.223
+    	Range: 195.108.10.193 à 195.108.10.222
+
+    Subrede 8:
+    	Rede: 195.108.10.224
+    	Broadcast:195.108.10.255
+    	Range: 195.108.10.225 à 195.108.10.254
+
+***************************************
+Questão 4) Uma rede com IP CLASSE C precisa ser dividida em 16 subredes responda: (Use
+210.21.1.X).
+a. Qual a máscara de subrede utilizada.
+b. Qual o número máximo de hosts por subrede.
+c. Para cada subrede responda:
+i. Qual o endereço de rede (ID de Rede).
+ii. Qual o endereço de broadcast.
+iii. Qual o range de endereços IP.
+
+
+subrede: 2^n=16
+ n=4  
+
+a) Classe C 
+ Último octeto:11110000 = 240
+ Mask: 255.255.255.240
+
+b) Host 
+ 2^n-2
+ O último octeto contem quatro números zero :11110000
+ n = 4
+ 2^4-2=14
+
+c)  Subrede 1:
+    	Rede: 210.21.1.0
+    	Broadcast:210.21.1.15
+    	Range: 210.21.1.1 à 210.21.1.14
+
+    Subrede 2:
+    	Rede: 210.21.1.16
+    	Broadcast:210.21.1.31
+    	Range: 210.21.1.17 à 210.21.1.30
+
+    Subrede 3:
+    	Rede: 210.21.1.32
+    	Broadcast:210.21.1.47
+    	Range: 210.21.1.33 à 210.21.1.46
+
+    Subrede 4:
+    	Rede: 210.21.1.48
+    	Broadcast:210.21.1.63
+    	Range: 210.21.1.49 à 210.21.1.62
+    
+    Subrede 5:
+    	Rede: 210.21.1.64
+    	Broadcast:210.21.1.79
+    	Range: 210.21.1.65 à 210.21.1.78
+
+    Subrede 6:
+    	Rede: 210.21.1.80
+    	Broadcast:210.21.1.95
+    	Range: 210.21.1.81 à 210.21.1.94
+    
+    Subrede 7:
+    	Rede: 210.21.1.96
+    	Broadcast:210.21.1.111
+    	Range: 210.21.1.95 à 210.21.1.110
+
+    Subrede 8:
+    	Rede: 210.21.1.112
+    	Broadcast:210.21.1.127
+    	Range: 210.21.1.113 à 210.21.1.126
+    
+    Subrede 9:
+    	Rede: 210.21.1.128
+    	Broadcast:210.21.1.143
+    	Range: 210.21.1.129 à 210.21.1.142
+
+    Subrede 10:
+    	Rede: 210.21.1.144
+    	Broadcast:210.21.1.159
+    	Range: 210.21.1.145 à 210.21.1.158
+
+    Subrede 11:
+    	Rede: 210.21.1.160
+    	Broadcast:210.21.1.175
+    	Range: 210.21.1.161 à 210.21.1.174
+
+    Subrede 12:
+    	Rede: 210.21.1.176
+    	Broadcast:210.21.1.191
+    	Range: 210.21.1.177 à 210.21.1.190
+    
+    Subrede 13:
+    	Rede: 210.21.1.192
+    	Broadcast:210.21.1.207
+    	Range: 210.21.1.193 à 210.21.1.206
+
+    Subrede 14:
+    	Rede: 210.21.1.208
+    	Broadcast:210.21.1.223
+    	Range: 210.21.1.209 à 210.21.1.222
+    
+    Subrede 15:
+    	Rede: 210.21.1.224
+    	Broadcast:210.21.1.239
+    	Range: 210.21.1.225 à 210.21.1.238
+
+    Subrede 16:
+    	Rede: 210.21.1.240
+    	Broadcast:210.21.1.255
+    	Range: 210.21.1.241 à 210.21.1.254
+
+***************************************
+Questão 5) Dado o seguinte endereço IP e máscara: IP 147.20.10.255 – 255.255.252.0
+a. Quantos hosts podem ter cada subrede?
+b. Quantas subredes são possíveis de montar?
+c. O endereço fornecido é um endereço de: ( ) host ( ) broadcast ( ) rede
+d. O endereço fornecido pertence a qual subrede?
+
+a) Host: 2^n-2
+ n=10
+ 2^10-2=1022
+ O terceiro e último octeto possui dez números zero : 11111100.00000000
+
+b)Terceiro e último octeto possui seis números um : 11111100.00000000
+ Subrede: 2^n
+ n=6
+ 2^6=64
+
+c)256-252=4 (variação da subrede)
+ Rede:
+    147.20.0.255
+    147.20.4.255
+    147.20.8.255
+    147.20.12.255
+    147.20.16.255....
+ Broadcast: 
+    147.20.11.255
+    
+ O endereço é um Host porque está entre 147.20.8.0 e 147.20.11.255
+    Subrede: 147.20.8.0
+
+d) 3ª subrede
+
+***************************************
+Questão 8) Para cada subrede possível, apresente o endereço IP da subrede, o endereço IP do
+primeiro host, o endereço IP do último host e o endereço de broadcast. Calcule também o número
+de subredes e o número de hosts para cada subrede.
+a) 192.168.10.0/26
+b) 207.209.68.0/27
+c) 131.107.0.0/20
+d) 10.0.0.0/13
+
+a) 192.168.10.0/26
+ subRede: 192.168.10.0
+ Broadcast: 192.168.10.63
+ 	O último octeto é :11000000= 192
+ 	256-192=64   variação de subrede
+ Host:
+  	Primeiro:192.168.10.1
+        Último:192.168.10.62
+numero de host:2^2=4
+numero de subrede:2^6-2=62
+   
+b) 207.209.68.0/27
+ subRede: 207.209.68.0
+ Broadcast: 207.209.68.31
+        O último octeto é :11100000= 224
+        256-224=32   variação de subrede
+ Host:
+        Primeiro:207.209.68.1
+        O último:207.209.68.30
+numero de host= 2^5-2= 30
+numero de subrede=2^3=8
+        
+c) 131.107.0.0/20
+ subRede: 131.107.0.0
+ Broadcast: 131.107.15.255
+        O último octeto:11110000= 240
+        256-240=16   variação de subrede
+ Host:
+        Primeiro:131.107.0.1
+        O último:131.107.15.254
+numero de host= 2^12-2= 4094
+numero de subrede=2^4=16
+        
+d)  10.0.0.0/13
+ subRede: 10.0.0.0
+ Broadcast: 10.7.255.255
+ 	O último octeto:11111000= 248
+        256-248=8   variação de subrede
+ Host:
+        Primeiro:10.0.0.1
+        Último:10.7.255.254
+numero de host= 2^19-2
+numero de subrede=2^5=32
+
+
+

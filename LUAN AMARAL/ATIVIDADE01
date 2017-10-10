@@ -1,0 +1,54 @@
+INSTITUTO FEDERAL DA BAHIA
+RAMOM-REDES
+LUAN AMARAL VIANA-TI 431
+
+QUESTÃO 1-
+PONTO A PONTO: É A TOPOLOGIA QUE É MAIS SIMPLES.UNE DOIS COMPUTADORES POR QUALQUER MEIO DE TRANSMISSÃO.
+
+VANTAGENS:É MAIS RAPIDA.
+
+DESVANTAGENS:É MENOS SEGURA.
+
+BARRAMENTO: É UMA TOPOLOGIA QUE UNE COMPUTADORES ATRAVEIS DE NÓS CONECTADOS EM UMA BARRA ELA POSSUI ALTO PODER DE EXPANSÃO.
+
+VANTAGENS:USO DO CABO ECONÔMICO;MIDIA BARATA;SIMPLES E CONFIAVEL.
+
+DESVANTAGENS:FICA LENTA COM O AUMENTO DO TRAFEGO DE PC.
+
+ANEL:ULTILIZA LIGAÇÕES PONTO A PONTO QUE VÃO EM SENTIDO UNICO NO QUAL FOI TRANSMITIDO.CIRCULA NA FORMA DE UM ANEL.
+VANTAGENS:TODOS OS PC ACESSAM A REDE DE FORMA IGUAL.
+
+DESVANTAGENS:A FALA EM UM PC AFETA A REDE INTEIRA
+
+ESTRELA:FUNCIONA COM UM NÓ CENTRAL PARA GERENCIAR AS COMUNICAÇÕES,O NÓ CENTRAL QUE VAI DETERMINAR A VELOCIDADE DA TRANSMISSÃO.
+
+VANTAGENS:ADIÇÃO DE NOVOS COMPUTADORES É FACIL;GERENCIAMENTO É CENTRAL.
+
+DESVANTAGENS:UMA FALA EM UM COMPUTADOR AFETA A REDE INTEIRA.
+
+QUESTÃO 2-
+INTRANET-Intranet é uma rede baseada em protocolos TCP / IP,trata-se duma rede privada dentro de uma organização.
+
+INTERNET-Internet é um conjunto de redes mundial,com função de facilitar a comunicação em diversas partes do globo.
+
+EXTRANET-Quando as informações contidas em uma intranet privada,é partilhada para outro meio de informação essa rede passa a ser chamada de Extranet.
+
+QUESTÃO 3-
+Codificação de dados;Conexão com o meio físico;Técnica de transmissão;Transmissão de meio físico;Estabelecimento e término do vínculo;Controle de tráfego de quadros;Sequenciamento de quadros;Confirmação de quadros;Delimitação de quadros;Verificação de erros de quadro;Gerenciamento do acesso à mídia;Roteamento;Controle do tráfego da sub-rede;Fragmentação de quadros;Mapeamento de endereços lógicos/físicos.
+
+QUESTÃO 4-
+Aplicação-guarda todos os protocolos de comunicação para um serviço.
+Transporte-controla a comunicação dos host.
+
+Internet-serve para as comuniações entre as redes.
+
+Rede-é a parte fisica,tipo um roteador,serve para levar a comunicação do meio virtual para o meio real.
+
+
+QUESTÃO 5-
+
+HUB- É UMA PEÇA CENTRAL,QUE RECEBE OS SINAIS TRANSMITIDOS.
+
+SWITCH-É USADO PARA INTERLIGAR VARIOS HUB.
+
+ROTEADOR-SERVE PARA LEVAR OS SINAIS TRANSMITIDOS PELO PROVEDOR AO USUARIO.

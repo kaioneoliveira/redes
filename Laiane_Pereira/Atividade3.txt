@@ -1,0 +1,147 @@
+IFBA - Campus Jequié     Técnico em Informática
+Discente: Laiane dos Santos Pereira    TI: 431
+Docente: Ramon Fontes 
+Disciplina: Redes de Computadores - I Unidade
+Data: 26/09/2017
+
+     ~~ Atividade Endereçamento e Subredes ~~
+
+Questão 1:
+  
+Subrede:
+2^n = 8 --> n = 3
+11100000 = 224
+Variação: 256 - 224 = 32
+Subrede   Rede  Broadcast
+   1        0       31
+   2        32      63
+   3        64      95
+
+R.: A e B.
+
+Questão 2:
+
+11100000 = 224
+Variação: 256 - 224 = 32
+Subrede   Rede  Broadcast
+   1        0       31
+   2        32      63
+   3        64      95
+   4        96      127
+   5        128     159
+   6        160     191
+   7        192     223
+   8        224     255
+
+R.: A,C e D.
+    
+Questão 3: 
+
+(2^n)-2 >= 120 --> n>= 7
+10000000 = 128
+Variação: 256 - 128 = 128
+Subrede   Rede  Broadcast
+   1        0       127
+   2        128     255
+ 
+R.: B e D.
+    
+Questão 4:
+   
+Máscara /13
+variação 256-248 = 8
+Subrede   Rede  Broadcast
+   1        0       7
+   2        8       15
+
+Máscara/23
+Variação: 56 - 252 = 4
+Subrede   Rede  Broadcast
+   1        4       7
+   2        8       11
+
+R.: B e F.
+
+Questão 5:
+ 
+A alternativa B, pois o IP indicado não é privado.
+
+Questão 6:
+
+Alternativas A e B, pois hosts são números que ficam entre subredes e brodcasts, ou seja, não podem ser atribuídos para hosts.
+
+Questão 7:
+
+Máscara padrão --> /24
+
+11 hosts:
+Cálculo do número de hosts: (2^n)-2 >= 11 --> n >= 4
+4º octeto = 11110000 --> Máscara /28
+Endereço: 192.168.164.166/28
+
+16 hosts:
+Cálculo do número de hosts: (2^n) - 2 >= 16 --> n >= 5
+4º octeto = 11100000 --> Máscara /27
+Endereço: 192.168.164.149/27
+
+6 hosts:
+Cálculo do número de hosts: (2^n) - 2 >= 6 --> n >= 3
+4º octeto = 11111000 --> Máscara /29;
+Endereço: 192.168.164.178/29
+
+2 hosts: 
+(2^n) - 2 >= 2 --> n >= 2 
+4º octeto = 11111100 --> Máscara /30
+Endereço: 192.168.164.188/30
+
+Questão 8:
+
+105 hosts:
+Cálculo para número de hosts: (2^n) - 2 >= 105 --> n=7
+4º octeto = 10000000 --> Máscara /25
+Endereço: 192.168.197.251/25
+
+49 host:
+Cálculo para número de hosts:(2^n) - 2 >= 49 --> n = 6
+4º octeto = 11000000 --> Máscara /26
+Endereço: 192.168.197.52/26
+
+12 hosts:
+Cálculo para número de hosts: (2^n) - 2 >= 12 --> n = 4
+4º octeto = 11110000 --> Máscara /28
+Endereço: 192.168.197.87/28
+
+2 hosts:
+Cálculo para número de hosts: (2^n) -2 >= 2 --> n = 2
+4º octeto = 11111100 --> Máscara /30
+Endereço: 192.168.197.72/30
+
+Questão 9:
+
+14 hosts:
+Cálculo para número de hosts: (2^n) - 2 >= 14 --> n = 4
+4º octeto = 11110000 --> Máscara/28
+Endereço: 192.168.124.39/28
+
+42 hosts:
+Cálculo para número de hosts: (2^n) - 2 >= 42 --> n = 6 (OBS.: Não sei como resolver isso, pois esse cálculo não daria n = 6)
+4º octeto = 11111000 --> Máscara/30
+Endereço: 192.168.124.31/30
+
+6 hosts:
+Cálculo para número de hosts: (2^n) - 2 >= 6 --> n = 3
+4º octeto = 11111000 --> Máscara /29
+Endereço: 192.168.124.51/29
+
+Questão 10:
+Cálculo para número de hosts: (2^n) - 2 >= 30 --> n = 5
+4º octeto = 11100000 --> Máscara /27
+Variação = 256 - 224 = 32
+Rede  Broadcast
+0   ---  31
+32  ---  63
+64  ---  95
+
+R.: Alternativa A.
+
+   

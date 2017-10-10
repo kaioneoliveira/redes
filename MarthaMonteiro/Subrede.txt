@@ -1,0 +1,175 @@
+Questão 1) Para a rede abaixo: (Use 192.168.10.X/24).
+a.	 (2^n) - 2=5  2^n=7  n≈3
+	MASK 255.255.255.248
+Distribua endereços IP para 5 hosts de forma que estejam na mesma subrede.
+	192.168.10.4
+192.168.10.5
+192.168.10.6
+192.168.10.7
+192.168.10.8
+b. Qual o endereço de rede (ID de Rede).
+ 192.168.10.0/29
+c. Qual o endereço de broadcast.
+Resposta:192.168.1.7/29
+d. Qual o Range de endereços IP para esta rede.
+ ( 1-6)
+e. Qual o domínio de broadcast (nº de hosts) desta rede.
+6 pois... (2^n)-2, n é 3  logo: (2^3)-2=6
+Questão 2) Uma rede com IP CLASSE C precisa ser dividida em 2 subredes responda: (Use 200.143.165.X).
+(2^x)=2  x=1, isso significa que o host vai ter 1 a mais na máscara. 
+a.	Qual a máscara de subrede utilizada.
+	MASK: 255.255.255.128
+   b. Qual o número máximo de hosts por subrede.
+ (2^7)-2 = 126
+
+
+	c. Para cada subrede responda:
+		i. Qual o endereço de rede (ID de Rede).
+		200.143.165.0/25
+		200.143.165.128/25
+		ii. Qual o endereço de broadcast.
+			200.143.165.127/25
+			200.143.165.255/25
+		iii. Qual o range de endereços IP.
+			(1-126); (129-254)
+Questão 3) Uma rede com IP CLASSE C precisa ser dividida em 8 subredes responda: (Use 195.108.10.X).
+a. Qual a máscara de subrede utilizada.
+255.255.255.224
+b. Qual o número máximo de hosts por subrede.
+(2^5)-2 = 32-2= 30.
+c. Para cada subrede responda:
+	i. Qual o endereço de rede (ID de Rede).
+ Varia de 32 a 32, pois 256-224=32
+1.	195.108.10.0/27
+2.	195.108.10.32/27
+3.	195.108.10.64/27
+4.	195.108.10.96/27
+5.	195.108.10.128/27
+6.	195.108.10.160/27
+7.	195.108.10.192/27
+8.	195.108.10.224/27
+
+ii. Qual o endereço de broadcast.
+1.	195.108.10.31/27
+2.	195.108.10.63/27
+3.	195.108.10.95/27
+4.	195.108.10.127/27
+5.	195.108.10.159/27
+6.	195.108.10.191/27
+7.	195.108.10.223/27
+8.	195.108.10.255/27
+iii. Qual o range de endereços IP.
+1.	1-30
+2.	33-62
+3.	65-94
+4.	97-126
+5.	129-158
+6.	161-190
+7.	193-222
+8.	225-254
+Questão 4) Uma rede com IP CLASSE C precisa ser dividida em 16 subredes responda: (Use 210.21.1.X).
+a. Qual a máscara de subrede utilizada.
+2^n=16, n=4... 11110000=240
+MASK255.255.255.240
+b. Qual o número máximo de hosts por subrede.
+(2^4)-2 = 14
+c. Para cada subrede responda:
+i. Qual o endereço de rede (ID de Rede).
+Variação=256-240=16
+1.	210.21.10.0/28
+2.	210.21.10.16/28
+3.	210.21.10.32/28
+4.	210.21.10.48/28
+5.	210.21.10.64/28
+6.	210.21.10.80/28
+7.	210.21.10.96/28
+8.	210.21.10.112/28
+9.	210.21.10.128/28
+10.	210.21.10.144/28
+11.	210.21.10.160/28
+12.	210.21.10.176/28
+13.	210.21.10.192/28
+14.	210.21.10.208/28
+15.	210.21.10.224/28
+16.	210.21.10.240/28
+ii. Qual o endereço de broadcast.
+1.	210.21.10.15/28
+2.	210.21.10.31/28
+3.	210.21.10.47/28
+4.	210.21.10.63/28
+5.	210.21.10.79/28
+6.	210.21.10.95/28
+7.	210.21.10.111/28
+8.	210.21.10.127/28
+9.	210.21.10.143/28
+10.	210.21.10.159/28
+11.	210.21.10.175/28
+12.	210.21.10.191/28
+13.	210.21.10.207/28
+14.	210.21.10.223/28
+15.	210.21.10.239/28
+16.	210.21.10.255/28
+iii. Qual o range de endereços IP.
+1.	1-14
+2.	17-30
+3.	33-46
+4.	49-62
+5.	65-78
+6.	81-94
+7.	97-110
+8.	113-126
+9.	129-142
+10.	145-158
+11.	161-174
+12.	177-190
+13.	193-206
+14.	209-222
+15.	225-238
+16.	241-154
+Questão 5) Dado o seguinte endereço IP e máscara: IP 147.20.10.255 – 255.255.252.0
+Começa a variar a partir do 3° octeto, que tem 6 1s (/22) a mais que o prefixo padrão que é \16, assim a porção de host terá 10 zeros.
+a. Quantos hosts podem ter cada subrede?
+(2^10)-2 = 1022.
+b. Quantas subredes são possíveis de montar?
+22-16 = 6. ----> (2^6)=64
+c. O endereço fornecido é um endereço de: ( ) host ( ) broadcast ( ) rede
+É um endereço de host, pois esta entre os endereços de rede e broadcast.
+Varia de 4 em 4 → 256-252
+subrede:147.20.8.0
+broadcast: 147.20.11.255
+d. O endereço fornecido pertence a qual subrede?
+Pertence a terceira subrede:
+147.20.0.0
+147.20.4.0
+147.20.8.0 
+147.20.12.0
+Questão 8) Para cada subrede possível, apresente o endereço IP da subrede, o endereço IP do primeiro host, o endereço IP do último host e o endereço de broadcast. Calcule também o número de subredes e o número de hosts para cada subrede.
+a.	192.168.10.0/26
+VARIAÇÃO: 256-192=64
+Subrede 1º: 192.168.10.0/26
+Ultimo: 192.168.10.65/26
+Números de Subrede=2^n=4
+Número de host=62
+b) 207.209.68.0/27
+VARIAÇÃO: 256-224=32 
+Subrede 1º: 207.209.68.31
+ Ultimo: 207.209.68.30
+Broad: 207.209.68.31
+
+Números de Subrede=2^3=8
+Número de host=30
+
+c) 131.107.0.0/20
+VARIAÇÃO: 256-240=16.
+Subrede 1º: 131.107.0.1
+ Ultimo: 131.107.15.254
+Broad: 131.107.15.255
+Números de Subrede=2^4=16
+Número de host=4048
+
+d) 10.0.0.0/13
+VARIAÇÃO: 256-248=8.
+Subrede: 10.0.0.0 
+Broad: 10.7.255.255
+Números de Subrede=2^5=32
+Número de host=524286

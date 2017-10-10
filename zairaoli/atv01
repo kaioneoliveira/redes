@@ -1,0 +1,29 @@
+IFBA Campus Jequié
+Exercício 01- Redes de Computadores
+Discente- Zaira Oliveira Santos      Turma-431 
+
+  	1º)
+ Topologia física ponto a ponto: é a mais simplória, une duas maquinas através de um meio qualquer. Sua vantagem é a possibilidade de compartilhar mídia, além de poder ser facilmente configurada. Entretanto apenas poder ser compartilhada por dois computadores é uma desvantagem.
+   	Topologia em Barra: é muito comum, pois todos computadores estão conectados há uma barra que é compartilhada ente todos, a vantagem do barramento é que seu custo é barato, simples e confiável mas é fácil de ficar com a rede lenta e ter problemas no cabo.
+	Topologia em estrela: é a mais comum nos dias atuais, nela há um conector central que através de cabos trançados transmite todos os dados, o bom dessa topologia é que fica fácil de identificar o erro e que uma falha em um computador não afetará as outras redes (fácil manutenção), porém, a montagem dessa topologia custa caro.
+	Topologia em anel: os dispositivos ficam em série fechando uma espécie de círculo, os dados passam em uma direção, o lado bom dessa topologia é que a performance não é impactada com o aumento de computadores mas os problemas são difíceis de achar, além de que um erro num computador pode afetar todos os outros.
+	 Topologia em malha: assemelha-se com a topologia anterior, se difere apenas em relação e as mensagens, que vão em todos os sentidos. Sua vantagem é portar um fácil diagnostico, todavia, possui alto custo.
+
+2º) 
+
+A Internet é a rede de computadores dispersos por todo planeta que mediante a um protocolo comum trocam dados e mensagens, tendo como seu principal uso a união de usuários. Ao passo que a Intranet é uma rede local, circunscrita aos limites internos de uma instituição, na qual são utilizados os mesmos programas e protocolos de comunicação empregados na Internet, a Extranet é uma rede de computadores constituída pela interligação de duas ou mais intranets. Ao passo que 
+
+3º) 
+
+A camada física está encarregada da transmissão e recepção do fluxo de bits brutos não estruturados através de um meio físico. A camada de vínculo de dados proporciona uma transferência de quadros de dados sem erros de um nó para outro através da camada física, permitindo que as camadas acima dela assumam a transmissão praticamente sem erros através do vínculo. A camada de rede controla a operação da sub-rede, decidindo que caminho físico os dados devem seguir com base nas condições da rede, na prioridade do serviço e em outros fatores. A camada de transporte garante que as mensagens sejam entregues sem erros, em sequência e sem perdas ou duplicações. Ela elimina para os protocolos de camadas superiores qualquer preocupação a respeito da transferência de dados entre eles e seus pares. A camada de sessão permite o estabelecimento da sessão entre processos em execução em estações diferentes. A camada de apresentação formata os dados a serem apresentados na camada de aplicativo. Ela pode ser considerada o tradutor da rede. A camada de aplicativo serve como a janela onde os processos de aplicativos e usuários podem acessar serviços de rede.
+
+4º) 
+
+As quatro camadas do modelo TCP/IP são: aplicação, transporte, internet e rede. Respectivamente, as funções de tais camadas são: fazer a comunicação entre os programas e os protocolos de transporte no TCP/IP; Receber os dados enviados pela camada de aplicação e transformá-los em pacotes menores, a serem repassados para a camada de internet. Ela garante que os dados chegarão sem erros e na sequência correta; Endereçamento e roteamento do pacote, fazendo a conexão entre as redes locais. Adiciona ao pacote o endereço IP de origem e o de destino, para que ele saiba qual o caminho deve percorrer; Envio do datagrama recebido da camada de internet em forma de quadros através da rede física.
+
+5º)
+
+O HUB é um dispositivo que tem como função conectar equipamentos que compõem a rede, trabalham na primeira camada do modelo OSI. Switches são dispositivos inteligentes que também conectam equipamentos de uma rede, podendo oferecer inúmeros recursos, trabalham com as duas primeiras camadas do modelo OSI. Roteadores estabelecem a comunicação entre diferentes redes de computadores, camada 3 do modelo OSI.
+
+											
+	

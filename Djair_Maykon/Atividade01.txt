@@ -1,0 +1,29 @@
+Questão 1:
+	Topologia em Anel: Caracterizada pela formação de um circuito fechado pelos nós, ou seja, todos os computadores são ligados por um fio que passa por todos eles. Vantagem: Aumentar o número de usuários não interfere na eficiência da comunicação; Desvantagem: Falha de um computador pode ocasionar mal funcionamento da rede por completo.
+	Topologia em Estrela: Caracterizada pela ligação de todos os nós a um dispositivo central. Vantagem: Fácil manutenção; Desvantagem: Funcionamento da rede é totalmente prejudicado se o dispositivo central é danificado.
+	Topologia Ponto a Ponto: Caracterizada pela ligação direta de dois nós através de um cabo. Vantagem: Baixo custo de montagem; Desvantagem: Pequena gama de recursos.
+	Topologia em Barramento: Caracterizada pela ligação de vários nós através de um cabo. Vantagem: Baixo custo de montagem; Desvantagem: Grandes quantidades de computadores deixam a rede ineficiente.
+
+Questão 2:
+	A internet é uma união de várias redes locais que permite a troca de informação entre vários locais do mundo. Já a intranet é mais utilizada em redes fechadas para a troca de dados de forma restrita, ou seja, apenas computadores daquela rede trocam informações. A extranet é uma expansão da intranet, pois permite acesso a computadores fora da rede, de forma controlada.
+	Como visto a principal diferença entre elas é a abrangência e a seletividade, que existe na intranet e na extranet e não existe na internet.
+
+Questão 3:
+	Camada Física: É a primeira camada e também a mais baixa, trata diretamente do recebimento dos sinais elétricos, ópticos ou mecânicos, e cuida de receber e transportar os bits não estruturados.
+ Camada de Enlace: Verificar a existência de erros na transmissão.
+Camada de Rede: Decide a rota que os dados irão tomar;
+Camada de transporte: Camada de transferência final, cuida de todo o transporte dos bits de forma que as próximas camadas não precisem se preocupar com isso.
+Camada de sessão: Possibilita a comunicação entre nós. 
+Camada de Apresentação: Traduz o dado recebido para o padrão utilizado na transmissão.
+Camada de Aplicação: Responsável pela promoção da interface da máquina com o usuário.
+
+Questão 4:
+	Camada de Aplicação: Responsável pela comunicação da aplicação com o protocolo de rede. 
+Camada de Transporte: Faz o transporte das informações com constante verificação para que não haja erros. 
+Camada de Internet: Esta camada faz o endereça, roteia e controla o envio e a recepção das informações. 
+Camada de acesso à rede: É responsável pela comunicação do protocolo TCP/IP com os vários tipos de rede.
+
+Questão 5:
+	Hub: Trabalhando na camada física do modelo OSI, o hub realiza a conexão entre os dispositivos e computadores que fazem parte da rede. 
+Switch: Muito parecido com hub também faz a conexão dos equipamentos da rede, no entanto ele transmite e recebe os dados de forma inteligente encaminhado os pacotes para as maquinas especificas, logo faz parte da camada de acesso do modelo OSI. 
+Roteadores: Atua na camada de rede do modelo OSI, pois trabalhando escolhendo a rota que as informações irão tomar para chegar em seu destino.

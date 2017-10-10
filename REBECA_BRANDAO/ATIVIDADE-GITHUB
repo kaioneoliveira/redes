@@ -1,0 +1,12 @@
+IFBA
+ALUNA-REBECA DE JESUS BRANDÃO
+1)O que é o git?Como você definiria o github?
+O git é uma espécie de gerenciador de arquivos,ou seja,ele fica responsável pelo controle das versões.E o Github é uma plataforma que hospeda códigos e projetos.
+2)O que você pôde notar de diferente? Comente.
+Após o clique do segundo ls posterior a clonagem os arquivos,o projeto é baixado no terminal juntamente com a pasta.
+3) Existe um conceito muito importante no github chamado de branch (ramo em inglês). Defina branch no âmbito do github. Por que você utilizaria branches? Para qual branch
+você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de
+diferente?
+O branch é uma espécie de ramificação dos projetos que possibilita um paralelo ao repositório,permitindo assim um duplo acesso aos projetos.Eu utilizaria para poder chamar novamente o meu projeto em outra pasta deixando-a mais organizada,foi enviado para o branch '2017-i431' e caso eu quisesse enviar um novo eu iria apertar na caixa seletiva e digitar um novo branch.
+4)Que tipo de informação o git apresenta de forma que te permita saber que há diferenças entre branches?
+Durante o acesso aparece uma caixa de seleção "branch",onde é possível escolher um tipo de ramificação que faz a relação com a pasta desejada.

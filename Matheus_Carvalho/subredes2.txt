@@ -1,0 +1,94 @@
+Matheus Santos Carvalho
+Turma: 431
+
+Questão 1:
+
+2^n >= 8 
+n>=3
+11111111.11111111.111 /19
+Variação é 32
+0-31
+32-63
+64-95 -> R= A , C e D.
+
+Questão 2:
+
+Variação: 256-224=32
+0-31
+32-63      
+64-95
+96-127
+128-159
+160-191
+192-223
+224-255 
+R=A, C e D.
+
+Questão 3:
+ 
+2^n-2>=120
+n>=7
+11111111.11111111.11111111.100000000 /25  -> No caso letra B
+
+Ta variando 32 entre os endereços.
+0-31
+32-63     
+64-95
+
+Assim o valido para o link A é a letra D.
+R= B e D.
+
+Questão 4:
+
+/13   Variação: 256–248=8.
+0-7
+8-15 -> F está na faixa de Host
+
+/23 Variação: 256 – 252=4.
+0-3 
+4-7
+8-11 ->B está na faixa de Host 
+R= F e B.
+
+Questão 5:
+
+Pode ser usada apenas endereços públicos, dessa forma qualquer um que não seja os seguintes:
+10.0.0.0 a 10.255.255.255 (10.0.0.0 /8)
+172.16.0.0 a 172.31.255.255 (172.16.0.0 /12)
+192.168.0.0 a 192.168.255.255 (192.168.0.0 /16)
+R= B pois está fora da faixa de ips privados.
+
+Questão 6:
+
+R: A,B.
+
+Questão 7:
+
+11 hosts: 192.168.164.166/28 
+2 hosts: 192.168.164.188/30  
+6 hosts: 192.168.164.178/29 
+16 hosts: 192.168.164.149/27 
+
+Questão 8:
+
+49 hosts: 192.168.197.52/26 
+2 hosts: 192.168.197.72/30 
+12 hosts: 192.168.197.87/28  
+105 hosts: 192.168.197.251/25 
+
+Questão 9:
+
+14 hosts: 192.168.124.39/28
+6 hosts: 192.168.124.51/25 
+2 hosts: 192.168.124.61/28 
+42 hosts: 192.168.124.31/30 
+
+Questão 10: 
+
+2^n-2>=30
+n>=5
+
+11111111.11111111.11111111.11100000 /27
+
+R= A
+

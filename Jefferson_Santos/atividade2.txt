@@ -1,0 +1,272 @@
+ALUNO: Jefferson de Jesus Santos
+TURMA: 431
+1-a)
+
+192.168.10.1
+192.168.10.2
+192.168.10.3
+192.168.10.4
+192.168.10.5
+
+b)192.168.10.0/29
+
+c)192.168.10.7/29
+
+d)1 à 6
+
+e)6
+
+2-a)
+255.255.255.128
+
+b)126
+
+c)
+Endereços de Rede-
+Sub-Rede 1:
+200.143.165.0
+
+Sub-Rede 2:
+200.143.165.128
+
+Broadcast
+Sub-Rede 1:
+200.143.165.127
+
+Sub-Rede 2:
+143.165.128.255
+
+
+3-a)
+255.255.255.224
+
+b)2^n-2=30
+
+c)Variação:256-224=32
+Endereços de Rede
+Sub-Rede 1:
+195.108.10.0
+
+Sub-Rede 2:
+195.108.10.32
+
+Sub-Rede 3:
+195.108.10.64
+
+Sub-Rede 4:
+195.108.10.96
+
+Sub-Rede 5:
+195.108.10.128
+
+Sub-Rede 6:
+195.108.10.160
+
+Sub-Rede 7:
+195.108.10.192
+
+Sub-Rede 8:
+195.108.10.224
+
+II)Broadcast
+Sub-Rede 1:
+195.108.10.31
+
+Sub-Rede 2:
+195.108.10.63
+
+Sub-Rede 3:
+195.108.10.95
+
+Sub-Rede 4:
+195.108.10.127
+
+Sub-Rede 5:
+195.108.10.159
+
+Sub-Rede 6:
+195.108.10.191
+
+Sub-Rede 7:
+195.108.10.223
+
+Sub-Rede 8:
+195.108.10.255
+
+
+
+4-a)
+255.255.255.240
+
+b)2^n-2=14
+
+c)Variação:256-240=16
+Endereços de Rede
+Sub-Rede 1:
+210.21.1.0
+
+Sub-Rede 2:
+210.21.1.16
+
+Sub-Rede 3:
+210.21.1.32
+
+Sub-Rede 4:
+210.21.1.48
+
+Sub-Rede 5:
+210.21.1.64
+
+Sub-Rede 6:
+210.21.1.80
+
+Sub-Rede 7:
+210.21.1.96
+
+Sub-Rede 8:
+210.21.1.112
+
+Sub-Rede 9:
+210.21.1.128
+
+Sub-Rede 10:
+210.21.1.144
+
+Sub-Rede 11:
+210.21.1.160
+
+Sub-Rede 12:
+210.21.1.176
+
+Sub-Rede 13:
+210.21.1.192
+
+Sub-Rede 14:
+210.21.1.208
+
+Sub-Rede 15:
+210.21.1.224
+
+Sub-Rede 16:
+210.21.1.240
+
+Broadcast
+Sub-Rede 1:
+210.21.1.15
+
+Sub-Rede 2:
+210.21.1.31
+
+Sub-Rede 3:
+210.21.1.47
+
+Sub-Rede 4:
+210.21.1.63
+
+Sub-Rede 5:
+210.21.1.79
+
+Sub-Rede 6:
+210.21.1.95
+
+Sub-Rede 7:
+210.21.1.111
+
+Sub-Rede 8:
+210.21.1.127
+
+Sub-Rede 9:
+210.21.1.143
+
+Sub-Rede 10:
+210.21.1.159
+
+Sub-Rede 11:
+210.21.1.175
+
+Sub-Rede 12:
+210.21.1.191
+
+Sub-Rede 13:
+210.21.1.207
+
+Sub-Rede 14:
+210.21.1.223
+
+Sub-Rede 15:
+210.21.1.239
+
+Sub-Rede 16:
+210.21.1.255
+
+
+5-a)2^n-2=1022
+
+b)2^6=64
+
+c)Host, variação:256-252=4
+0
+4
+8
+12
+.
+.
+.
+sub-rede:147.20.8.1
+broadcast:147.20.1.1
+              
+d)147.20.8.0 -> 147.20.11.255, terceira sub-rede
+
+
+8-a)
+
+Endereço de IP: 192.168.10.0
+
+Primeiro Host: 192.168.10.1
+
+Último Host: 192.168.10.62
+
+Broadcast: 192.168.10.63
+
+Número de sub-redes: 2^n=4
+
+Número de hosts: (2^6-2)=62
+
+b)
+Endereço de IP: 207.209.68.0
+
+Primeiro Host: 207.209.68.1
+
+Último Host: 207.209.68.30
+
+Broadcast: 207.209.68.31
+
+Número de subredes: 2^n=8
+
+Número de hosts: (2^5-2)=30
+
+c)
+Endereço de IP: 131.107.0.0
+
+Primeiro Host: 131.107.0.1
+
+Último Host: 131.107.15.254
+
+Broadcast: 131.107.15.255
+
+Número de subredes: 2^n=16
+
+Número de hosts: 4094
+
+d)
+Endereço de IP: 10.0.0.0
+
+Primeiro Host: 10.0.0.1
+
+Último Host: 10.7.255.254
+
+Broadcast: 10.7.255.255
+
+Número de subredes: 2^n=32
+
+Número de hosts: (2^19-2)=524286

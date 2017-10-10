@@ -1,0 +1,308 @@
+IFBA - Campus Jequié     Técnico em Informática
+Discente: Laiane dos Santos Pereira    TI: 431
+Docente: Ramon Fontes 
+Disciplina: Redes de Computadores - I Unidade
+Data: 29/08/2017
+
+     ~~ Atividade Subredes ~~
+
+Questão 1:
+   IP: 192.168.10.X/24
+
+a) Cálculo Host:
+   (2^n)-2 >= 5 --> n = 3
+   (2^3)-2 = 6
+   /24 --> /29
+   
+   4º octeto: 11111000 = 248 
+   192.168.10.248
+
+   Variação de subrede: 256 - 248 = 8
+   1º 192.168.10.0/24   1 <--> 6
+   2º 192.168.10.8/24
+           .
+           .
+           .
+ 
+   Resposta:
+   192.168.10.1
+   192.168.10.2
+   192.168.10.3
+   192.168.10.4
+   192.168.10.5
+ 
+b) ID Rede: 192.168.10.0/29
+ 
+c) ID Broadcast: 192.168.10.7/29
+ 
+d) Range: 192.168.10.1 à 192.168.10.6/29
+ 
+e) O domínio de broadcast é igual a 6.
+ 
+
+Questão 2:
+    Classe C --> IP: 200.143.165.X/24  
+ 
+    Cálculo Subrede: 
+    2^n >= 2 --> n = 1
+    24 + 1 = 25  
+    /24 --> /25    --> 200.143.165.X/25
+
+a) Último octeto: 10000000 = 128
+   Variação de subrede: 256 - 128 = 128
+   Máscara: 255.255.255.128
+   
+b) Cálculo Host: 
+   (2^n) - 2 --> n = 7
+   (2^7) - 2 = 126 hosts por subrede
+  
+c) Variação de subrede: 256 - 224 = 32
+   1ª Subrede:
+   Endereço Rede: 200.143.165.0/25
+   Broadcast:200.143.165.127/25
+   Range: 200.143.165.1/25 à 200.143.165.126/25
+
+   2ª Subrede:
+   Endereço Rede: 200.143.165.128/25
+   Broadcast: 200.143.165.255/25
+   Range: 200.143.165.129/25 à 200.143.165.254/25
+    
+    
+Questão 3: 
+     Classe C --> IP: 195.108.10.X/24
+      
+     Cálculo Subrede: 
+     2^n >= 8 --> n = 3
+     24 + 3 = 27
+     /24 --> /27   --> 200.143.165.X/27
+ 
+a) Último octeto:11100000 = 224
+   Máscara: 255.255.255.224
+   
+b) Cálculo Host:
+    (2^n) - 2 --> n = 5
+    (2^5) - 2 = 30 hosts por subrede
+
+c)  1ª Subrede:
+    Endereço Rede: 195.108.10.0/27
+    Broadcast:195.108.10.31/27
+    Range: 195.108.10.1/27 à 195.108.10.30/27
+
+    2ª Subrede:
+    Endereço Rede: 195.108.10.32/27
+    Broadcast:195.108.10.63/27
+    Range: 195.108.10.33/27 à 195.108.10.62/27
+
+    3ª Subrede:
+    Endereço Rede: 195.108.10.64/27
+    Broadcast:195.108.10.95/27
+    Range: 195.108.10.65 à 195.108.10.94/27
+
+    4ª Subrede:
+    Endereço Rede: 195.108.10.96/27
+    Broadcast:195.108.10.127/27
+    Range: 195.108.10.97/27 à 195.108.10.126/27
+    
+    5ª Subrede:
+    Endereço Rede: 195.108.10.128/27
+    Broadcast:195.108.10.159/27
+    Range: 195.108.10.129/27 à 195.108.10.158/27
+
+    6ª Subrede:
+    Endereço Rede: 195.108.10.160/27
+    Broadcast: 195.108.10.191/27
+    Range: 195.108.10.161/27 à 195.108.10.190/27
+    
+    7ª Subrede:
+    Endereço Rede: 195.108.10.192/27
+    Broadcast: 195.108.10.223/27
+    Range: 195.108.10.193/27 à 195.108.10.222/27
+
+    8ª Subrede:
+    Endereço Rede: 195.108.10.224/27
+    Broadcast:195.108.10.255/27
+    Range: 195.108.10.225/27 à 195.108.10.254/27
+    
+    
+Questão 4:
+    Classe C --> IP: 210.21.1.X/24
+ 
+    Cálculo Subrede: 
+    2^n >= 16 --> n = 4
+    24 + 4 = 28
+    /24 --> /28   --> 210.21.1.X/28
+ 
+a) Último octeto: 11110000 = 240
+   Máscara: 255.255.255.240
+   
+b) Cálculo Host:
+    (2^n) - 2 --> n = 4
+    (2^4) - 2 = 14 hosts por subrede
+  
+c)  Variação: 256 - 240 = 16
+    1ª Subrede:
+    Endereço Rede: 210.21.1.0/28
+    Broadcast: 210.21.1.15/28
+    Range: 210.21.1.1/28 à 210.21.1.14/28
+
+    2ª Subrede:
+    Endereço Rede: 210.21.1.16/28
+    Broadcast: 210.21.1.31/28
+    Range: 210.21.1.17/28 à 210.21.1.30/28
+
+    3ª Subrede:
+    Endereço Rede: 210.21.1.32/28
+    Broadcast: 210.21.1.47/28
+    Range: 210.21.1.33/28 à 210.21.1.46/28
+
+    4ª Subrede:
+    Endereço Rede: 210.21.1.48/28
+    Broadcast: 210.21.1.63/28
+    Range: 210.21.1.49/28 à 210.21.1.62/28
+    
+    5ª Subrede:
+    Endereço Rede: 210.21.1.64/28
+    Broadcast: 210.21.1.79/28
+    Range: 210.21.1.65/28 à 210.21.1.78/28
+
+    6ª Subrede:
+    Endereço Rede: 210.21.1.80/28
+    Broadcast: 210.21.1.95/28
+    Range: 210.21.1.81/28 à 210.21.1.94/28
+    
+    7ª Subrede:
+    Endereço Rede: 210.21.1.96/28
+    Broadcast: 210.21.1.111/28
+    Range: 210.21.1.95/28 à 210.21.1.110/28
+
+    8ª Subrede:
+    Endereço Rede: 210.21.1.112/28
+    Broadcast: 210.21.1.127/28
+    Range: 210.21.1.113/28 à 210.21.1.126/28
+    
+    9ª Subrede:
+    Endereço Rede: 210.21.1.128/28
+    Broadcast: 210.21.1.143/28
+    Range: 210.21.1.129/28 à 210.21.1.142/28
+
+    10ª Subrede:
+    Endereço Rede: 210.21.1.144/28
+    Broadcast: 210.21.1.159/28
+    Range: 210.21.1.145/28 à 210.21.1.158/28
+
+    11ª Subrede:
+    Endereço Rede: 210.21.1.160/28
+    Broadcast: 210.21.1.175/28
+    Range: 210.21.1.161/28 à 210.21.1.174/28
+
+    12ª Subrede:
+    Endereço Rede: 210.21.1.176/28
+    Broadcast: 210.21.1.191/28
+    Range: 210.21.1.177/28 à 210.21.1.190/28
+    
+    13ª Subrede:
+    Endereço Rede: 210.21.1.192/28
+    Broadcast: 210.21.1.207/28
+    Range: 210.21.1.193/28 à 210.21.1.206/28
+
+    14ª Subrede:
+    Endereço Rede: 210.21.1.208/28
+    Broadcast: 210.21.1.223/28
+    Range: 210.21.1.209/28 à 210.21.1.222/28
+    
+    15ª Subrede:
+    Endereço Rede: 210.21.1.224/28
+    Broadcast: 210.21.1.239/28
+    Range: 210.21.1.225/28 à 210.21.1.238/28
+
+    16ª Subrede:
+    Endereço Rede: 210.21.1.240/28
+    Broadcast: 210.21.1.255/28
+    Range: 210.21.1.241/28 à 210.21.1.254/28
+
+Questão 5:
+    IP: 147.20.10.255
+    Máscara: 255.255.252.0 --> /22
+  
+a) Cálculo Host: 
+   (2^n) - 2 --> n = 10
+   (2^10) - 2 = 1022 hosts por subrede
+    
+b)  Cálculo Subrede: 
+    2^n --> n = 6
+    2^6 = 64 subredes
+  
+c)  Variação de subrede: 256 - 252 = 4
+    Redes:
+    1ª 147.20.0.255
+    2ª 147.20.4.255
+    3ª 147.20.8.255
+    4ª 147.20.12.255
+    5ª 147.20.16.255
+            .
+            .
+            .
+
+    Subrede: 147.20.8.0
+    Broadcast: 147.20.11.255
+    Resposta: É um endereço de Host que está entre 147.20.8.0 e 147.20.11.255, ou seja, entre a subrede e o broadcast.
+
+d) À 3ª Subrede.
+
+Questão 8: 
+
+a) 192.168.10.0/26
+
+   Endereço Rede: 192.168.10.0
+   Broadcast: 192.168.10.63
+   Último octeto: 11000000 = 192
+   Variação de subrede: 256-192 = 64
+   
+   Cálculo Host:
+   Primeiro:192.168.10.1
+   Último:192.168.10.62
+ 
+   Número subredes: (2^2) = 4
+   Número de hosts: (2^6) - 2 = 62
+   
+   b) 207.209.68.0/27
+
+      Endereço Rede: 207.209.68.0
+      Broadcast: 207.209.68.31
+      Último octeto: 11100000 = 224
+      Variação de subrede: 256-224 = 32
+      
+      Cálculo Host:
+      Primeiro:207.209.68.1
+      Último:207.209.68.30
+   
+      Número subredes: (2^3) = 8
+      Número de hosts: (2^5) - 2 = 30
+        
+   c) 131.107.0.0/20
+
+      Endereço Rede: 131.107.0.0
+      Broadcast: 131.107.15.255
+      Último octeto: 11110000 = 240
+      Variação de subrede: 256 - 240 = 16
+      
+      Cálculo Host:
+      Primeiro:131.107.0.1
+      Último:131.107.15.254
+
+      Número subredes: (2^4) = 16
+      Número de hosts: (2^12) - 2 = 4084
+        
+    d)  10.0.0.0/13
+
+        Endereço Rede: 10.0.0.0
+        Broadcast: 10.7.255.255
+        Último octeto: 11111000 = 248
+        Variação de subrede: 256 - 248 = 8
+        
+        Cálculo Host:
+        Primeiro: 10.0.0.1
+        Último: 10.7.255.254
+
+        Número subredes: (2^5) = 32
+        Número de hosts: (2^19) - 2 = 524286

@@ -1,0 +1,41 @@
+(Questão 01) 
+2^n = 8 | n=3
+11111111.11111111.111 /19 | Variação igual a 32
+0 – 31 | 32 – 63 | 64 – 95
+Resposta: Alternativas A, C e D.
+(Questão 02)
+256-224=32 <- Variação
+0 – 31 | 32 – 63 | 64 – 95 | 96 – 127 | 128 – 159 | 160 – 191 | 192 – 223 | 224 – 255 |
+Resposta: Alternativas A, C e D.
+(Questão 03)
+2^n = 120 | n=7
+11111110 = 254
+256-254=2 <- Variação
+Resposta: Alternativas A e E
+(Questão 04)
+256-248 = 8 <- Variação
+0 – 7 | 8 – 15 |
+256-252 = 4 <- Variação
+0 – 3 | 8 – 11 |
+Respostas: Alternativas F e B.
+(Questão 05) Respostas: Alternativa B
+(Questão 06) Respostas: Alternativas A e B
+(Questão 07)
+192.168.164.166/28 - 11 hosts
+192.168.164.149/27 - 16 hosts
+192.168.164.188/30 - 2 hosts
+192.168.164.178/29 - 6 hosts
+(Questão 08)
+192.168.197.52/26 - 49 hosts
+192.168.197.72/30 - 2 hosts
+192.168.197.87/28 - 12 hosts
+192.168.197.251/25- 105 hosts
+(Questão 09)
+192.168.124.39/28 - 14 hosts
+192.168.124.31/30 - 42 hosts
+192.168.124.61/28 - 2 hosts
+192.168.124.51/25 - 6 hosts
+(Questão 10)
+2^n-2 = 30 | n=5
+256-224= 32 <- Variação
+Respostas: Alternativa A

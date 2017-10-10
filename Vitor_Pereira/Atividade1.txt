@@ -1,0 +1,19 @@
+Questão 01. Descreva os tipos de rede quanto à topologia, colocando as vantagens e desvantagens de cada uma delas.
+Na topologia anel os computadores são ligados em sequência, formando um ciclo, tem como vantagem que todos os computadores estão ligados a uma mesma rede, a partir do aumento de usuário a performance não sofre alteração, pode ser considerado desvantajoso, pois, se um computador falhar afetara o resto da rede e os problemas são difíceis de identificar.
+Na topologia em barras os computadores são ligados a um único barramento físico, somente uma máquina pode ser responsável por um barramento em certo instante, enquanto as outras apenas recebem os dados. Vantagens: instalação de baixo custo, é simples e confiável. Desvantagens: a rede fica lenta quando cresce o número de computadores, correndo o risco de parar a rede quando um cabo desconecta ou falha.  
+Na topologia estrela os computadores são conectados por um concentrador principal (fonte) que transmite todos os dados. Vantagens: fácil manutenção da rede, quando um computador falha não afeta o restante da rede. Desvantagem: custo alto, uma falha no concentrador principal paralisa toda rede.
+Na topologia ponto a ponto é usada para ligar dois pontos e redes, usado em residências e pequenas empresas. Vantagens: baixo custo, fácil implementação, sistema simples de cabeamento. Desvantagens: baixa segurança, não existe um administrador de rede.
+
+Questão 02. Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
+A internet é um conjunto de redes locais espalhadas pelo mundo, o que torna possível a interligação entre os computadores.
+A intranet é um espaço restrito a determinado público utilizado para compartilhamento de informações restritas. Geralmente utilizado em servidores locais instalados na empresa.
+A extranet seria uma extensão da intranet. Funciona do mesmo modo da intranet, porém sua principal característica é a possibilidade de acesso via internet, ou seja, de qualquer lugar do mundo você pode acessar os dados de sua empresa. A ideia de uma extranet é melhorar a comunicação entre os funcionários e parceiros além de acumular uma base de conhecimento que possa ajudar os funcionários a criar novas soluções.
+
+Questão 03. Quais são as principais funções das 7 camadas do Modelo OSI?
+Aplicação: funções especializadas (transferências de arquivos, terminal virtual, e-mail); Apresentação: formatação de dados e conversão de caracteres e códigos; Sessão: negociação e estabelecimento de conexão com outro nó; Transporte: meios e métodos para a entrega de dados ponta-a-ponta; Rede: roteamento de pacotes através de uma ou várias redes; Enlace: detecção e correção de erros introduzidos pelo meio de transmissão; Física: transmissão dos bits através do meio de transmissão.
+
+Questão 04. Quais são as camadas do padrão TCP/IP e suas funções correspondentes?
+APLICAÇÃO: Esta camada é responsavel pelo funcionamento dos serviços e apicações do modelo TCP/IP; TRANSPORTE: Esta camada é responsável pela entrega contínua de dados, sem falhas e erros; INTERNET: Esta camada é responsável pelo endereçamento,  roteamento e controle de envio e recepção dos dados; ACESSO À REDE: Esta camada é responsável pela adaptação do Modelo TCP/IP aos diversos tipos de redes.
+
+Questão 05. Conceitue hub, switch e roteador. Comente sobre eles no contexto do modelo OSI.
+Os hubs são os dispositivos usados na instalação da topologia estrela, é basicamente o concentrador principal (fonte) que transmite todos os dados. Os Switches tem a função de conectar computadores a rede, porem diferente dos hubs são equipamentos mais inteligentes com mais recursos. O roteador faz a comunicação entre diversos computadores (ADLS, Wireless).

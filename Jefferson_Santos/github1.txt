@@ -1,0 +1,7 @@
+1-Com o github é possível que várias pessoas editem o mesmo projeto. Um local na Web onde é possivel alocar códigos, podendo editá-los e compartilhá-los.
+
+  2- Ferrammenta de armazenamento virtual, que além disso, tem a possibilidade de editar arquivos.
+
+  3-Ramificação de projetos, altera um projeto sem mudar o original. Primeiramente enviei para o branch da turma i431. Usaria para mandar arquivos para outros branch.
+  
+  4- O conteúdo e titulo.

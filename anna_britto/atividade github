@@ -1,0 +1,7 @@
+1. Git é um sistema que por meio dele é possível compartilhar arquivos, geralmente da área de informática, nele outros usuários podem contribuir na construção do seu trabalho. Github é uma espécie de git. 
+
+2. Depois de clonar, a diferença é que a pasta clonada, e os arquivos que estão dentro dela, ficam salvos na pasta alunos do computador.
+
+3. Branch é uma espécie de ramificação do master e todos os arquivos criados dentro dele ficam armazenados no master também. Para os arquivos ficarem mais organizados. Branch ‘2017-i431’. Teria que clicar na opção de busca do branch e selecionar ou digitar o branch desejado.
+
+4. Há uma caixa seletiva com o nome de branch onde é possível selecionar qual você deseja, e caso você já tiver em um ele irá apresentar o nome do branch. 

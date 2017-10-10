@@ -1,0 +1,24 @@
+1- 	Topologia em Anel: rede em formato de circuito fechado, computadores ligados em série. A mensagem que passa por um, passa por todos. Vantagens: todos acessam a mesma rede, aumentando o número de usuários; a rede não cai de pefomance. Desvantagens: Se um computador falhar, a rede toda é afetada.; isolar problemas é difícil. 
+	Topologia em Barras: todos os computadores esão ligados ao mesmo barrameno, cada computador manda um sinal po vez, se caso, dois computadores enviarem o sinal no mesmo momento, haveá colisão e a conexão vai te que ser reiniciada. Vantagens: barato; simples instalação; rápida e eficiente. Desvantagens: conexão limitada; falha em um cabo, paralisa toda a rede; problemas difíceis de isolar.
+	Topologia em Estrela: Computadores ligados por pares trançados de fios, com uma fonte entre eles. Vantagens: falha em um computador não afeta os outros computadores; gerenciamento por um ponto central; instalação de novos computadores é simples. Desvantagens: se o dispositivo central falhar, todos os computadores conectados se paralisarão.
+	Topologia em Malha:  Computadores se interligam entre si, ponto a ponto, por cabos, ou seja, vários caminhos que chegam ao mesmo lugar. Vantagens: vários caminhos possíveis de comunicação, se um fio falhar, o arquivo que estava nele, ja estã passando por outros fios, ou seja, muitas chances de chegar ao destino.
+	Topologia mista: rede composta por várias topologias, ou seja, uma mistura de uma ou mais topologias, tendo ligações pono a ponto, geralmente utilizado em grandes redes. Vantagens: posiibilidade de ligação entre várias redes. Desvantagens: a ligação entre as topologias não é uniforme.
+
+2- 	Internet-  Rede mundial que abrange todos os computadores.
+  	Intranet- Rede direcionada a um local físico, restrita para apenas uma organização, voltada para empresas que necessitam de comunicação entre os setores.
+	Extranet- É uma extensão da intranet, quebrando os limites físicos, contando com o uso externo para seções selecionadas.
+3- 	Camada1(física)- Transmição e recepção de bits como corrente elétrica.
+	Camada2(enlace)-  Possui uma tabela de endereçamento e é responsável pelo controle de tráfego, correção e detectamento de erros.
+ 	Camada3(rede)- Responsável pelo tráfego, escolhendo assim o melhor caminho para transmitir os dados, mapeando os endereços.
+	Camada4(transporte)-  Dados sendo entregues em seus respectivos destinos, detectando e corrigindo os erros a fim de controlar o fluxo de mensagens.
+	 Camada5(sessão)- Inicia e encerra as conexões, gerenciando diálogo e as atividades.
+	Camada6(apresentação)- É considerado o tradutor da rede, funcionando com camada intermediária. Gerencia formatos e criptografia, responsável pela compreensáo dos dados.
+	Camada7(aplicação)- tranferência e gerenciamento de arquivos mortos. Local onde fica deisponível os protocolos.
+4- 	Camada de aplicação- fornece os principais serviços disponibilizados na internet, fazendo comunicação entre as aplicações e os protocolos.
+ 	Camadas de internet- recebe os pacotes da camada de transpote, transferindo-as para a camada de aplicação. Faz endereçamento, encaminhamento e virificação da validade dos pacotes recebidos.
+	Camada de transporte-  Fornece conexão entre duas aplicações , garantindo o encaminhamento e a transformação das aplicações em pacotes.
+	Camada de network- Especifica e encaminha os dados.
+5- 	Hub- É um centralizador, utilizado em topologia de estrela. É o dispositivo que realiza coneção entre todos os equipamentos da rede, fazendo apenas isso. Conheido com dispositivo buro.
+	Roteadores- Faz a comunicação entre disposivos diferentes, enviando pacotes de dados entre eles, decidindo por onde esses pacotes devem seguir.
+	Switche-  Disposiivo inteligente, que oferece vários recursos. Contém uma tabela de endereçamento e realiza endereçamento de dados.
+ 

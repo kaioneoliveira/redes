@@ -1,0 +1,25 @@
+01. 2^n >= 8 
+n = 3 
+11100000 --> 224 
+256 - 224 = 32 
+Letras = 'A' 'C' 'D'
+
+02. 11100000 --> 224
+256 - 224 = 32 
+Letras = 'D' 'E' 'F'
+São porque são as únicas que o resto dá igual a zero(0).
+
+03. Letras = 'C' 'D'
+
+04. Letras = 'C' 'F' 
+
+05. Letra = 'B' 
+
+06. Letras = 'A' 'B'
+
+10. 2^n - 2 = 30
+2^n = 32 
+n = 5 
+11100000 --> 224
+256 - 224 = 32 
+Letra = 'A' 

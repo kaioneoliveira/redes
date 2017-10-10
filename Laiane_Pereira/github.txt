@@ -1,0 +1,10 @@
+Atividade GitHub – I Unidade
+
+Questão 1:
+Git é um sistema de controle de versão de arquivos. Através dele podemos desenvolver projetos nos quais diversas pessoas podem contribuir simultaneamente, editando e criando novos arquivos e permitindo que os mesmos possam existir sem o risco de suas alterações serem sobrescritas. O GitHub é um site no qual pode-se fazer upload de projetos Git. Ele é a plataforma mais conhecida de hospedagem de projetos Git e serve para que uma equipe possa manter as versões do projeto em que trabalham em um lugar centralizado, na internet, acessível a quem pertence ao projeto, em qualquer lugar do mundo.
+Questão 2:
+Após clonar o meu repositório, utilizando o comando git clone, pude perceber que uma pasta pessoal com o mesmo nome do meu repositório foi criada no diretório local. Esse, foi acessado pelo terminal usando o comando ls.
+Questão 3:
+O branch no âmbito do GitHub é uma maneira pela qual ramificações, ou seja, alterações podem ser feitas em projetos e arquivos, sem modificar o original. Eu utilizaria branches para preservar algum projeto e depois poder compará-lo. Para o branch master. Para alterar, basta digitar o comando “git checkout -s” e adicionar os meus arquivos digitando o “git add”.
+Questão 4:
+O nome e o conteúdo irão diferenciar os branches. E os arquivos são comparados utilizando-se o comando “git dif”.

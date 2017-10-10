@@ -1,0 +1,16 @@
+Questão 1)O que é o git?Como você definiria o github?
+Segunndo o site tableles, Git é um sistema de controle de versão, daí pode-se entender que git é como se fosse um site para desenvolver projetos ou arquivos, onde varias pessoas podem participar ao mesmo tempo. O Github é um serviço da web que implementa o git, no nosso caso,por exemplo é um pagina na qual os alunospoderão postar suas atividades, individualmente e ao mesmo tempo, cada qual com sua “pasta” separada.
+
+Questão 2) O que você pôde notar de diferente? Comente.
+quando se dá um segundo ls, depois da clonagem, abri um novo diretorio com os dados do antigo (alunos), porém com a  diferença que meus dados que estavm no github, aprecem junto a este diretorio.
+
+Questão 3)  Existe um conceito muito importante no github chamado de  branch (ramo em
+inglês). Defina branch no âmbito do github. Por que você utilizaria  branches  ? Para qual branch
+você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de
+diferente?
+branch é ramificaçoes, ou seja partes especificas  de um projeto princial. Ao usar o Branch, você acabar por especificar/restringir dados e informações de um determinado projeto.
+Enviei meu arquivo para o branch 2017-i431.
+
+Questão 4)  Que tipo de informação o git apresenta de forma que te permita saber que há
+diferenças entre branches?
+Na sua pagina do github, ha uma caixa de dialogo denominada Branch, que ao clica-la permite que você crie ou procure um Branch.

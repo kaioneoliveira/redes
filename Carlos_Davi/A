@@ -1,0 +1,36 @@
+QUESTÃO 01) Descreva os tipos de rede quanto à topologia, colocando as vantagens e desvantagens de cada uma delas.
+
+Anel: Conhecida por ter um formato em forma de um círculo fechado. Esse tipo de rede funciona com todos os computadores conectados em série. Cada estação dessa topologia esta conectada apenas a mais duas estações. A principal vantagem dessa topologia é que todos os computadores acessam a rede igualmente e sua performance não é prejudicada com o aumento de usuários. Sua principal desvantagem e que quando um computador falha outros computadores serão prejudicados.
+
+Barramento: Nessa topologia todos os computadores são conectados com um mesmo barramento físico de dados, mas os dados não passam por dentro de cada um dos nos, somente uma máquina “escrever” no barramento por um determinado tempo.
+Sua principal vantagem é que há uma economia no tanto de cabos necessário, sua instalação é barata e fácil de se manusear. Sua desvantagem é que em alguns casos ela pode ficar muito lenta em situações de muito trafego de dados e esses problemas são difíceis de isolar.
+
+Estrela: A topologia em estrela é a mais utilizada atualmente, utiliza-se um hub como ponto central e cabos de par trançado para ligar os computadores. Nessa topologia todas as informações passam pela estação central inteligente, que esta conectada a cada estação da rede e tem a função de distribuir o trafego corretamente para que uma estação não receba dados indevidamente. A central gerencia o fluxo de dados da rede conectada ponto a ponto a cada nó dando um aspecto de estrela por isso esse nome topologia estrela. Sua principal vantagem é sua codificação e fácil adição de novos computadores e que se um computador falhar o resto da rede não será prejudicada. A sua desvantagem principal é que se o dispositivo central falhar toda a rede falha.
+Ponto-a-Ponto: Nessa topologia cada um dos pontos e nós da rede funciona como cliente e servidor, ou seja, ela pode compartilhar dados sem utilizar um servidor central. Para se utilizar essa rede todos os pontos devem utilizar programas compatíveis para se comunicar corretamente. Sua principal vantagem é o seu baixo custo, fácil implementação e são sistemas simples de cabeamento. Sua desvantagem é que contem uma baixa segurança, não é utilizada em rede com mais de 20 micros e fica lento quando ocorre grande fluxo de dados.
+
+QUESTÃO 02) Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
+A internet é um aglomerado de redes locais espalhadas pelo mundo, sua interligação se torna possível graças aos protocolos TCP/IP. Sendo considerada atualmente como a melhor forma de comunicação inventada pelo homem com a internet é possível transmitir dados á longa distancia.
+A intranet é uma rede de computadores mas diferente da internet ela é restrita a um local físico, desse modo é uma rede fechada, interna e exclusiva apenas a algumas pessoas. Geralmente essa rede é utilizada por empresas, desse modo apenas pode ser acessada pelo seus utilizadores e colaboradores internos a principal vantagem de se utilizar dessa rede é a redução de custos e ganho de velocidade na divulgação e distribuição de informações como documentos, formulários, noticias entre outros.
+A extranet é basicamente um intranet, sua principal diferença é que o seu acesso pode ser feito via Web, mas ainda assim ocorre uma restrição e somente pessoas autorizadas podem ter acesso a essa rede. Sua utilização se da mais em grandes empresas que precisam se comunicar com outras corporativas que não estão no seu mesmo local físico ela também é utilizada por instituições educacionais como sistemas de bibliotecas entre outras.
+
+QUESTÃO 03)  Quais são as principais funções das 7 camadas do Modelo OSI?
+
+1º Camada Física: sua função é transmitir e receber o fluxo de bits, sendo a camada mais baixa do modelo OSI.
+2º Camada de Ligação de dados: sua função é detectar e corrigir erros que talvez possam ocorrer no nível físico, controlar o fluxo e estabelecer um protocolo de comunicação entre os sistemas que estão diretamente conectados.
+3º Camada rede: sua função é definir a partir de roteadores o melhor caminho para ocorrer os tráfegos dos dados no processo.
+4º Camada de transporte: sua função é receber os dados, controlando o fluxo, ordenando pacotes e corrigindo possíveis erros.
+5º Camada sessão: responsável pela troca de dados e comunicação entre os hosts, permitindo desse modo à comunicação entre computadores.
+6º Camada de apresentação: sua função é converter os dados recebidos para um formato utilizado pelo protocolo.
+7º Camada de aplicação: é responsável pela interface direta para inclusão e recepção de dados, tudo nesta camada esta relacionado com o software.
+
+QUESTÃO 04) Quais são as camadas do padrão TCP/IP e suas funções correspondentes?
+Camada aplicação: Contém todos os protocolos necessários para um serviço especifico de comunicação de dados exemplo: como que um navegador deve se comunicar com um servidor.
+Camada transporte: Essa camada controla a comunicação host-host.
+Camada internet: é responsável pelas conexões entre as redes locais.
+Camada rede: Essa camada é conhecida como física pois utiliza-se de tecnologias usadas para que ocorra a conexão como Wi-Fi, modem entre outros.
+
+QUESTÃO 05) Conceitue hub, switch e roteador. Comente sobre eles no modelo OSI.
+
+O hub é um dispositivo que tem como função interligar os computadores de uma rede local. Ele recebe os dados vindos de um computador e o manda para outro computador, durante esse processo mais nenhum computador consegue enviar algum sinal. Os hubs são recomendados para pequenas redes desse modo ele dificilmente apresentara algum problema. Esse dispositivo atua na primeira camada do modelo OSI.
+O switch é bastante semelhante ao hub, mas sua principal diferença é que diferente do hub ele somente repassa os dados para o computador de destino desse modo a rede não fica “congelada” a um único computador, assim a rede fica com um melhor desempenho e com menor taxa de colisões. O switch atua na terceira camada do modelo OSI.
+O roteador é um equipamento utilizado em redes de maior porte. Além de ser melhor que o switch o roteador pode determinar qual a melhor rota que o pacote de dado deve seguir para chegar em seu destino. Os roteadores também atuam na terceira camada do modelo OSI.

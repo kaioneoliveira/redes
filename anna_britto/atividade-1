@@ -1,0 +1,26 @@
+Atividade 01
+1.Descreva os tipos de rede quanto à topologia, colocando as vantagens e
+desvantagens de cada uma delas.
+
+o	Topologia em Anel: é uma rede que liga os computadores em série, de forma fechada. Vantagem: é um sistema simples e mais fácil de expandir. Desvantagem: caso ocorra um problema é difícil corrigir já que se houver dano na rede todos os computadores serão penalizados.
+o	Topologia em Barras: como o próprio o nome diz é uma “barra” que conecta os computadores. Vantagem: de todas as topologias de rede é a mais barata. Desvantagem: quanto mais computadores ligados a rede mais pesada e lenta ela fica.
+o	Topologia em Estrela: todos os computadores são ligados a uma rede central. Vantagem: se houver problema em um caso isolado não vai afetar a rede. Desvantagem: porém se houver problema na central afeta toda a rede.
+o	Topologia Ponto a Ponto: liga dois computadores a uma só rede. Vantagem: mais econômica. Desvantagem: menor segurança.
+o	Topologia Mista: mistura de topologias de rede diferentes. Vantagem: menor quantidade de erros. Desvantagem: maior custo econômico e a instalação é mais difícil.
+2.Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
+Internet é uma rede que possuí tráfego de informações que podem ser acessados por computadores a partir de servidores. A Intranet, assim como a Extranet, fazem parte da Internet só que a Intranet é uma rede fechada que só permite seu acesso a determinadas pessoas e computadores, já a Extranet é um tipo de Intranet só que aberta a um determinado público.
+3.Quais são as principais funções das 7 camadas do Modelo OSI?
+o	Camada Física: A partir dos cabos do computador a máquina recebe pulsos elétricos e eles são transformados para números binários.
+o	Camada Data Link: Converte os números binários em dados e depois os divide em hosts específicos.
+o	Camada de Rede: Transforma o endereço físico em um endereço IP.
+o	Camada de Transporte: Entrega e recebe os dados por meio da rede.
+o	Camada de Sessão: É responsável pela comunicação (troca de dados) da máquina com outro computador.
+o	Camada de Apresentação: Transforma os dados para suas aplicações destinadas.
+o	Camada de Aplicação: Interface, onde o usuário vai ter acesso a aplicações.
+4. Quais são as camadas do padrão TCP/IP e suas funções correspondentes?
+o	Camada de Aplicação: Troca de dados entre programas na rede para realização de uma tarefa.
+o	Camada de Transporte: Converte os dados e os transforma em pacotes.
+o	Camada de Rede: Os dados são alocados no endereço IP.
+o	Camada de Interface: Recebe e envia os pacotes através da rede.
+5.Conceitue hub, switch e roteador. Comente sobre eles no contexto do modelo OSI
+O HUB e SWITCH são os dispositivos utilizados para montar uma topologia de rede, para haver conexão entre os computadores. O HUB só permite uma troca de informação por vez, congestionando os outros computadores ligados e sua segurança é inferior comparada ao SWITCH, que já permite uma maior troca de informação entre os computadores, só não ocorre quando é para o mesmo destinatário. Já o roteador permite acesso a mais redes e com menos perca de informações 

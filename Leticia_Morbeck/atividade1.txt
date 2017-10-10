@@ -1,0 +1,70 @@
+QUESTÃO 01) Descreva os tipos de rede quanto à topologia, colocando as vantagens e desvantagens de cada uma delas.
+Foram estudados 5 tipos de rede quanto a topologia, a primeira é a topologia em Anel, no qual os computadores  ficam ligados em serie e em forma de um circulo fechado. Resumidamente na topologia em Barra, os computadores se ligam através de um único barramento físico de dados, onde as informações são transmitidas para todos os computadores, porém só o computador destinatário lê essas informações.  A topologia mais utilizada é a em estrela, mas só pode ser usada em redes pequenas e consiste em um rub central que se encarrega de retransmitir os dados para as estações e cabos de par trançados. A topologia mista combina dois ou mais tipos de topologia podendo se beneficiar com as vantagens destas. A topologia mais simples de todas é a ponto a ponto que é utilizada para ligar dois computadores de redes diferentes, são mais utilizadas em residências e em empresas pequenas.
+VANTAGENS:
+TOPOLOGIA EM ANEL:
+Todos os computadores acessam a rede igualmente;
+A rede não sofre negativamente com o aumento de usuáriosh
+DESVANTAGENS:
+Falha de um computador pode afetar o restante da rede;
+Problemas são difíceis de isolar;
+ TOPOLOGIA EM BARRA:
+Custo de instalação barata;
+Simples e relativamente confiável;
+Fácil expansão;
+DESVANTAGENS:
+Quanto maior o numero de computadores sendo utilizados, mais lenta a rede fica;
+Quando um cabo se desconecta ou falha interfere negativamente na rede;
+Problemas são difíceis de isolar;
+TOPOLOGIA EM ESTRELA:
+As estações se comunicam com o nó central, facilitando a manutenção da rede;
+A falha na rede de um computador não afeta o restante da rede;
+DESVANTAGENS:
+Custo de instalação cara;
+Uma falha no dispositivo central (hub) paralisa a rede inteira;
+TOPOLOGIA MISTA:
+Possibilidade de ligar várias redes;
+Melhor tolerância a falhas;
+DESVANTAGENS:
+A ligação não é uniforme;
+Instalação e configuração difícil;
+TOPOLOGIA PONTO A PONTO:
+Baixo Custo;
+Fácil implementação;
+Sistema simples de cabeamento
+Micros funcionam normalmente sem estarem conectados a rede;
+DESVANTAGENS:
+Baixa segurança;
+Topologia simples e sem muitos recursos;
+Rede sofre problemas em aumentar o tamanho;
+
+QUESTÃO 02) Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
+ INTERNET:
+É uma rede de computadores dispersos por todo o planeta que trocam dados e informações unindo usuários, facilitando a comunicação. Seu funcionamento é baseado na Pilha de Protocolos TCP/IP.
+INTRANET:
+É uma rede fechada e interna, que é acessada apenas por funcionários da empresa ou órgãos públicos que a utiliza, ou seja, é em rede exclusiva de determinado local e é separada fisicamente da internet.	
+EXTRANET:
+É uma extensão da intranet, que abrange não apenas os funcionários, mais também clientes/fornecedores de um determinado empresa/local, ou seja, ela permite acesso externo controlado.
+Resumindo o acesso só é restrito na intranet e na extranet, a comunicação é instantânea nas três e o compartilhamento de dados também ,a comunicação externa só não é possível na intranet, porém esta  admite compartilhamento de impressoras e rede local(LAN).
+
+QUESTÃO 03)  Quais são as principais funções das 7 camadas do Modelo OSI?
+As sete principais camadas são:
+Camada Física: Tem a função de transmitir e receber bits, estabelecer conexões física, combinação de moldem e comutar além de fornecer a codificação de dados. 
+Camada de enlace de dados: É responsável por detectar  colisõese corrigir erros em nível de rede local, controlar o trafego e gerenciar o acesso á mídia.
+Camada de Rede: Tem a função controlar o congestionamento, fornecer o roteamento e o mapeamento de endereços.
+Camada de Transporte: Detecta e corrigi erros fim a fim e controla o fluxo de mensagem.
+Camada de Sessão: Tem a função de gerenciar o diálogo, gerencia as atividades e fornece estabelecimento manutenção.
+Camada de Apresentação: É responsável pela gerencia de formatos, pela criptografia e compressão de dados, é considerada como o tradutor da rede.
+Camada de Aplicação: Transfere e gerencia os sistemas de Arquivos remotos, é interface direta para inserção/recepção de dados. 
+
+QUESTÃO 04) Quais são as camadas do padrão TCP/IP e suas funções correspondentes? 
+ Camadas do padrão TCP/IP:
+Camada de interface de Rede: Transporta e recebe os pacotes de dados ou datagramas IP e envia para uma rede física específica, também tem como função a interface do modelo TCP/IP com os diversos tipos de rede e a de encontrar o caminho mais curto e confiável.
+Camada de Internet: Essa camada estabelece a comunicação entre dois campos de trabalho e faz o endereçamento dos pacotes de dados, encaminha os pacotes e verifica a validade sua validade, recebe e envia mensagens ICMP de controle e informações de erros.
+Camada de Transporte: Fornece forma de comunicação entre duas aplicações ponto-a-ponto, controla o fluxo de dados, controla os erros e segmenta e reagrupa as mensagens.
+Camada de Aplicação: Esta camada assegura o fornecimento dos principais serviços disponibilizados pela Internet e escolhe o transporte necessário.
+QUESTAO O 05) Conceitue hub, switch e roteador. Comente sobre eles no contexto do modelo
+OSI.
+  O hub é um centralizador, mais utilizado na topologia em estrela, esse dispositivo de rede  trabalha na primeira camada do modelo OSI.
+Em redes de computadores, o switch são equipamentos utilizados para conexão e filtragem de informações entre duas e mais estações, corrigi erros de alguns pacotes de dados ou colisão de arquivo além de coordenar o trafego de informações na rede, e diferente dos hubs os switches são “inteligentes” e oferecem vários recursos. Opera no nível 2 do modelo de referência OSI. E identifica o computador pelo endereço MAC.
+
+ O roteador faz a comunicação entre redes distintas de computadores, eles decidem qual caminho o tráfego de informações deve seguir, o que facilita bastante a configuração de uma rede, esse equipamento é da camada 3 em relação ao modelo OSI. 

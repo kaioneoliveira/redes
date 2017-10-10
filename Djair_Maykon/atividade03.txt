@@ -1,0 +1,85 @@
+01) 172.25.0.0 -> Classe B -> Mascara padrão \16
+dividir emm 8 subredes iguais -> 2^n = 8 -> n = 3
+mascara de subrede três 1s a mais da mascara padrão -> \19
+variacao -> 256-224 = 32
+3ª subrede -> 192.25.64.0 até 192.25.95.255
+Resposta: A, C, D.
+
+02) \27 -> 11111111.11111111.11111111.11100000
+Variação = 256 - 224 -> variação = 32
+0 - 31
+32 - 63
+64 - 97
+96 - 127
+128 - 159
+160 - 191
+192 - 223
+224 - 255
+Resposta = A, C, D;
+
+03) network A - > 2^n - 2 >= 120 - > n = 7
+7 zeros na mascara = /25
+Rede A = 172.16.3.128/25
+
+Link A nn pode ter endereço dos outros que estão ligados:
+172.16.3.32 ate 172.16.3.63
+172.16.3.64 ate 172.16.3.95
+172.16.3.96 ate 172.16.3.127
+Link A = 172.16.3.0/30
+
+04)  B. /23 terceiro e quarto octeto varia de 10.1 até 11.255. É host -> 10.2
+     F. /13 segundo, terceiro e quarto octeto varia de 8.0.0 até 15.255.255 É host -> 10.0.0
+     
+05) B pois, dentre as alternativas, é a unica que não está dentro da faixa de ip privado.
+
+06) A, B. Pois tais endereços são utilizados
+
+07) 11 hosts -> 2^n-2 >= 11 logo n = 4 -> /28
+    11 hosts: 192.168.164.166/28
+    
+    16 hosts -> 2^n-2 >= 16 logo n = 5 -> /27
+    16 hosts: 192.168.164.149/27
+    
+    6 hosts -> 2^n-2 >= 6 logo n = 3 -> /29
+    6 hosts: 192.168.164.178/29
+    
+    2 hosts -> 2^n-2 >= 2 logo n = 2 -> /30
+    2 hosts: 192.168.164.188/30
+    
+08) 105 hosts -> 2^n-2 >= 105 logo n = 7 -> /25
+    105 hosts: 192.168.197.251/25
+    
+    49 hosts -> 2^n-2 >= 49 logo n = 6 -> /26
+    49 hosts: 192.168.197.52/26
+    
+    12 hosts -> 2^n-2 >= 12 logo n = 4 -> /28
+    12 hosts: 192.168.197.87/28
+    
+    2 hosts -> 2^n-2 >= 2 logo n = 2 -> /30
+    2 hosts: 192.168.197.72/30
+    
+09) 42 hosts -> 2^n-2 >= 42 logo n = 6 -> /26
+    42 hosts (pensamento inicial): 192.168.124.69/26 de 192.168.124.64 até 192.168.124.127
+    
+    6 hosts -> 2^n-2 >= 6 logo n = 3 -> /29
+    6 hosts (pensamento inicial): 192.168.124.51/29 de 192.168.124.48 até 192.168.124.55
+    
+    14 hosts -> 2^n-2 >= 14 logo n = 4 -> /28
+    14 hosts (pensamento inicial): 192.168.124.39/28 de 192.168.124.32 até 192.168.124.47
+    
+    2 hosts -> 2^n-2 >= 2 logo n = 2 -> /30
+    2 hosts (pensamento inicial): 192.168.124.60/30 de 192.168.124.60 até 192.168.124.63
+    
+    a rede de 42 hosts ficou com ips confiltantes com a rede de 6 hosts logo não poderá
+    ser utilizada a mascara de subrede /29 logo tentei a /27 e consegui
+    Resposta ->
+    42 hosts: 192.168.124.69/26
+    6 hosts: 192.168.124.31/27
+    14 hosts: 192.168.124.39/28
+    2 hosts: 192.168.124.60/30
+    
+10) 2^n-2 >= 30
+    2^n >= 32
+    n = 5 -> /27
+    Resposta: A.
+    

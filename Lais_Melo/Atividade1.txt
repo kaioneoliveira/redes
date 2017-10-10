@@ -1,0 +1,59 @@
+Questão 01- Descreva os tipos de rede quanto à topologia, colocando as vantagens e desvantagens de cada uma delas.
+Topologia barramento:
+Todos os computadores são ligados em um mesmo barramento físico de dados, onde todos os nós são compartilhados entre todos os processadores, podendo o controle ser centralizado ou distribuido. Na topologia de barramento a comunicação é feita por broadcast. Os dados são enviados pelo barramento e todas as máquinas veem os dados, porém somente o detinatário o recebe.
+Vantagens:
+	Uso de cabo é econômico
+	Fácil expansão
+Desvantagens:
+	Falha no cabo paralisa a rede inteira
+	A rede pode ficar extremamente lenta em casos de tráfego pesado.
+Topologia anel:
+	A topologia anel se baseia em dispositivos conectados em série formando um círcuito fechado. Os dados são transmitidos de nó em nó, operando em um único sentido. Os dados circulam até chegar ao seu destino.
+Vantagens:
+	O desempenho da rede não é afetado pelo aumento de usuários.
+Desvantagens:
+	A falha de um computador pode afetar o resto da rede.
+Topologia estrela:
+	A topologia estrela utiliza um nó central, geralmente um switch, para realizar as retransmissões entre as estações. O nó central também irá determinar a velocidade das trasmissões de dados.
+Vantagens:
+	Gerenciamento centralizado.
+	Falha de um computador não afeta o restante da rede.
+Desvantagens:
+	Falha no dispositivo central trava a rede inteira.
+Topologia ponto a ponto:
+	A topologia ponto a ponto é a mais simples de todas, pois une dois computadores por um meio de trasmissão qualquer. É uma arquitetura de redes de computadores onde cada um dos pontos ou nós da rede funciona tanto como cliente quanto como servidor.
+Vantagens:
+	Permite compartilhamentos de serviços e dados sem a necessidade de um servidor central. 
+Desvantagens:
+	Todos os pontos da rede devem usar programas compatíveis para ligar-se um ao outro. 
+
+Questão 02- Defina Internet, Intranet, Extranet, identificando seus principais usos e diferenças.
+Internet – Rede de computadores que interliga milhões de usuários em todo o mundo. Não é uma rede única, mas um grupo de redes hierarquizadas e seu funcionamento é baseado na Pilha de Protocolos TCP/IP. A internet serve como um dos principais meios de comunicação inventados pelo homem. 
+Intranet – É também uma rede de computadores baseada na pilha de protocolos TCP/IP. Porém, a Intranet é restrita a um local físico. Ou seja, é uma rede fechada, interna e exclusiva. A intranet é muito utilizada em empresas e orgãos públicos. 
+Extranet – Rede baseada na tecnologia Web, que une os recursos da intranet de uma companhia com os de seus clientes, fornecedores ou outros parceiros. A intranet pode operar apenas como uma rede corporativa dentro dos limites da empresa, porém pode ser vantajosa sua ligação com a internet.
+
+Questão 03- Quais são as principais funções das 7 camadas do Modelo OSI? 
+Camada Física:
+É onde se inicia o todo processo. A camada física é responsável por definir se a transmissão pode ser ou não realizada nos dois sentidos simultaneamente. Sendo a camada mais baixa do modelo OSI, diz respeito a transmissão e recepção do fluxo de bits brutos não-estruturados em um meio físico. Ela descreve as interfaces elétricas, ópticas, mecânicas e funcionais para o meio físico e transporta sinais para todas as camadas superiores.
+Camada de Enlace:
+Esta camada detecta e, opcionalmente, corrige erros que possam acontecer no nível físico. É responsável por controlar a recepção, delimitação e transmissão de quadros, e também estabelece um protocolo de comunicação entre sistemas diretamente conectados.
+Camada de Rede:
+A camada de rede é responsável pelo tráfego no processo de internetworking. A partir de dispositivos como roteadores, ela decide qual o melhor caminho para os dados no processo, bem como estabelecimento das rotas. A camada de redes já entende o endereço físico, que o converte para endereço lógico, o endereço IP. 
+Camada de transporte:
+A camada de transporte garante que as mensagens sejam entregues sem erros, em sequência e sem perdas ou duplicações. Ela elimina para os protocolos de camadas superiores qualquer preocupação a respeito da transferência de dados entre eles e seus pares.
+Camada de sessão:
+Responsável pela troca de dados e a comunicação entre hosts, a camada de Sessão permite que duas aplicações em computadores diferentes estabeleçam uma comunicação, definindo como será feita a transmissão de dados, pondo marcações nos dados que serão transmitidos. 
+Camada de Apresentação:
+A camada de Apresentação, também chamada camada de Tradução, converte o formato do dado recebido pela camada de Aplicação em um formato comum a ser usado na transmissão desse dado, ou seja, um formato entendido pelo protocolo usado.
+Camada de Aplicação:
+A camada de aplicação corresponde às aplicações no topo da camada OSI que serão utilizadas para promover uma interação entre a máquina destinatária e o usuário da aplicação. Esta camada também disponibiliza os recursos para que tal comunicação aconteça.
+Questão 04- Quais são as camadas do padrão TCP/IP e suas funções correspondentes?
+Camada de Aplicação: Essa camada é utilizada pelos programas para enviar e receber informações de outros programas através da rede.
+Camada de transporte:  Camada responsável por receber os dados enviados pelo grupo acima, verificar a integridade deles e dividi-los em pacotes. 
+Camada de Rede: Nesta camada os dados empacotados são recebidos e anexados ao endereço virtual (IP) do computador remetente e do destinatário.
+Camada de Interface: A Interface recebe e envia pacotes pela rede. Os protocolos utilizados nessa camada dependem do tipo de rede que está sendo utilizada. 
+
+Questão 05- Conceitue hub, switch e roteador. Comente sobre eles no contexto do modelo OSI.
+Hub: O Hub é o “concentrador” e sua funçao é interligar computadores em uma rede local, recebendo dados de um computador e retransmitindo para outro. Os hubs trabalham com a primeira camada do modelo OSI.
+Switch: O switch é bastante semelhante ao hub, porem para transmitir os dados entres computadores o switch cria uma série de canais exclusivos em que os dados do computador de origem são recebidos somente pela máquina destino. Ou seja, ele trabalha com as duas primeiras camadas do modelo OSI.
+Roteador: Além de estabelecer a comunicação entre duas máquinas, o roteador também tem a capacidade de escolher a melhor rota que a informação deve seguir até seu destino. Com isso, a velocidade de transferência é maior e a perda de dados durante a transmissão diminui consideravelmente. O roteador é equivalente a um computador que gerencia diversas conexões de rede.

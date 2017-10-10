@@ -1,0 +1,7 @@
+1-  O Git possibilita que um arquivo possa ser manipulado por diversas pessoas. Assim o Github é uma página Web local onde se pode depositar código fontes, podendo reutilizar e alterar eles, também permite compartilhar projetos. 
+
+2- Que além de funcionar como um armazenamento virtual é possível programar com vários comandos, por exemplo de excluir e renomear um arquivo.
+ 
+3- O branch permite a ramificação de um projeto. Utilizar para fazer alterações em algum projeto sem mudar o original. Inicialmente enviei para o branch i431. Usaraia um branch base para publicar outro projeto em outro branch. 
+
+4- O conteúdo e título.

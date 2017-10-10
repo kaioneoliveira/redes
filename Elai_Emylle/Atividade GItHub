@@ -1,0 +1,14 @@
+IFBA – campus Jequié Disciplina: Redes de Computadores
+Estudante: Elai Emylle Matos de Lima TI 431
+
+1.
+Git é um sistema de controle de versão de arquivos, que registra a evolução dos projetos e seus códigos, e também permite que outros usuários contribuam a eles sem que os arquivos sejam sobrescritos. O Github é um site que oferece serviços de hospedagem e compartilhamento para desenvolvimento pessoal de projetos.
+
+2.
+Primeiro, foram listadas as pastas e o endereço do diretório do computador. Depois de clonar o repositório do GitHub, e executar o comando ls, aparece o nome do repositório clonado na listagem dos diretórios.
+
+3.
+Branch é uma ramificação do projeto, como uma cópia do arquivo. É utilizado para alterar os arquivos em diferentes dispositivos, para depois reuní-los de volta ao projeto inicial. O arquivo foi enviado para o branch 2017-i431. Alteraria o nome do branch no comando para isso.
+
+4.
+O GitHub permite que você diferencie os branches por meio dos nomes que eles têm. Também, podem ser identificados pelos arquivos que eles contêm por meio dos pull requests, fazem o requerimento para que o código modificado seja enviado para o projeto principal.

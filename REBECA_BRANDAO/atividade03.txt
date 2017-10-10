@@ -1,0 +1,154 @@
+IFBA
+ALUNA-REBECA DE JESUS BRANDÃO   TI-431
+1- A rede 172.25.0.0 foi dividida em 8 subredes iguais. Qual dos seguintes endereços IP
+pode ser atribuídos para hosts da terceira subrede? (Escolha três):
+A. 172.25.78.243
+B. 172.25.98.16
+C. 172.25.72.0
+D. 172.25.94.255
+E. 172.25.96.17
+F. 172.25.100.16
+2^n-2>=8
+n>=3
+Útimo octeto=11100000
+variação=256-224
+variação=32
+0-31
+32-63
+64-95
+Respostas:A,C E D
+
+2- Quais 3 Endereços IP podem ser atribuídos para hosts se a máscara de subrede /27
+estiver em uso? (Escolha Três):
+A. 10.15.32.17
+B. 17.15.66.128
+C. 66.55.128.1
+D. 135.1.64.34
+E. 129.33.192.192
+F. 192.168.5.63
+último octeto-11100000
+variação=256-224
+variação=32
+0-31
+32-63
+64-95
+96-127
+128-159
+160-191
+192-223
+224-255
+Respostas:
+A,C E D
+
+3- Em relação ao desenho abaixo, qual endereço de rede deve ser utilizado para o Link A
+e Network A? (Escolha duas).
+2^n>=120
+n>=7
+último octeto=10000000
+logo a máscara é /25--->b
+variação=256-224
+variação=32
+Existindo três uns e cinco zeros no octeto final,o link é letra d
+0-31
+32-63
+
+Resposta:
+Letra b-network e letra d-link
+
+4-Quais dos seguintes Endereços IP pode ser atribuídos para hosts? (Escolha duas)
+A. 205.7.8.32/27
+B. 191.168.10.2/23
+C. 127.0.0.1
+D. 224.0.0.10
+E. 203.123.45.47/28
+F. 10.10.0.0/13
+máscara/13
+variação 256-248=8
+
+0-7
+8-15(o que está compreendido é host)
+máscara/23
+256-252=4
+0-3
+4-7
+8-11(o que está compreendido também é host)
+Respostas:
+letra b e letra f
+
+5- Qual endereço IP pode ser atribuído para uma interface a ser usada na Internet?
+A. 10.180.48.224
+B. 9.255.255.10
+C. 192.168.20.223
+D. 172.16.200.18
+Classes que não podem ser usadas na internet
+A=10.0.0.0
+B=172.16
+C=192.168
+Todos os endereços ,exceto o b,correspondem a uma dessas classes.
+Resposta
+Letra b
+
+6-Quando um Servidor DHCP é configurado, quais 2 Endereços IPs nunca serão
+atribuídos para hosts? (Escolha duas)
+A. endereço IP de subrede.
+B. endereço de broadcast da subrede.
+C. endereço IP concedido à LAN.
+D. endereço IP usado por uma interface.
+E. endereço IP configurado manualmente nos clientes.
+F. endereços IP designados para um Servidor DHCP.
+
+Host está compreendido entre endereços de subredes e de broadcast,logo,os mesmos não podem ser utilizados.
+Respostas:
+Letra a e b
+
+7- Faça a correlação correta (exemplo: indique se Floss Fa0/0 deve possuir o endereço IP
+192.168.164.189/30 ou qualquer outro IP dentre as opções disponíveis). Como há menos
+possibilidades que opções disponíveis, alguns endereços Ips não serão utilizados e
+consequentemente não farão parte da resposta. Utilize o mesmo conceito para as questões 08 e 09.
+
+11 hosts--> 2^n-2=11 |n=4;(seria a máscara padrão 24)
+último octeto=11110000,que equivale a máscara /28
+endereço:192.168.164.166/28
+16 hosts-->2^n-2=16|n=5(seria a máscara padrão 24)
+último octeto=11111000,nesse caso equivale a máscara /27;
+endereço:192.168.164.149/27
+6 hosts-->2^n-2=6|n=2(seria a máscara padrão 24)
+último octeto = 11000000,nesse caso equivale a máscara/29;
+endereço:192.168.164.178/29
+
+8-Faça a correlação correta:
+105 hosts-->2^n-2=105|n=7
+último octeto=11111110--> máscara/25
+endereço:192.168.197.251/25
+49 hosts-->2^n-2=49|n=6
+último octeto=11111100-->máscara/26
+endereço:192.168.197.52/26
+12 hosts-->2^n-2=12|n=4
+último octeto=11110000-->máscara/28
+endereço:192.168.197.87/28
+
+9- Faça a correlação correta:
+14 hosts-->2^n-2=14|n=4
+último octeto=11110000-->máscara/28
+endereço:192.168.124.39/28
+42 hosts-->2^n-2=42|n=6
+último octeto=11111000-->máscara/30
+endereço:192.168.124.31/30
+6 hosts-->2^n-2=6|n=3
+últimos octetos=11100000-->máscara /25
+endereço:192.168.124.51/25
+
+10-  Você está em um ambiente de data center foram atribuídos a seguinte faixa de endereço
+10.188.31.0/23. Você é solicitado para desenvolver um esquema de endereçamento que permita o
+máximo de subredes com até 30 hosts em cada. Qual faixa de endereço IP encaixa com esses
+requisitos?
+
+2^n-2=30|n=5
+último octeto=11100000-->máscara/27
+variação=256-224
+variação=32
+0-31
+32-63
+64-95
+Resposta :
+letra a

@@ -1,0 +1,61 @@
+QUESTÃO 1) A rede 172.25.0.0 foi dividida em 8 subredes iguais. Qual dos seguintes endereços IP pode ser atribuídos para hosts da terceira subrede? (Escolha três).
+ 2 ^ n = 8
+ n = 3
+11100000 = 224
+ Variação: 256-224 = 32
+ 0-31 / 32-63 / 64-95 / 96-127 / 128-159 / 160-191 / 192-223 / 224-255
+ RESPOSTA = A, C, D
+-------------------------------------------------------------------------------------------------------------
+ QUESTÃO 2) Quais 3 Endereços IP podem ser atribuídos para hosts se a máscara de subrede /27 estiver em uso? (Escolha Três)
+ Variação: 256-224 = 32
+ 0-31 / 32-63 / 64-95 / 96-127 / 128-159 / 160-191 / 192-223 / 224-255   
+ R = A, C e D.
+-------------------------------------------------------------------------------------------------------------
+ QUESTÃO 3) Em relação ao desenho abaixo, qual endereço de rede deve ser utilizado para o Link A e Network A? (Escolha duas).
+ 2 ^ n-2> = 120
+ n> = 7
+11111111.11111111.11111111.100000000 / 25 -> letra B
+ Variação = 32 
+ 0-31 / 32-63 / 64-95
+ Assim o valido para o link A é a letra D.
+ RESPOSTA = B e D.
+----------------------------------------------------------------------------------------------------------------
+ QUESTÃO 4) Quais dos seguintes Endereços IP pode ser atribuídos para hosts? (Escolha duas)
+ / 13 Variação: 256-248 = 8.
+ 0-7
+ 8-15 -> F é na faixa de Anfitrião
+ / 23 Variação: 256 - 252 = 4.
+ 0-3 
+ 4-7
+ 8-11 -> B está na faixa de Host 
+ RESPOSTA = B, F.
+--------------------------------------------------------------------------------------------------
+QUESTÃO 5) Qual endereço IP pode ser atribuído para uma interface a ser usada na Internet?
+ RESPOSTA = B.
+-------------------------------------------------------------------------------------------------
+ QUESTÃO 6) Quando um Servidor DHCP é configurado, quais 2 Endereços IPs nunca serão atribuídos para hosts? (Escolha duas)
+ RESPOSTA = A, B.
+------------------------------------------------------------------------------------------------------
+ QUESTÃO 7) Faça a correlação correta (exemplo: indique se Floss Fa0/0 deve possuir o endereço IP 192.168.164.189/30 ou qualquer outro IP dentre as opções disponíveis). Como há menos possibilidades que opções disponíveis, alguns endereços Ips não serão utilizados e consequentemente não farão parte da resposta. Utilize o mesmo conceito para as questões 08 e 09.
+11 hosts: 192.168.164.166/28 
+2 hosts: 192.168.164.188/30  
+ 6 hosts: 192.168.164.178/29 
+ 16 hosts: 192.168.164.149/27 
+-----------------------------------------------------------------------------------------------------------
+ QUESTÃO 8) Faça a correlação correta:
+49 hosts: 192.168.197.52/26 
+2 hosts: 192.168.197.72/30 
+12 hosts: 192.168.197.87/28  
+105 hosts: 192.168.197.251/25 
+--------------------------------------------------------------------------------------------------------------
+QUESTÃO 9) Faça a correlação correta:
+14 hosts: 192.168.124.39/28
+ 6 hosts: 192.168.124.51/25 
+2 hosts: 192.168.124.61/28 
+42 hosts: 192.168.124.31/30 
+------------------------------------------------------------------------------------------------------------
+ QUESTÃO 10) Você está em um ambiente de data center foram atribuídos a seguinte faixa de endereço 10.188.31.0/23. Você é solicitado para desenvolver um esquema de endereçamento que permita o máximo de subredes com até 30 hosts em cada. Qual faixa de endereço IP encaixa com esses requisitos?
+ 2 ^ n-2> = 30
+ n> = 5
+11111111.11111111.11111111.11100000 / 27
+ RESPOSTA = A

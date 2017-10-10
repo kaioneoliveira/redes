@@ -1,0 +1,67 @@
+QUESTÃO 1:
+
+Topologia Ponto-a-ponto
+Trata-se de uma topologia no qual existe um ponto da rede que é conectado diretamente a outro ponto da rede. Tem como vantagens, baixo custo, fácil implementação, sistema simples de cabeamento. Trazem como desvantagens, redes pequenas, baixa segurança, não existe um administrador da rede.
+
+Topologia em Barramento
+Trata-se de uma topologia na qual havia um único caminho para o tráfego de dados, na forma de um cabo coaxial, e os pontos de redes são conectadas a esse cabo coaxial para trocar dados pela rede. Tem como vantagens, processo econômico, barato e de fácil instalação, simples e confiável e de fácil expansão. Trazem como desvantagens, trafego pesado acarreta em lentidão, falha em um cabo acaba paralisando toda a rede.
+
+Topologia em Anel
+Trata-se de uma topologia em anel, na qual os dispositivos são conectados em série, de forma a fechar um circuito fechado. Os dados são transmitidos em única direção de nó em nó até atingir o destino desejado. Uma mensagem enviada por uma estação é passada por outras estações, através das retransmissões, até ser retirada pela estação destino. Tem como vantagens, todos as máquinas tem acesso igualitário, não há mudança em relação a quantidade de usuários. Trazem como desvantagens, falha em um computador pode afetar toda a rede e problemas são difíceis de isolar.
+
+Topologia Estrela
+Trata-se de uma topologia em estrela na qual utiliza cabos de par trançado e um concentrador como ponto central da rede. O concentrador se encarrega de retransmitir todos os dados para todas as estações. Tem como vantagens adição de novas máquinas de uma forma simples, gerenciamento centralizado, falha em um computador não afeta o resto. Traz como desvantagem, uma falha no ponto central, paralisa tudo.
+
+
+QUESTÃO 2:
+
+Internet
+É um conjunto de redes que permite a conexão e interconexão descentralizada de computadores do mundo todo, na qual funciona através de um conjunto de protocolos denominado TCP/IP.
+Intranet
+É um espaço fechado a determinado coletivo, na qual é utilizado para compartilhamento de informações restritas.
+Extranet
+É uma expansão da intranet, de forma a possibilitar o acesso às informações por meio da internet, permitindo o acesso de qualquer local do mundo.
+
+QUESTÃO 3:
+
+Camada Física
+Responsável por converter em sinais os quadros da camada de ligação em sinais compatíveis com o meio de transmissão.
+
+Camada de Ligação
+Responsável por receber os pacotes da camada de rede e transforma-los em quadros ou frames.
+
+Camada de Rede
+Responsável por efetuar o endereçamento dos pacotes da camada de transporte de forma a chegarem ao destino.
+
+Camada de transporte
+Responsável por efetuar a divisão dos dados em pacotes de forma a serem transmitidos pela rede.
+
+Camada de sessão
+Responsável por controlar a transmissão de dados entre duas aplicações cuidando de erros e de registros.
+
+Camada de Apresentação
+Responsável por efetuar a tradução e a conversão de dados vindos da camada de aplicação de forma a serem transmitidos.
+
+Camada de Aplicação
+Responsável por efetuar a interface entre as aplicações e os protocolos de rede de forma à apresentar ao utilizador.
+
+QUESTÃO 4:
+
+CAMADA DE INTERFACE DE REDE
+Manda os pacotes de dados ou datagramas IP e transmite-os para uma rede física particular e recebe os pacotes de dados ou datagramas IP de uma rede física particular.
+CAMADA DE INTERNET:
+Estabelece a comunicação entre dois postos de trabalho, endereçamento dos pacotes de dados, encaminham pacotes de dados, verificam a validade dos pacotes de dados que recebem, recebem e enviam mensagens ICMP de controlo e informação de erros.
+CAMADA DE TRANSPORTE:
+Informa o nível de serviço e domina o status da conexão que é utilizada no transportamento de dados.
+
+CAMADA DE APLICAÇÃO:
+Define o protocolo de aplicação e como o programa irá realizar a comunicação com os serviços da camada transportadora.
+
+QUESTÃO 5:
+
+HUB
+ É um dispositivo de rede que trabalha na camada física do modelo OSI. É um concentrador com várias portas na qual reúne o conjunto de fluxos de redes em suas portas, sem dependência dos hosts transmissores e receptores, ele irá enviar todo o fluxo para a rede.
+SWITCH
+É um dispositivo de interconexão, no qual concentra rede, porém, ele divide a rede em domínios de colisão independente, ele opera na camada de rede do modelo OSI, no qual funciona em um processo de roteamento em que as mensagens são divididas em pacotes, de forma em que cada pacote contém os endereços necessários para o seu encaminhamento, em diferentes nós de rede; estes pacotes são recebidos em uma fila de espera e retransmitidos após uma análise. 
+ROTEADOR
+É um dispositivo intermediário em uma rede de computadores que permitem o roteamento de pacotes entre redes separadas. É um equipamento que funciona na camada de redes do modelo OSI, função de roteamento trata os endereços IP em função do seu endereço de rede definido pela ocultação de sub-redes e por seus redirecionamentos de acordo com o algoritmo de roteamento e sua tabela associada.

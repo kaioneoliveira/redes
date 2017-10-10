@@ -1,0 +1,19 @@
+INSTITUTO FEDERAL DA BAHIA
+Redes – Ramon
+João Victor Rebouças – 431
+
+  1)A topologia física ponto a ponto é a mais simples pois apenas une duas maquinas através de um meio qualquer, a vantagem é que dá para compartilhar músicas, filmes, imagens entre outras coisas, além de poder ser facilmente configurada, mas só pode ser compartilhada por apenas dois computadores.
+  O barramento é muito comum, pois todos computadores estão conectados há uma barra que é compartilhada ente todos, a vantagem do barramento é que seu custo é barato, simples e confiável mas é fácil de ficar com a rede lenta e ter problemas no cabo.
+	A topologia da estrela é a mais comum, nela há um conector central que através de cabos trançados transmite todos os dados, o bom dessa topologia é que fica fácil de identificar o erro e que uma falha em um computador não afetará as outras redes, porém se houver falha no dispositivo central a rede ficara em pane. 
+	Na topologia em anel os dispositivos ficam em série fechando uma espécie de círculo, os dados passam em uma direção o lado bom dessa topologia é que a performance não é impactada com o aumento de computadores mas os problemas são difíceis de achar além de que um erro num computador pode afetar todos os outros.
+	E por último a topologia em malha que se assemelha muito com a do anel se difere apenas que as mensagens vão em todos os sentidos o bom dela é que tem um fácil diagnostico mas possui alto custo.
+
+	2)A internet é a conexão global entre todos os dispositivos, a extranet é geralmente utilizadas entre empresas que querem fazer negócios, já a intranet é algo local, usada dentro de empresas, para coisas mais específicas
+
+ 	3)A camada física faz a transmissão de bits brutos ou seja transporta sinas para todas as outras camadas. Camada de ligação de dados simplesmente detecta prováveis erros que podem vir da camada física, assim controla o fluxo. A camada de redes fornece o procedimento no qual a informação será enviada. Na camada de transporte as informações que vem da anterior são transformadas em pacotes. A camada de apresentação faz uma “peneira” com os dados recebidos e envia os selecionados para a camada de aplicação que fornecem uma interação entre a máquina e o usuário.
+
+ 	4)Existe a camada da rede onde se parece muito com a camada física do OSI, no qual há conexões como modem e wi-fi, a camada da internet, parte é responsável pelas conexões entre as redes locais, estabelecendo assim a interconexão. A camada do transporte estabelece a comunicação entre os host. E a camada da aplicação que contém todos os protocolos feitos.
+
+  5)O hub é o material de rede o mais básico. Ele é utilizado para uma rede local com um número restrito de máquinas, por conta disso uma solicitação enviada para uma máquina irá também para todas as outras e isso faz a net ficar muito ruim. O switch trabalha com as duas primeiras camadas do modelo OSI, quer dizer que ele distribui os dados para cada máquina destinatária, enquanto que o hub envia todos os dados para todas as máquinas que respondem. Concebido para trabalhar em redes, com um número de máquinas levemente mais elevado que o hub, ele elimina as colisões e pacotes eventuais. O roteador autoriza a utilização d diversas classes de endereços IP na mesma rede. Ele permite desta forma a criação de sub redes, ele é utilizado nas grandes instalações, onde é necessário (principalmente por razões de segurança e de simplicidade) de constituir vários sub redes. Quando a rede internet chega por cabo, é necessário utilizar um roteador para conectar uma sub rede à Internet,
+
+	

@@ -1,0 +1,9 @@
+Questão 01 - O que é o git? Como você definiria o github?
+O git é um sistema de controle de versão de arquivos, onde se pode desenvolver projetos juntamente com outras diversas pessoas. 
+O github é uma plataforma que permite que o usuário hospede seus projetos. É muito semelhante a uma rede social, pois permite que o usuário siga projeto de outros desenvolvedores.
+Questão 02 - O que você pôde notar de diferente? Comente.
+Foi criado um novo diretório com o repositório criado.
+Questão 03 - . Existe um conceito muito importante no github chamado de branch (ramo em inglês). Defina branch no âmbito do github. Por que você utilizaria branches? Para qual branch você enviou seu arquivo? E se quisesse enviar para um novo branch, o que você faria de diferente?
+Um branch no Git é um leve ponteiro móvel que permite que pessoas associadas alterem o projeto sem o risco de perder o projeto original. Para não perder o projeto original no meio das alterações feitos pelos associados. Novo_branch. Criar um novo branch.
+Questão 04 - . Que tipo de informação o git apresenta de forma que te permita saber que há diferenças entre branches?
+Ele explica o que é o branche por meio de um artigo.

@@ -1,0 +1,291 @@
+1. IP: 192.168.10.X/24
+
+a) Host:
+    2^n-2>=5
+    n=3 - número de 0
+    2^3-2=6
+   
+   de 8 números do útimo octeto 3 são zeros e 5 são 1, logo: 
+   24+5=29
+   de /24 para /29
+   
+ Último octeto: 11111000 = 248
+ 192.168.10.248
+ 256-248= 8 (variação da subrede)
+ 
+ 192.168.10.1
+ 192.168.10.2
+ 192.168.10.3
+ 192.168.10.4
+ 192.168.10.5
+ 192.168.10.6
+ 
+ b) Id Rede: 192.168.10.0/29
+ 
+ c) Id Broadcast: 192.168.10.7/29
+ 
+ d) Range: 192.168.10.1/29 à 192.168.10.6/29
+ 
+ e) 6 hosts.
+ 
+ 
+ 2. IP: 200.143.165.X/24
+ 
+     subrede: 2^n=2
+     n=1  --- 24+1=25
+     200.143.165.X/25
+ 
+a) Classe C 
+   Último octeto:10000000 = 128
+   Masc: 255.255.255.128
+   
+
+b) Host 
+    2^n-2
+    Último octeto possui 7 números 0:10000000
+    n = 7
+    2^7-2=126
+    
+  
+c)  Subrede 1:
+    Rede: 200.143.165.0/25
+    Broadcast:200.143.165.127/25
+    Range: 200.143.165.1/25 à 200.143.165.126/25
+
+    Subrede 2:
+    Rede: 200.143.165.128/25
+    Broadcast:200.143.165.255/25
+    Range: 200.143.165.129/25 à 200.143.165.254/25
+    
+    
+3. IP: 195.108.10.X/24
+ 
+     subrede: 2^n=8
+     n=3  --- 24+3=27
+     200.143.165.X/27
+ 
+a) Classe C 
+   Último octeto:11100000 = 224
+   Masc: 255.255.255.224
+   
+
+b) Host 
+    2^n-2
+    Último octeto possui 5 números 0:11100000
+    n = 5
+    2^5-2=30
+    
+  
+c)  Variação: 256-224 = 32
+    
+    Subrede 1:
+    Rede: 195.108.10.0/27
+    Broadcast:195.108.10.31/27
+    Range: 195.108.10.1/27 à 195.108.10.30/27
+
+    Subrede 2:
+    Rede: 195.108.10.32/27
+    Broadcast:195.108.10.63/27
+    Range: 195.108.10.33/27 à 195.108.10.62/27
+
+    Subrede 3:
+    Rede: 195.108.10.64/27
+    Broadcast:195.108.10.95/27
+    Range: 195.108.10.65/27 à 195.108.10.94/27
+
+    Subrede 4:
+    Rede: 195.108.10.96/27
+    Broadcast:195.108.10.127/27
+    Range: 195.108.10.97/27 à 195.108.10.126/27
+    
+    Subrede 5:
+    Rede: 195.108.10.128/27
+    Broadcast:195.108.10.159/27
+    Range: 195.108.10.129/27 à 195.108.10.158/27
+
+    Subrede 6:
+    Rede: 195.108.10.160/27
+    Broadcast: 195.108.10.191/27
+    Range: 195.108.10.161/27 à 195.108.10.190/27
+    
+    Subrede 7:
+    Rede: 195.108.10.192/27
+    Broadcast: 195.108.10.223/27
+    Range: 195.108.10.193/27 à 195.108.10.222/27
+
+    Subrede 2:
+    Rede: 195.108.10.224/27
+    Broadcast:195.108.10.255/27
+    Range: 195.108.10.225/27 à 195.108.10.254/27
+    
+    
+    
+4. IP: 210.21.1.X/24
+ 
+     subrede: 2^n=16
+     n=4  
+     de 8 números do útimo octeto 4 são zeros e 4 são 1, logo: 
+     24+4=28
+     de /24 para /28.
+ 
+a) Classe C 
+   Último octeto:11110000 = 240
+   Masc: 255.255.255.240
+   Variação: 256-240 = 16
+
+b) Host 
+    2^n-2
+    Último octeto possui 4 números 0:11110000
+    n = 4
+    2^4-2=14
+    
+  
+c)  Subrede 1:
+    Rede: 210.21.1.0/28
+    Broadcast:210.21.1.15/28
+    Range: 210.21.1.1/28 à 210.21.1.14/28
+
+    Subrede 2:
+    Rede: 210.21.1.16/28
+    Broadcast:210.21.1.31/28
+    Range: 210.21.1.17/28 à 210.21.1.30/28
+
+    Subrede 3:
+    Rede: 210.21.1.32/28
+    Broadcast:210.21.1.47/28
+    Range: 210.21.1.33/28 à 210.21.1.46/28
+
+    Subrede 4:
+    Rede: 210.21.1.48/28
+    Broadcast:210.21.1.63/28
+    Range: 210.21.1.49/28 à 210.21.1.62/28
+    
+    Subrede 5:
+    Rede: 210.21.1.64/28
+    Broadcast:210.21.1.79/28
+    Range: 210.21.1.65/28 à 210.21.1.78/28
+
+    Subrede 6:
+    Rede: 210.21.1.80/28
+    Broadcast:210.21.1.95/28
+    Range: 210.21.1.81/28 à 210.21.1.94/28
+    
+    Subrede 7:
+    Rede: 210.21.1.96/28
+    Broadcast:210.21.1.111/28
+    Range: 210.21.1.95/28 à 210.21.1.110/28
+
+    Subrede 8:
+    Rede: 210.21.1.112/28
+    Broadcast:210.21.1.127/28
+    Range: 210.21.1.113/28 à 210.21.1.126/28
+    
+    Subrede 9:
+    Rede: 210.21.1.128/28
+    Broadcast:210.21.1.143/28
+    Range: 210.21.1.129/28 à 210.21.1.142/28
+
+    Subrede 10:
+    Rede: 210.21.1.144/28
+    Broadcast:210.21.1.159/28
+    Range: 210.21.1.145/28 à 210.21.1.158/28
+
+    Subrede 11:
+    Rede: 210.21.1.160/28
+    Broadcast:210.21.1.175/28
+    Range: 210.21.1.161/28 à 210.21.1.174/28
+
+    Subrede 12:
+    Rede: 210.21.1.176/28
+    Broadcast:210.21.1.191/28
+    Range: 210.21.1.177/28 à 210.21.1.190/28
+    
+    Subrede 13:
+    Rede: 210.21.1.192/28
+    Broadcast:210.21.1.207/28
+    Range: 210.21.1.193/28 à 210.21.1.206/28
+
+    Subrede 14:
+    Rede: 210.21.1.208/28
+    Broadcast:210.21.1.223/28
+    Range: 210.21.1.209/28 à 210.21.1.222/28
+    
+    Subrede 15:
+    Rede: 210.21.1.224/28
+    Broadcast:210.21.1.239/28
+    Range: 210.21.1.225/28 à 210.21.1.238/28
+
+    Subrede 16:
+    Rede: 210.21.1.240/28
+    Broadcast:210.21.1.255/28
+    Range: 210.21.1.241/28 à 210.21.1.254/28
+
+5) IP: 147.20.10.255
+  Masc:255.255.252.0 - /22
+  
+  a) Host: 2^n-2
+    n=10
+    2^10-2=1022
+    Terceiro e último octeto possui 10 números 0: 11111100.00000000
+    
+  b)Terceiro e último octeto possui 6 números 1: 11111100.00000000
+    Subrede: 2^n
+    n=6
+    2^6=64
+  
+  c)256-252=4 (variação da subrede)
+    Rede:
+    147.20.0.255
+    147.20.4.255
+    147.20.8.255
+    147.20.12.255....
+    Broadcast: 147.20.11.255
+    Subrede: 147.20.8.0
+    Resp: Host porque está entre 147.20.8.0 e 147.20.11.255
+  
+  d) Terceira subrede.
+
+
+ 8) a)  192.168.10.0/26
+        Subrede: 192.168.10.0
+        Broadcast: 192.168.10.63
+        Último octeto:11000000= 192
+        256-192=64 (variação de subrede)
+        Host:
+          Primeiro:192.168.10.1
+          Último:192.168.10.62
+        Subrede: 2^2=4
+        Número de Host: 2^6-2= 62
+
+    b)  207.209.68.0
+        Subrede: 207.209.68.0
+        Broadcast: 207.209.68.31
+        Último octeto:11100000= 224
+        256-224=32 (variação de subrede)
+        Host:
+          Primeiro:207.209.68.1
+          Último:207.209.68.30
+        Subrede: 2^3=8
+        Número de Host: 2^5-2= 30
+        
+    c)  131.107.0.0/20
+        Subrede: 131.107.0.0
+        Broadcast: 131.107.15.255
+        Último octeto:11110000= 240
+        256-240=16(variação de subrede)
+        Host:
+          Primeiro:131.107.0.1
+          Último:131.107.15.254
+        Subrede: 2^4=16
+        Número de Host: 2^12-2= 4084
+        
+    d)  10.0.0.0/13
+        Subrede: 10.0.0.0
+        Broadcast: 10.7.255.255
+        Último octeto:11111000= 248
+        256-248=8(variação de subrede)
+        Host:
+          Primeiro:10.0.0.1
+          Último:10.7.255.254
+        Subrede: 2^5=32
+Número de Host: 2^19-2= 524286 
