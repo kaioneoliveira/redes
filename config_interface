@@ -1,0 +1,14 @@
+Questão 1:
+	Responsável pela conexão IP da rede.
+
+Questão 2:
+	Pode interferir com problemas de conexão.
+
+Questão 3:
+	Porta TCP, usou-se comandos : up e down.
+
+Questão 4:
+	Por questões de segurança, TCP, prevalece segurança, UDP, velocidade.
+
+Questão 5:
+	É util quando queremos saber endereços remotos, locais e estados.
