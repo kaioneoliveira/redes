@@ -1,0 +1,23 @@
+Problema 1:
+	a) A distância mínima é 25, seguindo pelo caminho 1>>3>>4>>5>>6
+	b) É possivel, por conta que na letra (a), para chegar ao fim ele passa pelo 4, que no caso é o menor caminho.
+	c) Não. Porque as referências irão se alterar, de forma a não sabermos da onde começar.
+
+Problema 2:
+	54. Indo pelo caminho 1>>2>>3>>4>>8.
+
+Problema 3:
+	a)
+	
+	(1)-4-(2)-3-(3)-6-(4)
+	 |     |     |	   |	  
+	 7     8     7	   8
+	 |     |     |     |
+	(5)-8-(6)-6-(7)-8-(8)	
+	 |     |     |     |
+	 2     3     1     8
+	 |     |     |     |
+	(9)-3-(10)-1-(11)-8-(12)
+
+	
+	b)21, Seguindo pelo caminho 1>>5>>9>>10>>11>>12
