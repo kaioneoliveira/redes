@@ -1,0 +1,7 @@
+Feito com Isabelle Borges
+
+1. https://github.com/ElaiEmylleMatos/redes/blob/i441-2018-1/ElaiEmylleMatos/TopologyIE1.py
+
+2. Não é possível a comunicação, pois elas não estão na mesma rede.
+
+3. https://github.com/ElaiEmylleMatos/redes/blob/i441-2018-1/ElaiEmylleMatos/TopologyIE.py
