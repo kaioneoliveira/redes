@@ -1,0 +1,31 @@
+sudo mn - conecta o Mininet
+
+
+nodes - Faz a listagem dos nós, um controlador, 2 hosts e 1 switch, c1, h1, h1 e s1
+	
+
+sh ovs-vsctl show - listagem das  portas e dos bridges 
+
+sh ovs-ofctl dump-flows s1 - apresenta o fluxo da tebela do switch, s1
+
+
+h1 ping h2 - Executa um teste de conectividade entre o h1 e h2 
+
+
+sh ovs-ofctl dump-flows s1 - Mostra oque foi recebido pelo switch apos o teste de conectividade
+
+
+sh ovs-ofctl dump-flows s1 - sim ainda prossegue com o fluxo
+
+
+sh ovs-ofctl del-flows s1 - exclui todos os fluxos
+
+
+sh ovs-ofctl add-flow s1 in_port=1,actions=output:2 - Faz com que oque entre na porta 1 saia na porta 2
+
+
+sh ovs-ofctl dump-flows s1 - checou novamente a tabela de fluxo
+
+h1 ping h2 - teste de conectividade novamente
+
+sh ovs-ofctl del-flows s1 - deleta todos os fluxos
