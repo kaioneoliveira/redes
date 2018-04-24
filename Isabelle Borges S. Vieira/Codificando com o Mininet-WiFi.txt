@@ -1,0 +1,7 @@
+Feito com Elai Emylle Matos
+
+1. https://github.com/Bellcakedunica/redes/blob/i441-2018-1/Isabelle%20Borges%20S.%20Vieira/TopologyIE1.py
+
+2. Não é possível a comunicação, pois elas não estão na mesma rede.
+
+3. https://github.com/Bellcakedunica/redes/blob/i441-2018-1/Isabelle%20Borges%20S.%20Vieira/TopologyIE.py
