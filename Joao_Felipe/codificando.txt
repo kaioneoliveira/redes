@@ -1,0 +1,135 @@
+ALUNOS: João Felipe e Martha Monteiro
+1)
+#!/usr/bin/python
+
+'Setting the position of nodes'
+
+from mininet.node import Controller
+from mininet.log import setLogLevel, info
+from mininet.wifi.cli import CLI_wifi
+from mininet.wifi.node import OVSKernelAP
+from mininet.wifi.net import Mininet_wifi
+
+
+def topology():
+
+    net = Mininet_wifi(controller=Controller, accessPoint=OVSKernelAP)
+
+    info("*** Creating nodes\n")
+    sta1 = net.addStation('sta1', mac='00:00:00:00:00:02', ip='10.0.0.1/8',
+                   position='30,60,1')
+    sta2 = net.addStation('sta2', mac='00:00:00:00:00:03', ip='10.0.0.2/8',
+                   position='70,30,2')
+    sta3 = net.addStation('sta3', mac='00:00:00:00:00:02', ip='10.0.0.3/8',
+                   position='50,60,3')
+    sta4 = net.addStation('sta4', mac='00:00:00:00:00:03', ip='10.0.0.4/8',
+                   position='20,30,4')
+
+    ap1 = net.addAccessPoint('ap1', ssid='acp1', mode='g', channel='1',
+                             position='50,50,0')
+    ap2 = net.addAccessPoint('ap2', ssid='acp2', mode='g', channel='2',
+                             position='50,50,0')
+    c1 = net.addController('c1', controller=Controller)
+   
+    h1 = net.addHost('h1', ip='10.0.0.3/8')
+    h2 = net.addHost('h2', ip='10.0.0.2/8')
+
+    net.propagationModel(model="logDistance", exp=4.5)
+    h1.plot('10,10,10')
+    h2.plot('30,20,50')
+
+    info("*** Configuring wifi nodes\n")
+    net.configureWifiNodes()
+
+    info("*** Creating links\n")
+    net.addLink(ap1, h1)
+
+    net.plotGraph(max_x=100, max_y=100, max_z=100)
+
+    info("*** Starting network\n")
+    net.build()
+    c1.start()
+    ap1.start([c1])
+
+    info("*** Running CLI\n")
+    CLI_wifi(net)
+
+    info("*** Stopping network\n")
+    net.stop()
+
+
+if __name__ == '__main__':
+    setLogLevel('info')
+    topology()
+
+b)
+    net.addLink( sta1, ap1 )
+    net.addLink( sta1, ap1 )
+    net.addLink( sta3, ap2 )
+    net.addLink( sta4, ap2 )
+
+
+c) O arquivo.py completo foi executado : “ sudo python arquivo.py”
+
+    
+d) O código “net.addLink(x, y)” foi utilizado para conectar os hosts ao ponto de acesso.
+    
+    net.addLink(ap1, h1)
+    net.addLink(ap2, h2)
+    
+e) Os pontos de acesso estão conectados em um mesmo controlador devido a este código :
+  
+    c1.start()
+    ap1.start([c1])
+    ap2.start([c1])
+
+2.
+Utilizando o código “sta1 ping sta2” percebe-se que há conexão entre as estações :
+
+mininet-wifi> sta1 ping sta2
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=3.04 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=64 time=2.90 ms
+64 bytes from 10.0.0.2: icmp_seq=3 ttl=64 time=2.90 ms
+64 bytes from 10.0.0.2: icmp_seq=4 ttl=64 time=2.89 ms
+^C
+--- 10.0.0.2 ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 2.897/2.937/3.041/0.060 ms
+
+Utilizando o código “h1 ping h2” percebe-se que há conexão entre os hosts :
+
+
+mininet-wifi> h1 ping h2
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=4.21 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=64 time=1.98 ms
+64 bytes from 10.0.0.2: icmp_seq=3 ttl=64 time=1.66 ms
+^C
+--- 10.0.0.2 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2002ms
+rtt min/avg/max/mdev = 1.666/2.621/4.216/1.135 ms
+
+3. As estações e pontos de acesso foram conectadas usando estas linhas de comando:
+    
+    info("*** Creating links\n")
+    net.addLink(ap1, h1)
+    net.addLink(ap2, h2)
+    net.addLink(ap1, ap2, cls=_4address)
+    net.addLink( sta1, ap1 )
+    net.addLink( sta1, ap1 )
+    net.addLink( sta3, ap2 )
+    net.addLink( sta4, ap2 )
+
+Modificamos a posição do ap2 para (‘80,50,0’) e conseguimos conectar h1 com h2:
+
+mininet-wifi> h1 ping h2
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=12.5 ms
+64 bytes from 10.0.0.2: icmp_seq=2 ttl=64 time=0.611 ms
+64 bytes from 10.0.0.2: icmp_seq=3 ttl=64 time=0.364 ms
+^C
+--- 10.0.0.2 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2022ms
+rtt min/avg/max/mdev = 0.364/4.499/12.524/5.675 ms
+
