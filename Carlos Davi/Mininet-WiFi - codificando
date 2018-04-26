@@ -1,0 +1,78 @@
+1:
+  #!/usr/bin/python
+
+'Setting the position of nodes'
+
+from mininet.node import Controller
+from mininet.log import setLogLevel, info
+from mininet.wifi.node import OVSKernelAP
+from mininet.wifi.link import wmediumd, _4address
+from mininet.wifi.cli import CLI_wifi
+from mininet.wifi.net import Mininet_wifi
+from mininet.wifi.wmediumdConnector import interference
+
+
+
+def topology():
+
+    net = Mininet_wifi( controller=Controller, accessPoint=OVSKernelAP,
+                        link=wmediumd, wmediumd_mode=interference,
+                        configure4addr=True, autoAssociation=False )
+
+    info("*** Creating nodes\n")
+    ap1 = net.addAccessPoint( 'ap1', _4addr="ap", ssid="wds-ssid1",
+                              mode="g", channel="1", position='80,100,0' )
+    ap2 = net.addAccessPoint( 'ap2', _4addr="client", ssid="wds-ssid2",
+                              mode="g", channel="1", position='120,100,0' )
+    sta1 = net.addStation( 'sta1', ip="192.168.0.1/24", position='70,120,0' )
+    sta2 = net.addStation( 'sta2', ip="192.168.0.2/24", position='70,62,0' )
+    sta3 = net.addStation( 'sta3', ip="192.168.0.3/24", position='120,120,0' )
+    sta4 = net.addStation( 'sta4', ip="192.168.0.4/24", position='120,62,0' )
+    c1 = net.addController('c1', controller=Controller)
+    h1 = net.addHost('h1', ip='192.168.0.7/24')
+    h2 = net.addHost('h2', ip='192.168.0.8/24')
+
+    net.propagationModel(model="logDistance", exp=4.5)
+
+    h1.plot('50,100,0')
+    h2.plot('150,100,0')
+
+    info("*** Configuring wifi nodes\n")
+    net.configureWifiNodes()
+
+    info("*** Creating links\n")
+    net.addLink(ap1, ap2, cls=_4address)
+    net.addLink(ap1, sta1)
+    net.addLink(ap1, sta2)
+    net.addLink(ap2, sta3)
+    net.addLink(ap2, sta4)
+    net.addLink(ap1, h1)
+    net.addLink(ap2, h2)
+
+    net.plotGraph(max_x=200, max_y=200)
+
+    info("*** Starting network\n")
+    net.build()
+    c1.start()
+    ap1.start([c1])
+    ap2.start([c1])
+
+    info("*** Running CLI\n")
+    CLI_wifi(net)
+
+    info("*** Stopping network\n")
+    net.stop()
+
+
+
+if __name__ == '__main__':
+    setLogLevel('info')
+    topology()
+
+2:
+  Não conseguem. Pois os dois acesspoints não estão conectados.
+  
+3:
+  Resolvi utilzando o 4address porém foi necessário desligar o networking manager para que houvesse comunicação entre ap1 e ap2.
+  
+OBS: Fiz com Djair Maykon.
