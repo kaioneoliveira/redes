@@ -26,3 +26,5 @@
   dos comutadores na instáncia do mininet-wifi eu iniciei o mininet com a opção --mac (sudo mn --mac) que faz com que o mininet
   crie os macs de forma ordenada de criação dos hosts.
   vi) exit -> Sai do mininet.
+
+OBS: Fiz com Carlos Davi.
