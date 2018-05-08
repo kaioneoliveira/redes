@@ -9,6 +9,18 @@
 
 
 ### Material de Apoio  
+* VND - automatizacao de alguns passos para preparacao do ambiente   
+Crie um arquivo de script chamado meuarquivo.sh com o seguinte conteudo:   
+``` 
+sudo apt-get update
+sudo apt-get install apache2 php7.0 flashplugin-installer
+cp /usr/lib/flashplugin-installer/libflashplayer.so /usr/lib/mozilla/plugins/
+cd /var/www/html
+git clone https://github.com/ramonfontes/vnd-sdn-version
+git reset d290df51b39d2b43ebcb3 
+```
+entao execute ele com sudo ./meuarquivo.sh
+
 * [VND](https://docs.google.com/document/d/1GBP3SjE9LQDLl5HW5yaaCHl_8cQKedGGnCCGchBkHSg/edit?usp=sharing)   
 * [Introdução ao Mininet e Mininet-WiFi](https://docs.google.com/presentation/d/13I5Zw4ki7udE2pTWf13obRayVGxqObCKE6Rg7eLFPAk/edit?usp=sharing)   
 * [On the role of Open Source in the Network Softwarization trend](https://docs.google.com/presentation/d/1NZs8ryftkONwLMmnSJnJeW3kOZkXDFzaJwDZT1e6vZU/edit?usp=sharing)       
