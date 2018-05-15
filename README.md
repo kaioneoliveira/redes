@@ -13,11 +13,13 @@
 Crie um arquivo de script chamado meuarquivo.sh com o seguinte conteudo:   
 ``` 
 sudo apt-get update
-sudo apt-get install apache2 php7.0 flashplugin-installer
+sudo apt-get install git apache2 php7.0 flashplugin-installer
 cp /usr/lib/flashplugin-installer/libflashplayer.so /usr/lib/mozilla/plugins/
 cd /var/www/html
 git clone https://github.com/ramonfontes/vnd-sdn-version
+cd vnd-sdn-version
 git reset d290df51b39d2b43ebcb3 
+rm .project
 ```
 entao execute ele com `sudo ./meuarquivo.sh`
 
