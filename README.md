@@ -7,8 +7,12 @@
 * Atividade 03 (Mininet-WiFi: codificando) - [entrega 22/04](https://docs.google.com/document/d/1MUboLU9_scZ7w0Fprj_6b-7WK-kc9guFhAQ0dPN-8o4/edit?usp=sharing)    
 
 
-
 ### Material de Apoio  
+
+**II Unidade**    
+* [Linux: Manipulando o Kernel](https://docs.google.com/document/d/1-6bJQwbJzAqAaw8Sk8DLqMj9vg_anAHxSBm9Y6sUFC4/edit?usp=sharing)    
+
+**I Unidade**   
 * VND - automatizacao de alguns passos para preparacao do ambiente   
 Crie um arquivo de script chamado meuarquivo.sh com o seguinte conteudo:   
 ``` 
