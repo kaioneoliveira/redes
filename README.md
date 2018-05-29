@@ -6,11 +6,10 @@
 * Atividade 02 (SDN - comandos básicos) - [entrega 15/04](https://docs.google.com/document/d/1bxtaE5U0vx8Ba-P8LJwFnhDtXiu37z0v_8IEpGOrAuI/edit?usp=sharing)    
 * Atividade 03 (Mininet-WiFi: codificando) - [entrega 22/04](https://docs.google.com/document/d/1MUboLU9_scZ7w0Fprj_6b-7WK-kc9guFhAQ0dPN-8o4/edit?usp=sharing)    
 
+**II Unidade**  
+* Atividade 04 [Análise de Redes sem Fio](https://docs.google.com/document/d/1zY-9Q8q55tdMI7wxLe68yfeTeovczfakmeY7xsF6xL8/edit?usp=sharing)    
 
 ### Material de Apoio  
-
-**II Unidade**    
-* [Linux: Manipulando o Kernel](https://docs.google.com/document/d/1-6bJQwbJzAqAaw8Sk8DLqMj9vg_anAHxSBm9Y6sUFC4/edit?usp=sharing)    
 
 **I Unidade**   
 * VND - automatizacao de alguns passos para preparacao do ambiente   
@@ -32,3 +31,7 @@ entao execute ele com `sudo ./meuarquivo.sh`
 * [On the role of Open Source in the Network Softwarization trend](https://docs.google.com/presentation/d/1NZs8ryftkONwLMmnSJnJeW3kOZkXDFzaJwDZT1e6vZU/edit?usp=sharing)       
 * [Video Github](https://www.youtube.com/watch?v=zg8JcK1dgMI)       
 * [Terminal online gratuito](http://www.webminal.org)    
+   
+
+**II Unidade**    
+* [Linux: Manipulando o Kernel](https://docs.google.com/document/d/1-6bJQwbJzAqAaw8Sk8DLqMj9vg_anAHxSBm9Y6sUFC4/edit?usp=sharing)    
