@@ -7,7 +7,8 @@
 * Atividade 03 (Mininet-WiFi: codificando) - [entrega 22/04](https://docs.google.com/document/d/1MUboLU9_scZ7w0Fprj_6b-7WK-kc9guFhAQ0dPN-8o4/edit?usp=sharing)    
 
 **II Unidade**  
-* Atividade 04 [Análise de Redes sem Fio](https://docs.google.com/document/d/1zY-9Q8q55tdMI7wxLe68yfeTeovczfakmeY7xsF6xL8/edit?usp=sharing)    
+* Atividade 04 [Manipulando Kernel Linux](https://docs.google.com/document/d/1-6bJQwbJzAqAaw8Sk8DLqMj9vg_anAHxSBm9Y6sUFC4/edit?usp=sharing)     
+* Atividade 05 [Análise de Redes sem Fio](https://docs.google.com/document/d/1zY-9Q8q55tdMI7wxLe68yfeTeovczfakmeY7xsF6xL8/edit?usp=sharing)     
 
 ### Material de Apoio  
 
