@@ -1,0 +1,48 @@
+IFBA - Campus Jequié    Data: 09/04/2018
+Informática - 4° Ano - 441
+Discente: Laiane Pereira
+Docente: Ramon Fontes
+Disciplina: Projetos de Redes - I Unidade
+
+
+         ~Atividade 02 (SDN - Comandos básicos)~
+
+Questão 1:
+ 
+i) nodes - Comando que verifica os nós, ou seja, os componentes de  rede que estão conectados.
+
+ii) sh ovs-vsctl show - Verifica situação de conexão do controlador (ponte OVS).
+
+iii) sh ovs-vsctl dump-flows s1 - Verifica a tabela de fluxos no switch. Entretanto, ela está vazia, pois não houve comunicação entre os hosts.
+
+Questão 2:
+ 
+i)h1 ping -c1 h2 - Este comando envia um único pacote de ping de h1 para h2.
+
+ii) sh ovs-ofctl dump-flows s1 - Foram mostradas as informações sobre a comunicação entre o h1 e o h2. 
+
+Questão 3: 
+
+i -  Sim, existem. As mesmas informações que foram mostradas antes, foram agora.
+
+ii) sh ovs-ofctl del-flows s1 - Apagou a tabela de fluxos.
+
+iii) sh ovs-ofctl add-flow s1 in_port=1,actions=output:2
+     sh ovs-ofctl add-flow s1 in_port=2,actions=output:1
+
+     A primeira linha de comando acima criou um fluxo em que o pacote enviado do switch pela porta 1 tem a ação de sair pela porta 2, e o segundo comando faz o      inverso: da porta 2 sai pela 1. 
+
+iv) Na tabela de fluxos apareceu, agora, os dois fluxos criados anteriormente.
+
+v) Mais uma vez, foi enviado um único pacote de ping de h1 para h2.
+
+vi) Com "sh ovs-ofctl del-flows s1" excluí a tabela de fluxos.
+
+vii) Para que h1 não se comunicasse com h2, usei o comando "sh ovs-ofctl add-flow s1 in_port=1,actions=drop". Ele Descarta o pacote, portanto, nenhum processamento adicional ou encaminhamento acontece. Se uma ação de queda for usada, nenhuma outras ações podem ser especificadas. Eu poderia, também, realizar esta questão utilizando o conceito de prioridade de entrada de fluxo.
+
+viii) cd ..
+
+
+
+
+

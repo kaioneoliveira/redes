@@ -1,0 +1,101 @@
+Discente: Matheus Santos Carvalho
+Turma: 441
+*Obs:Fiz com Mateus Nardes.
+
+Questão 1-
+
+"pwd"
+
+Diretório: /home/alunos
+
+Questão 2-
+
+"mkdir my_test"
+"mkdir ./my_test/my_work/"
+"mkdir ./my_test/job1/"
+"mkdir ./my_test/job1/task1/"
+
+Questão 3-
+
+"cd my_work"
+
+Questão 4- 
+
+"nano numbers.txt"
+
+Questão 5- 
+
+"cp numbers.txt numbers1.txt"
+"cp numbers.txt numbers2.txt"
+
+Questão 6-
+
+"cp *.txt ~/my_test/job1/task1/"
+
+Questão 7-
+
+"ls -al"
+
+drwxrwxr-x 2 alunos alunos 4096 Abr  2 11:52 .
+drwxrwxr-x 3 alunos alunos 4096 Abr  2 11:26 ..
+-rw-rw-r-- 1 alunos alunos   18 Abr  2 11:50 numbers1.txt
+-rw-rw-r-- 1 alunos alunos   18 Abr  2 11:50 numbers.txt
+
+Questão 8-
+
+"chmod 755 numbers.txt"
+
+Questão 9-
+
+"chmod 644 numbers1.txt"
+
+Questão 10-
+
+"sudo cp -r /home/alunos/my_test/job1/task1 /home/alunos"
+
+Questão 11-
+
+"mv my_work my_work1"
+
+Questão 12-
+
+"rm -r task1"
+
+Questão 13- 
+
+"cd /bin"
+
+"ls . > /home/alunos/teste/listabin.txt"
+
+Questão 14-
+
+"clear"
+
+Questão 15-
+
+"top"
+
+Questão 16-
+
+"chmod 761 form.sh"
+
+Código:
+
+#!/bin/bash
+echo "Formulario de Dados:"
+
+read -p "Digite o Nome:" nome
+read -p "Digite o Sobrenome:" snome
+read -p "Digite o Sexo:" sexo
+read -p "Digite a Idade:" idade
+read -p "Digite o grau de Instrucao:" grau
+echo
+echo
+echo "---------------------------------------"
+echo
+echo "Nome Completo: $nome $snome"
+echo "Sexo: $sexo"
+echo "Idade: $idade"
+echo "Grau de Instrucao: $grau"
+
+

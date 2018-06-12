@@ -1,0 +1,15 @@
+comando --> c/
+
+c/ nodes: vai mostrar no terminal o nó. 
+c/ sh ovs-vsctl show: confirmar se o switch tá conectado.
+c/ sh ovs-ofctl dump-flows s1: mostra as tabelas de fluxo do switch.
+c/ h1 ping -c1 h2: vai pingar os hosts, o -c1 serve para determinar a quantidade de pacotes, que nesse caso será um (1). 
+c/ sh ovs-ofctl del-flows s1: apagar a tabela de fluxo, independente se o idle_timeout ainda não tenha atingido seu limite.
+c/ sh ovs-ofctl add-flows s1 in_port=1,actions=output:2: a porta 1 enviará dados somente à porta 2.
+c/ sh ovs-ofctl add-flows s1 in_port=2,actions=output:1: a porta 2 enviará dados somente à porta 1.
+
+
+forma para h1 não se comunicar com h2:
+obs.: questão feita em dupla com Rebeca Brandão
+
+c/ sh ovs-ofctl add-flows s1 in_port=1, actions=drop: o comando não vai permitir que a porta 1 passe os dados. 

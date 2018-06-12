@@ -1,0 +1,20 @@
+1
+	a) sudo mn, entra no mininet wifi após pedir a senha do usuário
+	b) nodes,  exibe os nós presentes, c0, h1, h2, s1
+	c)fornece os dados do banco de dados de configuração port, controlador
+	d)este comando cria uma tabela de fluxos
+2
+	a)mostra os dados da resposta do h2 em relação ao c1
+	b)exibe a tabela do s1 mostrando tcp, ptcp, o modo do controlador
+3
+	a) exibe NXST_FLOW reply (xid=0x4):
+	b)o comando foi executado com exito
+	c)os dois comandos foram inseridos
+	d) após exibir usando sh ovs-ofctl dump-flows s1 mostra cookie=0x0, duration=16.441s, 	table=0, n_packets=0, n_bytes=0, idle_age=24, in_port=1 actions=output:1
+	e) o ping mostra [-aAbBdDfhLnOqrRUvV] [-c count] [-i interval] [-I interface]
+            [-m mark] [-M pmtudisc_option] [-l preload] [-p pattern] [-Q tos]
+            [-s packetsize] [-S sndbuf] [-t ttl] [-T timestamp_option]
+            [-w deadline] [-W timeout] [hop1 ...] destination
+	f)com o comando del-flow foi excluido
+	g) dpctl del-flows
+	h) control + c

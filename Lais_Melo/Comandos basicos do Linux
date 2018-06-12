@@ -1,0 +1,95 @@
+Discentes: Vitor Pereira e Laís Melo 
+TI-441
+
+1. Verifique em qual diretório você se encontra e coloque o nome dele abaixo. 
+Resposta: O comando usado foi “pdw” para mostrar o caminho local, mostrando o diretório que foi /home/alunos.
+  
+2)	Crie a seguinte estrutura de diretórios dentro do diretório identificado acima. 
+ 
+./my_test/my_work/ 
+./my_test/job1/ 
+./my_test/job1/task1/
+Resposta: O comando usado foi “mkdir” para criar diretório/pasta, criando como mostra a estrutura acima.
+
+3)	Entre na pasta  my_work 
+Resposta: O comando usado foi “cd” para acessar diretórios, cd my_test -> cd_my work.
+
+4)	Crie um arquivo chamado “ numbers.txt ” contendo o seguinte conteúdo: 
+ 
+10 
+100 
+50 
+25 
+1 
+2 
+Resposta: O comando usado foi “nano” pois ele otimiza tempo, criando e abrindo o arquivo desejado, em seguido foi digitado o que se pediu na questão e salvo com o nome numbers.txt.
+
+5)	Duplique o arquivo  numbers.txt para  numbers1.txt e  numbers2.texto 
+Resposta: O comando usado foi “cp” para copiar/duplicar
+cp numbers.txt numbers1.txt
+cp numbers.txt numbers2.texto
+
+
+6)	Copiar todos os arquivos com extensão  .txt para a pasta  task1 . Para tanto, utilize apenas um comando. 
+Resposta: O comando usado foi “cp” para copiar porém com o acréscimo do “*” que indica tudo, cp *.txt ~/my_test/job1/task1/
+
+7)	Acesse  task1 e exibir todos os arquivos com seus detalhes (permissões de acesso, data, hora de criação, tamanho) 
+Resposta: O comando usado foi “cd” para acessar a pasta desejada e logo depois o comando “ls -la” para listar todos os arquivos detalhadamente.
+
+8)	Em  task1 , altere a permissão de acesso do arquivo  numbers.txt para –rwxr-xr-x 
+Resposta: O comando usado foi “chmod” para alterar a permissão do arquivo desejado. chmod 755 numbers.txt
+
+9)	Altere a permissão de acesso do arquivo  numbers1.txt para  -rw-r—r-- 
+Resposta: O comando usado foi “chmod” para alterar a permissão do arquivo desejado. chmod 644 numbers1.txt
+ 
+10)	Copie a pasta  task1 e seu conteúdo, para dentro do  /home/seu_usuario 
+Resposta: O comando usado foi “cp” para copiar porém com o acréscimo do “-r” que indica que está copiando uma pasta, cp –r task1/home/alunos/
+
+11)	Renomeie o diretório  my_work para  my_work1 
+Resposta: O comando usado foi “mv” ele é usado para mover, mas também cumpre a função de renomear. 
+mv my_work my_work1
+
+12)	Apague a pasta  task1 
+Resposta: O comando usado foi “rm” para remover porém com o acréscimo do “-r” que indica que está removendo uma pasta.
+rm –r task1 
+
+13)	Liste todos os arquivos da pasta /bin e guarde essa lista em um arquivo chamado  “listabin.txt ” 
+Resposta: 
+cd / 
+cd /bin
+ls
+Essa ordem de comandos que seguimos foi para entrar na pasta bin e listar todos os arquivos. Depois usamos o comando “nano” para criar e salvar a listagem feita.
+nano listabin.txt.    
+
+14)	Limpe o terminal 
+Resposta: O comando usado foi “clear” para limpar o terminal.
+
+15)	Qual o comando lista todos os processos em execução no sistema operacional Ubuntu? 
+Resposta: O comando usado foi “top” para mostrar todos os processos em execução detalhadamente.
+
+16)	Faça um formulário em script bash ou python, onde seja possível capturar entradas no sistema e imprimir um resumo ao final do preenchimento. Esse arquivo deve possuir, obrigatoriamente, as seguintes informações:  nome, sobrenome, sexo, idade e grau de instrução .  
+#!/bin/bash
+echo “Qual o seu nome?”
+read nome;
+echo “Seu nome é $nome!”
+echo “Qual o seu sobrenome?”
+read sobrenome;
+echo “Seu sobrenome é $sobrenome!”
+echo “Qual o seu sexo?”
+read sexo;
+echo “Seu sexo é $sexo!”
+echo “Qual o seu idade?”
+read idade;
+echo “Sua idade é $idade!” 
+echo “Qual o seu grau de instrução?”
+read grau_instrucao;
+echo “Seu grau de instrução é $grau_instrucao!” 
+esses comando foram usados para salvar o script, alterar a permissão e executá-los.
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~/teste$ touch script
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~/teste$ nano script
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~/teste$ chmod 761 script
+alunos@alunos-HP-Compaq-8000-Elite-SFF-PC:~/teste$ ./script
+
+o echo imprime na tela 
+o read declara a variável
+e o $ usado dentro do echo permite que imprima o dado digitado pelo usuario

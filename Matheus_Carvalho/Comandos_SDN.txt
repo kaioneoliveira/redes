@@ -1,0 +1,27 @@
+Discente: Matheus Santos Carvalho
+Turma: 441
+*Obs: Fiz com Mateus Nardes.
+
+"mininet-wifi>sudo mn": Inicia o emulador Mininet-Wifi
+
+"mininet-wifi>nodes": Mostra uma lista com os nós da rede.
+
+"mininet-wifi>sh ovs-vsctl show":Mostra as informações de controle e conexão do Switch.
+
+"mininet-wifi>sh ovs-ofctl dump-flows s1": Apresenta uma tabela de fluxos instalada, com as configurações que o switch usou para estabelecer a conexão de h1 e h2.
+
+"mininet-wifi>h1 ping -c1 h2": Estabelece um numero predefinido de pings. Nesse caso,1 "-c1".Com este comando, é possível medir quantos milissegundos (ms) um pacote de informações leva para ir até um destino e voltar.
+
+mininet-wifi>sh ovs-ofctl del-flows s1": Deleta os fluxos instalados anteriormente.
+"mininet-wifi>sh ovs-ofctl add-flow s1 in_port=1,actions=output:2": Delimita os parametros para o switch, com transmissão da porta 1 para 2.
+
+"mininet-wifi>sh ovs-ofctl add-flow s1 in_port=2,actions=output:1": Delimita os parametros para o switch, com transmissão da porta 2 para 1.
+
+Questão 3:
+
+VII) sh ovs-ofctl add-flows s1 "nw_src=10.0.0.1 nw_dst=10.0.0.2 dl_type=0x800", action=drop.
+
+Após excluir as tabelas de fluxos anteriores,foi usada a regra acima para tentar não permitir o ping entre o h1 e h2. O comando link verifica os ips,e o drop faz cair a conexão. Desse modo, o ping seguinte após a regra ser executada não retorna uma transmissão efetiva entre h1 e h2.
+
+VIII) Sair usa o comando "exit".  
+

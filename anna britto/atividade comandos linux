@@ -1,0 +1,65 @@
+Atividade realizada no mesmo computador que Rebeca Brandão, porém enviada separadamente.
+
+c/ --> comando usado
+
+1) c/ pwd 
+/home/alunos
+
+2) c/ mkdir my_test
+c/ cd my_test
+c/ mkdir my_work
+c/ mkdir job1
+c/ cd job1
+c/ mkdir task1
+
+3) c/ cd..
+c/ cd my_work
+
+4) c/ touch numbers.txt
+c/ nano numbers
+
+5) c/ cp numbers.txt numbers1.txt
+c/ cp numbers.txt numbers2.texto
+
+6) c/ cp *.txt ~/my_test/job1/task1
+
+7) c/ cd task1
+c/ ls -la
+
+8) c/ chmod 755 numbers.txt
+
+9) c/ chmod chmod 644 numbers1.txt
+
+10) c/ sudo cp -r /home/alunos/my_test/job1/task1 /home/alunos
+[sudo] senha para alunos:
+
+11) c/ nano my_work
+
+12) c/ sudo rm -r task1
+
+13) c/ ls /bin
+teclas: ctrl+shift+c
+c/ nano listabin.txt
+
+14) c/ clear 
+
+15) c/ ls -la
+
+16) Dupla do formulário: Rebeca Brandão 
+c/ nano trabalho
+editor de texto: 
+#!/bin/bash
+
+read "nome:" nome
+read "sobrenome:" sobrenome
+read "sexo:" sexo
+read "grau de instrução:" graudeinstrucao
+
+echo "*************************************************************"
+echo "nome: $nome $sobrenome"
+echo "sexo: $sexo"
+echo "idade: $idade"
+echo "grau de instrução: $graudeinstrucao"
+
+c/ chmod 777 trabalho
+c/ ./trabalho

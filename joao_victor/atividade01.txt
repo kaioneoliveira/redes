@@ -1,0 +1,37 @@
+			Atividade 1 
+1-    pwd
+2-   mkdir my_test
+   cd my_test
+   mkdir my_work
+    mkdir job1
+    cd job1
+    mkdir task1
+   
+3 -   cd ..
+    cd my_work
+4-  touch numbers.txt
+    nano numbers.txt
+    echo 10
+    echo 100
+    echo 50
+    echo 25
+    echo 1
+    echo 2    
+   ctrl+O para salvar
+   ctrl+x para sair do texto
+5-  cp numbers.txt numbers1.txt
+     cp numbers.txt numbers2.texto
+6-  cp *.txt ~/my_test/job1/task1
+7- cd task1
+    ls -la
+8-    chmod 755 numbers.txt
+9-  chmod 644 numbers1.txt
+10- nao consegui fazer
+11-  cd my_work ;   mv my_work   my_work1
+12-   rm   -r  task1
+13 – la  /bin/listabin.txt
+14- clear
+15- top
+16- 
+
+Professor ramon eu nao pude mandar a atividade nem no domingo, mesmo eu fazendo mais da metade na sala com kaione, desculpa pelo atraso, aceite se possível 

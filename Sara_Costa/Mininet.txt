@@ -1,0 +1,15 @@
+1)   i) nodes - mostra os nós existentes.
+    ii) sh ovs-vsctl show  - lista os switch.
+   iii) sh ovs-ofctl dump-flows s1 - lista o fluxo, mostra o que o switch aprendeu.
+
+2)   i) h1 ping c1 h2 - faz o Ping o número que acompanha o c é a quantidade de vezes que vai pingar.
+    ii) sh ovs-ofctl dump-flows s1 - lista o fluxo, mostra o que o switch aprendeu.
+
+3)   i) sh ovs-ofctl dump-flows s1 - lista o fluxo, mostra o que o switch aprendeu.
+    ii) sh ovs-ofctl del-flows s1 - deleta o fluxo.
+   iii) sh ovs-ofctl add-flow s1 in_port =1, actions =output:2 - insere/cria um novo fluxo.
+    iv) sh ovs-ofctl dump-flows s1 - lista o fluxo, mostra o que o switch aprendeu.
+     v) h1 ping c1 h2 - faz o Ping o número que acompanha o c é a quantidade de vezes que vai pingar.
+    vi) sh ovs-ofctl del-flows s1 - deleta o fluxo.
+   vii) Não Consegui.
+    xi) exit - sair do mininet.

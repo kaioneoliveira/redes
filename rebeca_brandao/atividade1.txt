@@ -1,0 +1,48 @@
+IFBA
+ALUNA - REBECA BRANDÃO TI 431
+
+1) pwd
+o diretório em que se encontra é /home/alunos 
+2) mkdir my-test
+   cd my_test
+   mkdir my_work
+   mkdir job1
+   cd job1 
+   mkdir task1
+ 3) cd ..
+    cd my_work
+ 4) touch numbers.txt
+    nano numbers 
+    insere os numeros no editor
+    control + o
+  5) cp numbers.txt numbers1.txt
+     cp numbers.txt numbers2.texto
+  6) cp *.txt ~/my_test/job1/task1
+  7) cd task1
+     ls -la
+  8) chmod 755 numbers.txt
+  9) chmod 644 numbers1.txt
+  10) sudo cp -r /home/alunos/my_test/job1/task1 /home/alunos
+      senha para alunos
+  11) nano my_work
+  12) sudo rm -r task1
+  13) ls /bin
+   ctrl + shift + c
+   nano -> cola + enter nome listabin.txt
+   ctrl + o
+  14) clear
+  15) ls -la
+  16) dupla : Anna Luiza Correia ,Rebeca Brandão
+      read "nome:" nome
+      read "sobrenome" sobrenome
+      read "sexo : " sexo
+      read "idade :" idade
+      read "grau de instrução" graudeinstruçao
+      echo "*********************************************"
+      echo "nome : $nome $sobrenome"
+      echo " sexo :  $sexo" 
+      echo "idade : $idade"
+      echo "grau de instrução : $graudeinstruçao"
+      chmode 777 trabalho
+      ./ trabalho
+      

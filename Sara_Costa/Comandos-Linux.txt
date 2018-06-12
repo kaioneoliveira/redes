@@ -1,0 +1,95 @@
+IFBA - campus Jequié
+Discente: Sara Coelho Costa   Turma: 441
+Dupla: Maile Caroline Santos Novaes
+ 
+1) Verifique em qual diretório você se encontra e coloque o nome dele abaixo.   
+RESP: Comando PWD - /home/alunos
+
+2) Crie a seguinte estrutura de diretórios dentro do diretório identificado acima. 
+./my_test/my_work/
+./my_test/job1/
+./my_test/job1/task1/
+RESP: Utiizou o comando MKDIR para criar os diretórios
+
+3) Entre na pasta my_work
+RESP: Comando CD my_test/my_work
+
+4) Crie um arquivo chamado “numbers.txt” contendo o seguinte conteúdo: 
+
+10
+100
+50
+25
+1
+2
+RESP: Utiizou o comando NANO numbers.txt para criar o arquivo
+
+
+5) Duplique o arquivo numbers.txt para numbers1.txt e numbers2.texto 
+RESP: Utiizou o comando CP numbers.txt numbers1.txt 
+                        CP numbers.txt numbers2.texto
+
+6) Copiar todos os arquivos com extensão .txt para a pasta task1. Para tanto, utilize apenas um comando. 
+RESP:  cp *.txt ~/my_test/job1/task1
+
+7) Acesse task1 e exibir todos os arquivos com seus detalhes (permissões de acesso, data, hora de criação, tamanho)
+RESP: cd my_test/job1/task1
+      ls -l
+
+8) Em task1, altere a permissão de acesso do arquivo numbers.txt para –rwxr-xr-x
+RESP: chmod 755 numbers.txt
+
+
+9) Altere a permissão de acesso do arquivo numbers1.txt para -rw-r--r--
+RESP: chmod 644 numbers1.txt
+
+10) Copie a pasta task1 e seu conteúdo, para dentro do /home/seu_usuario
+RESP: sudo cp -r /home/alunos/my_test/job1/task1   /home/alunos
+
+11) Renomeie o diretório my_work para my_work1
+RESP: mv  my_work my_work1
+
+12) Apague a pasta task1
+RESP: rm -r task1
+
+13) Liste todos os arquivos da pasta /bin e guarde essa lista em um arquivo chamado “listabin.txt”
+RESP: cd /bin
+      ls 
+      nano listabin.txt
+
+14) Limpe o terminal
+RESP: Comando clear
+
+15) Qual o comando lista todos os processos em execução no sistema operacional Ubuntu?
+RESP: Comando top
+
+16) Faça um formulário em script bash ou python, onde seja possível capturar entradas no sistema e imprimir um resumo ao final do preenchimento. Esse arquivo deve possuir, obrigatoriamente, as seguintes informações: nome, sobrenome, sexo, idade e grau de instrução. 
+RESP: Comandos nano formulario.txt
+      chmoud 777 formulario.txt
+      ./formulario.txt
+
+      
+      Formulário script bash:
+      
+#!/bin/bash
+echo
+echo "Digite o Nome"
+read NOME
+echo
+echo "Digite o Sobrenome"
+read SOBRENOME
+echo
+echo "Qual seu Sexo"
+read SEXO
+echo
+echo "Qual sua Idade"
+read IDADE
+echo
+echo "Qual seu Nivel de escolaridade"
+read GRAU
+echo
+echo $NOME
+echo $SOBRENOME
+echo $SEXO
+echo $IDADE
+echo $GRAU

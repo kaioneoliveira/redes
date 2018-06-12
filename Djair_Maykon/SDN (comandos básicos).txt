@@ -1,0 +1,30 @@
+1)
+  i) nodes -> Apresenta todos os comutadores, switches e controllers que estão rodando na instância atual do mininet-wifi
+  ii) sh ovs-vsctl show -> Apresenta com Detalhes todos os comutadores, switches e controllers bem como a situação de conexão entre
+  eles
+  iii) sh ovs-ofctl dump-flows s1 -> Apresenta uma tabela de fluxo com os fluxos contendo os dados que o switch s1 aprendeu durante
+  a comunicação entre suas portas. Sem fluxos pois não houve nenhuma comunicação atraves do switch ainda.
+  
+2)
+  i) h1 ping -c1 h2 -> Realiza um ping entre os comutadores h1 e h2 com apenas uma transferência de dados.
+  ii) sh ovs-ofctl dump-flows s1 -> Dessa vez obtive fluxos com dados pois houve uma comunicação atraves do switch s1 entre os comu-
+  tadores h1 e h2.
+
+3)
+  i) sh ovs-ofctl dump-flows s1 -> O mesmo resultado do obtido anteriormente ao utilizar esse comando.
+  ii) sh ovs-ofctl del-flows s1 -> Deleta todos os fluxos do switch s1.
+  iii) sh ovs-ofctl add-flow s1 in_port=1,actions=output:2 -> Cria um fluxo no switch s1 com a seguinte regra: Quando um pacote
+  for enviado pela porta 1 o switch deve realizar a ação de manda-lo pela porta 2.
+       sh ovs-ofctl add-flow s1 in_port=2,actions=output:1 -> Cria um fluxo no switch s1 com a seguinte regra: Quando um pacote
+  for enviado pela porta 2 o switch deve realizar a ação de manda-lo pela porta 1.
+  iv) sh ovs-ofctl dump-flows s1 -> Dessa vez obtive apenas dois fluxos, os que criei com os comandos do intem anterior.
+  v) h1 ping -c1 h2 -> Realizou o ping normalmente.
+  vi) sh ovs-ofctl del-flows s1 -> Deleta todos os fluxos do switch s1.
+  vii) sh ovs-ofctl add-flow s1 "dl_src=00:00:00:00:00:01 dl_dst=00:00:00:00:00:02 dl_type=0x0800", action=drop -> Com esse coman-
+  do crio um fluxo no switch s1 com a seguinte regra: Todo o pacote com origem no comutador com mac 00:00:00:00:00:01 e destino
+  com mac 00:00:00:00:00:02 nn deverá ser enviado para nenhuma porta nem salvo no switch. Para manter fixo e conhecidos os macs
+  dos comutadores na instáncia do mininet-wifi eu iniciei o mininet com a opção --mac (sudo mn --mac) que faz com que o mininet
+  crie os macs de forma ordenada de criação dos hosts.
+  vi) exit -> Sai do mininet.
+
+OBS: Fiz com Carlos Davi.

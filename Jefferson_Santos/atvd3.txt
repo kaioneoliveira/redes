@@ -1,0 +1,185 @@
+Atividade feita com Letícia 
+Questo 1
+#!/usr/bin/python
+ 
+
+'Setting the position of nodes'
+
+
+from mininet.node import Controller
+
+from mininet.log import setLogLevel, info
+
+from mininet.wifi.cli import CLI_wifi
+
+from mininet.wifi.node import OVSKernelAP
+
+from mininet.wifi.net import Mininet_wifi
+
+
+
+def topology():
+
+
+net = Mininet_wifi(controller=Controller, accessPoint=OVSKernelAP)
+
+
+print "*** Creating nodes"
+
+sta1 = net.addStation('sta1', mac='00:00:00:00:00:02', ip='10.0.0.1/8', position='30,60,1')
+
+sta2 = net.addStation('sta2',mac='00:00:00:00:00:03', ip='10.0.0.2/8', position='70,30,2')
+
+sta3 = net.addStation('sta3',mac='00:00:00:00:00:04', ip='10.0.0.3/8', position='50,60,3')
+
+sta4 = net.addStation('sta4',mac='00:00:00:00:00:05', ip='10.0.0.4/8', position='20,30,4')
+
+ap1 = net.addAccessPoint('ap1', ssid="simplewifi", mode="g", channel="5", position='50,50,0')
+
+ap2 = net.addAccessPoint('ap2', ssid="simplewifi", mode="g", channel="11", position='100,50,0')
+
+c0 = net.addController('c0', controller=Controller, ip='127.0.0.1', port=6633)
+
+h1 = net.addHost('h1',ip='10.0.0.3/8')
+
+h2 = net.addHost('h2',ip='10.0.0.4/8')
+
+
+h1.plot('10,30,0')
+
+h2.plot('70,30,0')
+
+
+print "*** Configuring wifi nodes"
+
+net.configureWifiNodes()
+
+
+print "*** Associating Stations"
+
+net.addLink(sta1, ap1)
+
+net.addLink(sta2, ap1)
+
+net.addLink(sta3, ap2)
+
+net.addLink(sta4, ap2)
+
+
+print "** Associating Hosts"
+
+net.addLink(h1, ap1)
+
+net.addLink(h2, ap2)
+
+net.plotGraph(max_x=200, max_y=200)
+
+
+print "*** Starting network"
+
+net.build()
+c0.start()
+
+ap1.start([c0])
+
+ap2.start([c0])
+
+
+info("*** Running CLI\n")
+
+CLI_wifi(net)
+
+
+info("*** Stopping network\n")
+
+net.stop()
+
+
+
+if __name__ == '__main__':
+
+setLogLevel('info')
+
+topology()
+
+
+
+Quetsão 2
+
+
+Não, porque os acess point de h1 e h2 não estão no raio de comunicação
+
+
+questão 3
+#!/usr/bin/python
+
+"""This example shows how to enable 4-address
++Warning: It works only when network manager is stopped"""
+
+from mininet.node import Controller
+from mininet.log import setLogLevel, info
+from mininet.wifi.node import OVSKernelAP
+from mininet.wifi.link import wmediumd, _4address
+from mininet.wifi.cli import CLI_wifi
+from mininet.wifi.net import Mininet_wifi
+from mininet.wifi.wmediumdConnector import interference
+
+
+def topology():
+    "Create a network."
+    net = Mininet_wifi( controller=Controller, accessPoint=OVSKernelAP,
+                        link=wmediumd, wmediumd_mode=interference,
+                        configure4addr=True, autoAssociation=False )
+
+    info("*** Creating nodes\n")
+    ap1 = net.addAccessPoint( 'ap1', _4addr="ap", ssid="wds-ssid1",
+                              mode="g", channel="1", position='15,30,0' )
+    ap2 = net.addAccessPoint( 'ap2', _4addr="client", ssid="wds-ssid2",
+                              mode="g", channel="1", position='40,60,0' )
+    sta1 = net.addStation( 'sta1', ip="192.168.0.1/24", position='24,32,0' )
+    sta2 = net.addStation( 'sta2', ip="192.168.0.2/24", position='40,34,0' )
+    sta3 = net.addStation( 'sta3', ip="192.168.0.3/24", position='50,62,0' )
+    sta4 = net.addStation( 'sta4', ip="10.0.0.4/24", position='60,42,0' )
+    c0 = net.addController('c0', controller=Controller, ip='127.0.0.1',
+                           port=6633)
+    h1 = net.addHost('h1',ip="10.0.0.1/24")
+    h2 = net.addHost('h2',ip="10.0.0.2/24")
+    h1.plot('19,32,0')
+    h2.plot('32,34,0')
+    info("*** Configuring Propagation Model\n")
+    net.propagationModel(model="logDistance", exp=4.5)
+
+    info("*** Configuring wifi nodes\n")
+    net.configureWifiNodes()
+   
+    print "** Associating Hosts"
+    net.addLink(h1, ap1)
+    net.addLink(h2, ap2)
+    net.plotGraph(max_x=100, max_y=100)
+
+    info("*** Adding Link\n")
+    net.addLink(ap1, ap2, cls=_4address)
+    net.addLink(sta1, ap1)
+    net.addLink(sta2, ap1)
+    net.addLink(sta3, ap2)
+    net.addLink(sta4, ap2)
+
+
+    net.plotGraph(max_x=100, max_y=100)
+
+    info("*** Starting network\n")
+    net.build()
+    c0.start()
+    ap1.start( [c0] )
+    ap2.start( [c0] )
+
+
+    info("*** Running CLI\n")
+    CLI_wifi(net)
+
+    info("*** Stopping network\n")
+    net.stop()
+
+
+if __name__ == '__main__':
+    setLogLevel( 'info' )

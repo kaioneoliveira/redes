@@ -1,0 +1,26 @@
+Aluno: Jefferson de Jesus Santos
+
+                                  
+sudo mn ---> Conecta ao Mininet-wifi e logo depois pede a senha do usuário
+nodes ---> aparece o controlador c0, os hosts h1 e h2 e o switch s1
+sh ovs-vsctl show --->  Confirma se o controlador está conectado (true) e apresentas outras informações como a interface.
+sh ovs-ofctl dump-flows s1 ---> OVS significa open virtual switch, e ele adiciona fluxo de uma porta para outra, esse comando inteiro apresenta uma  tabela de fluxos mostrando por exemplo a porta de origem e de destino do pacote, tem também o idle_timeout que apresenta o tempo que as informações ficaram  “disponiveis”, depois desse tempo se não houver mais fluxo, ela apagara as informações. É necessário pingar antes de emitir esse comando, caso contrario não vai aparecer nada.
+h1 ping -c1 h2 -->vai pingar do nó 1 para o nó 2, -c1 é para indicar a quantidade de pacotes que será enviado (que vai pingar), de h1 para h2, o numero depois o –c é numero de pacotes que você deseja pingar.
+
+sh ovs-ofctl del-flows s1 ---> serve para deletar a tabela de fluxos, ou seja, as informações serão apagadas.
+
+sh ovs-ofctl add-flow s1 in_port=1,actions=output:2
+sh ovs-ofctl add-flow s1 in_port=2,actions=output:1
+ambos os comandos estabelecem uma comunicação entre  h1 e o h2, só que na primeira os pacotes saem de h1 e vão para o h2 e na segunda acontece o inverso. se der  sh ovs-ofctl dump-flows s1  de novo, vai aparecer  as informações que o switch utilizou para fazer a passagem de fluxo de um computador para o outro e se pingar de novo não aparece mais o idle_timeout, porém aparecerá o idle_age que indica o “tempo de vida” daquela tabela de fluxos.
+
+Para resolver a questão VII da 3, foi necessários os seguintes comandos:
+sh ovs-ofctl show s1 --→ vai mostrar o números de portas do swtch
+links ---→ qual computador esta conectado a qual porta
+vii) crie uma regra de forma que h1 não consiga se comunicar com h2
+
+sh ovs-ofctl add-flow s1 “in_port=1 nw_dest=10.0.0.2 dl_type=0x0800”, action=drop.
+
+depois de utilizar o comando links, decobrimos que o endereço de h2 é 10.0.0.2 e com o sh ovs-ofctl add-flow s1, adicionamos uma regra ao switch, o dl_type=0x800, define o tipo da regra/protocolo que será feito e depois o drop pega o pacote que foi enviado (in_port=1 nw_dest=10.0.0.2) e “mata” a comunicação entre eles, ou seja, entre o h1 e o h2.
+
+
+Está atividade foi feita em dupla com Letícia.

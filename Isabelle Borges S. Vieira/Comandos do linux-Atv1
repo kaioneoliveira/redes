@@ -1,0 +1,105 @@
+1. Verifique em qual diretório você se encontra e coloque o nome dele abaixo.
+
+Comando: pwd
+Diretório atual: /home/alunos
+
+2) Crie a seguinte estrutura de diretórios dentro do diretório identificado acima.
+
+./my_test/my_work/:
+
+Comando usado- mkdir my_test
+	 cd my_test
+	 mkdir my_work
+
+./my_test/job1/:
+
+Comando usado- mkdir job1
+
+./my_test/job1/task1/:
+
+Comando usado- cd job1
+		    mkdir task1
+
+3) Entre na pasta my_work
+
+Comando usado- cd my_test
+		     cd my_work
+
+4)  R= Comando usado- nano numbers.txt
+
+5) Duplique o arquivo numbers.txt para numbers1.txt e numbers2.texto
+
+Comando usado- cp numbers.txt numbers2.txt 
+		     cp numbers.txt numbers3.texto
+
+6) Copiar todos os arquivos com extensão .txt para a pasta task1. Para tanto, utilize apenas um comando.
+Comando usado- cp *.txt ~/my_test/job1/task1
+
+7) Acesse task1 e exibir todos os arquivos com seus detalhes (permissões de acesso, data, hora de criação, tamanho)
+
+Comando usado- ls - a
+8) Em task1, altere a permissão de acesso do arquivo numbers.txt para –rwxr-xr-x
+
+Comando usado- chmod 755 numbers.txt
+
+
+9) Altere a permissão de acesso do arquivo numbers1.txt para -rw-r—r--
+Comando usado- chmod 644 numbers.txt
+
+10) Copie a pasta task1 e seu conteúdo, para dentro do /home/seu_usuario
+Comando usado-  cp -r ~/my_test/job1/task1  /home/alunos
+
+11) Renomeie o diretório my_work para my_work1
+
+Comando usado- mv ~/my_test/my_work ~/my_test/my_work1
+
+12) Apague a pasta task1
+
+Dentro do diretório job1:
+Comando usado- rm -r task1
+
+13) Liste todos os arquivos da pasta /bin e guarde essa lista em um arquivo chamado “listabin.txt”
+
+cd /bin --> ls
+nano listabin.txt  e colei lá, salvando depois.
+
+14) Comando usado- clear
+
+15) Comando usado - top
+
+
+16) Formulário em python:
+
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#FORMULÁRIO FEITO EM PYTHON BY ISABELLE BORGES S. VIEIRA
+#REDES, 4° ANO DE INFORMÁTICA, IFBA-CAMPUS JEQUIÉ, 2018
+
+print("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓")
+print("FORMULÁRIO PESSOAL")
+print("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n")
+nome = raw_input("Digite seu nome:\t")
+sobrenome = raw_input("Digite seu sobrenome:\t")
+sexo = int(input("Digite 1 para feminino ou 2 para masculino:\t"))
+
+while(sexo>2):
+        print("Número inválido!")
+        sexo = int(input("Digite 1 para feminino ou 2 para masculino:\t"))
+idade = int(input("Digite sua idade:\t"))
+grau_ins = raw_input("Informe seu grau de instrução:\t")
+print("\n")
+print("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓")
+print("RELATÓRIO DO FORMULÁRIO")
+print("▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓\n")
+print("Nome: %s\nSobrenome: %s" % (nome, sobrenome))
+
+if (sexo==1):
+        print("Sexo: Feminino")
+
+elif (sexo==2):
+        print("Sexo: Masculino")
+
+
+print("Idade: %d\ngrau de instrução: %s" % (idade, grau_ins ))

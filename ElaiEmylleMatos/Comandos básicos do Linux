@@ -1,0 +1,106 @@
+Elai Emylle Matos de Lima - 441
+
+Comandos básicos do Linux
+
+1. 
+
+$ pwd
+/home/alunos
+
+2. 
+
+~$ mkdir my_test
+~$ cd my_test
+~/my_test$ mkdir my_work
+~/my_test$ mkdir job1
+~/my_test$ cd job1/
+~/my_test/job1$ mkdir task1
+
+3.
+
+~/my_test/job1$ cd ..
+~/my_test$ cd my_work/
+
+4.
+
+~/my_test/my_work$ touch numbers.txt
+~/my_test/my_work$ nano numbers.txt 
+
+5.
+
+~/my_test/my_work$ cp numbers.txt numbers1.txt
+~/my_test/my_work$ mv numbers.txt numbers2.texto
+
+6.
+
+~/my_test/my_work$ cp *.txt ~/my_test/job1/task1/
+
+7.
+
+~/my_test$ cd job1/task1
+~/my_test/job1/task1$ ls -la
+total 12
+drwxrwxr-x 2 alunos alunos 4096 Abr  5 11:56 .
+drwxrwxr-x 3 alunos alunos 4096 Abr  5 11:38 ..
+-rw-rw-r-- 1 alunos alunos   17 Abr  5 11:56 numbers1.txt
+
+8.
+
+-rwxr-xr-x
+755
+
+~/my_test/job1/task1$ chmod 755 numbers.txt
+
+9.
+
+-rw-r--r--
+644
+
+~/my_test/job1/task1$ chmod 644 numbers1.txt
+
+10.
+
+~/my_test/job1/task1$ cp -R ~/my_test/job1/task1/ ~
+
+11.
+
+~/my_test$ mv my_work/ my_work1/
+
+12.
+
+~/my_test$ rm -r job1/task1/
+
+13.
+
+/home$ cd ..
+/$ cd bin
+/bin$ ls -la
+
+/bin$ cd ..
+/$ cd home/alunos
+~$ touch listabin.txt
+~$ nano listabin.txt
+
+14.
+
+~$ clear
+
+15.
+
+O comando top.
+
+16.
+
+#!/bin/bash
+
+echo "Digite seu primeiro nome:"
+read nome;
+echo "Digite seu sobrenome:"
+read sobrenome;
+echo "Digite seu sexo:"
+read sexo;
+echo "Digite sua idade:"
+read idade;
+echo "Digite seu grau de instrução:"
+read grau;
+echo -e "\n\n\nResumo\n\nNome: $nome\nSobrenome: $sobrenome\nSexo: $sexo\nIdade: $idade\nGrau de instrução: $grau"

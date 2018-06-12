@@ -1,0 +1,99 @@
+IFBA - Campus Jequié    Data: 08/04/2018
+Informática - 4° Ano - 441
+Discente: Laiane Pereira
+Docente: Ramon Fontes
+Disciplina: Projetos de Redes - I Unidade
+
+
+         ~Atividade 01 - Comandos básicos do Linux~
+
+Questão 1:
+Diretório: /home/laiane
+Comando: pwd
+
+Questão 2:
+Comandos:
+mkdir my_test
+cd my_test
+mkdir my_work
+mkdir job1
+cd job1
+mkdir task1
+
+Questão 3:
+Comandos:
+cd ..
+cd my_work
+
+Questão 4:
+nano numbers.txt 
+
+Questão 5:
+cp numbers.txt numbers1.txt
+cp numbers.txt numbers2.texto
+
+Questão 6:
+cp *.txt ../job1/task1/
+Caso eu não estivesse dentro de my_work: cp my_work/*.txt job1/task1/
+
+Questão 7:
+cd ..
+cd job1/task1
+ls -la
+
+Questão 8:
+chmod 755 numbers.txt
+
+Questão 9:
+chmod 644 numbers1.txt
+
+Questão 10:
+cp -R /home/laiane/my_test/job1/task1 /home/laiane
+
+Questão 11:
+cd ..
+mv my_work my_work1
+
+Questão 12:
+cd ..
+rm -r task1
+
+Questão 13:
+cd bin
+cd home/laiane
+nano listabin.txt
+
+Questão 14:
+clear
+
+Questão 15:
+O comando top.
+
+Questão 16:
+Criei o arquivo chamado "Formulario.sh" com o script bash:
+
+#!/bin/bash
+echo "Informe o nome: "
+read nome
+
+echo "Informe o sobrenome: "
+read sobrenome
+
+echo "Informe o sexo (M/F): "
+read sexo
+
+echo "Informe a idade: "
+read idade
+
+echo "Informe o grau de instrução: "
+read grau
+
+clear
+echo "Nome: $nome"
+echo "Nome: $sobrenome"
+echo "Nome: $sexo"
+echo "Nome: $idade"
+echo "Nome: $grau"
+
+Após, criar o script, executei-o e com o comando: sh Formulario.sh
+

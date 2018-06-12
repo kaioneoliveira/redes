@@ -1,0 +1,115 @@
+ 1. Verifique em qual diretório você se encontra e coloque o nome dele abaixo.
+
+Resposta: /home/alunos, usando o comando pwd
+
+2) Crie a seguinte estrutura de diretórios dentro do diretório identificado acima.
+
+O comando usado foi mkdir para criar as pasta e cd para entar na pasta
+
+ex: my_work está dentro de my_test, então usei cd para entrar em my_test e mkdir para assim criar a pasta my_work.
+
+3) Entre na pasta my_work
+
+cd my_test e depois cd my_work
+
+
+4) Crie um arquivo chamado “numbers.txt” contendo o seguinte conteúdo:
+
+
+
+10
+
+100
+
+50
+
+25
+
+1
+
+2
+
+touch nunbers.txt (criar)e depois nano nunbers.txt (editar)
+5) Duplique o arquivo numbers.txt para numbers1.txt e numbers2.texto
+cp é usado para copiar então:
+cp numbers.txt numbers1.text
+
+cp numbers.txt numbers2.text
+
+6) Copiar todos os arquivos com extensão .txt para a pasta task1. Para tanto, utilize apenas um comando.
+
+Cp *.txt ../job1/task1 ou cp *.txt ~my_test/job/task1
+*.txt é para copiar todos os arquivos .txt
+
+
+7) Acesse task1 e exibir todos os arquivos com seus detalhes (permissões de acesso, data, hora de criação, tamanho)
+
+cd .. (para sair da pasta atual e ir para my_test)
+
+cd job1/task1
+
+ls -la (listar os arquivos com os detalhes)
+
+8) Em task1, altere a permissão de acesso do arquivo numbers.txt para –rwxr-xr-x
+
+chmod 755 numbers.txt
+
+r = 4, w = 2 e x = 1, logo---- -rwx = 4+2+1=7, r-x= 4+1=5, r-x= 4+1=5
+
+9) Altere a permissão de acesso do arquivo numbers1.txt para -rw-r—r--
+
+chmod 644 numbers.txt
+
+rw- = 4+2=6, -r-=4, -r--=4
+
+10) Copie a pasta task1 e seu conteúdo, para dentro do /home/seu_usuario
+
+cp -r task1 /home/alunos
+
+11) Renomeie o diretório my_work para my_work1
+mv serve tanto para mover quanto para renomear
+mv my_work my_work1
+
+12) Apague a pasta task1
+
+rm -r task1
+
+13) Liste todos os arquivos da pasta /bin e guarde essa lista em um arquivo chamado “listabin.txt”
+cd / (para chegar na pasta antes do home)
+cd bin (para entrar na pasta bin)
+ls (para listar os arquivos da pasta bin)
+ls . > /home/alunos/test/listaBin.txt (copiar e colar a lista de nomes dos arquivos da pasta bin, no arquivo listabin.txt
+na pasta teste, nos diretorios de alunos aluno)
+
+
+14) Limpe o terminal
+
+clear
+
+15) Qual o comando lista todos os processos em execução no sistema operacional Ubuntu?
+ps -aux ---> lista todos os processos do computador 
+top ---> lista todos os principais processos em execução do computador
+usei os dois, o top está sempre trazendo mais arquivos e apresenta mais informações que ps -aux
+
+
+16) Faça um formulário em script bash ou python, onde seja possível capturar entradas no sistema e imprimir um resumo ao final do preenchimento. Esse arquivo deve possuir, obrigatoriamente, as seguintes informações: nome, sobrenome, sexo, idade e grau de instrução. 
+
+#!/bin/bash
+
+echo "DIGITE SEU NOME:"
+read x;
+echo "DIGITE SEU SOBRENOME:"
+read y;
+echo "SEXO"
+read z;
+echo "IDADE"
+read b;
+echo "GRAU DE INSTRUÇÃO"
+read k;
+
+echo
+
+echo "Seu nome é: $x $y"
+echo "Voce é do sexo: $z"
+echo "idade: $b"
+echo "seu grau de instituição é: $k"

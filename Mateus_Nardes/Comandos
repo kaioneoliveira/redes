@@ -1,0 +1,59 @@
+Obs: Fiz a atividade com Matheus Carvalho
+
+1-
+pwd-/home/alunos
+2-
+mkdir my_test
+mkdir ./my_test/my_work/
+mkdir ./my_test/job1/
+mkdir ./my_test/job1/task1/
+
+3-cd my_work 
+4- nano numbers.txt
+5- cp numbers.txt numbers1.txt
+   cp numbers.txt numbers2.txt
+6-cp *.txt ~/my_test/job1/task1/
+
+7-ls -al
+
+drwxrwxr-x 2 alunos alunos 4096 Abr  2 11:52 .
+drwxrwxr-x 3 alunos alunos 4096 Abr  2 11:26 ..
+-rw-rw-r-- 1 alunos alunos   18 Abr  2 11:50 numbers1.txt
+-rw-rw-r-- 1 alunos alunos   18 Abr  2 11:50 numbers.txt
+
+8-chmod 755 numbers.txt
+
+9-chmod 644 numbers1.txt
+
+10-sudo cp -r /home/alunos/my_test/job1/task1  /home/alunos
+
+11-mv my_work my_work1
+
+12-rm -r task1
+
+13- cd /bin
+    ls . > /home/alunos/teste/listabin.txt
+
+14-clear
+
+15-top
+
+16-
+#!/bin/bash
+echo "Formulario de Dados:"
+
+read -p  "Digite o Nome:" nome
+read -p "Digite o Sobrenome:" snome
+read -p "Digite o Sexo:" sexo
+read -p "Digite a Idade:" idade
+read -p "Digite o grau de Instrucao:" grau
+echo
+echo
+echo "---------------------------------------"
+echo
+echo "Nome Completo: $nome $snome"
+echo "Sexo: $sexo"
+echo "Idade: $idade"
+echo "Grau de Instrucao: $grau"
+
+

@@ -1,0 +1,64 @@
+IFBA
+Alunas-Martha Monteiro e Zaira Oliveira
+1- pwd  
+/home/alunos/
+
+2- mkdir my_test
+ cd my_test/
+mkdir job1
+cd job1/
+mkdir task1
+cd task1
+cd..
+cd..
+mkdir my_work
+
+3-  cd my_work/
+
+4- utilizamos o comando "touch" para criação de arquivo e em seguida o comando "nano" para edição do conteúdo.
+
+5- cp  numbers.txt  numbers1.txt
+cp  numbers.txt  numbers2.txt
+
+6- cp *.txt task1
+
+7- ls -la
+
+8- chmod 755 numbers.txt
+
+9- chmod 644 numbers1.txt
+
+10- cp -r task1/  /home/alunos  
+
+11- mv my_work my_work1
+
+12- rm -r task1
+
+13- cd /
+     cd bin
+     ls . > /home/alunos/
+     ls . > /home/alunos/teste/ListaBIn.txt
+     cd /home/alunos/teste/
+     ls
+     cat ListaBIn.txt
+      
+
+14- clear
+
+15- top
+
+16- nano form.py
+./form.py
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+nome = raw_input("nome:") 
+sobrenome = raw_input("sobrenome:")
+sexo = raw_input("sexo:")
+idade = int(input("idade:"))
+grau = raw_input("grau de instruçao:/n")
+print("nome: %s" %(nome))
+print("sobrenome: %s"%(sobrenome))
+print("sexo: %s" %(sexo))
+print("idade: %d" %(idade))
+print("grau de instruçao: %s" %(grau))

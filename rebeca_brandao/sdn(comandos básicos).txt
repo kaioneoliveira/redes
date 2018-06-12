@@ -1,0 +1,16 @@
+IFBA 
+ALUNA - REBECA DE JESUS BRANDÃO TI441
+COMANDOS:
+mininet-wifi>nodes = exibe e verfica os nós.
+sh ovs-vsctl show = confirma se o switch está conectado.
+mininet-wifi>sh ovs-ofctl dump-flows s1 = mostra as tabelas de fluxo instaladas no switch.
+mininet-wifi>h1 ping -c1 h2 = faz um ping entre h1 e h2 ,-c1 determina o número de pacotes que se quer enviar por ping ,nesse caso apenas um pacote foi enviado.
+mininet-wifi>sh ovs-ofctl del-flows s1 = deleta as tabelas de fluxo.
+mininet-wifi> sh ovs-ofctl add-flow s1 in_port=1,actions=output:2
+                                                                  = add -flow insere fluxos simples.No primeiro caso a comunicação/envio de dados está restringida apenas da porta um para a porta 2.E no segundo caso acontece o mesmo ,porém de forma inversa a comunicação/envio de dados está restringida apenas a porta 1.
+mininet-wifi> sh ovs-ofctl add-flow s1 in_port=2,actions=output:1
+questão vii)crie uma regra de forma que h1 não consiga se comunicar com h2.
+feito em dupla com ANNA LUIZA.
+mininet-wifi> sh ovs-ofctl add-flow s1 in_port=1,actions=drop
+Diferentemente da outra questão ao invés da saída da cominicação (OUTPUT) está em "action" a susbtituímos pelo valor "drop" que equivale ao mesmo sentido de restringir a comunicação, apenas para h1 ,impedindo a comunicação com as demais.
+

@@ -1,0 +1,19 @@
+FEITA COM A ALUNA ZAIRA OLIVEIRA
+
+
+
+sh ovs-vsctl show ----> tal comando serve para verificar o status OVS
+
+sh ovs-ofctl dump-flows s1 -----> exibe a tabela de fluxos já instalada.
+ 
+h1 ping -c1 h2 -----> ele executa o ping entre duas estações o número de vezes determinadas após o "-c"
+
+sh ovs-ofctl del-flows s1 ----> apaga a tabela de dados por completo (que foram instaladas anteriormente)
+
+
+
+
+ sh ovs-ofctl add-flow s1 in_port=1,actions=output:2 ----> tudo que entra na porta 1 sai pela 2 
+
+ sh ovs-ofctl add-flow s1 in_port=2,actions=output:1 -----> tudo que entra na porta 2 sai pela 1
+

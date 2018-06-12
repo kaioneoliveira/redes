@@ -1,0 +1,68 @@
+1-Resposta: /home/alunos
+
+
+2-O comando usado foi mkdir para criar as pasta e cd para entar na pasta 
+ex: my_work está dentro de my_test, então usei cd para entrar em my_test e mkdir para assim criar a pasta my_work.
+
+3- cd my_test e depois cd my_work
+
+4- touch nunbers.txt e depois nano nunbers.txt
+
+5-cp numbers.txt numbers1.text
+cp numbers.txt numbers2.text
+
+6-Cp *.txt ../job1/task1 ou cp *.txt ~my_test/job/task1
+
+7- cd ..
+
+cd job1/task1
+
+ls -la
+
+8- chmod 755 numbers.txt
+r = 4, w = 2 e x = 1, logo---- -rwx = 4+2+1=7, r-x= 4+1=5, r-x= 4+1=5
+
+9-
+chmod 644 numbers.txt
+
+rw- = 4+2=6, -r-=4, -r--=4
+
+10-cp -r task1 /home/alunos
+
+
+11- mv my_work my_work1
+
+12- rm -r task1
+
+13- cd /
+     cd bin
+     ls . > /home/alunos/
+     ls . > /home/alunos/teste/ListaBIn.txt
+     cd /home/alunos/teste/
+     ls
+     cat ListaBIn.txt
+      
+
+14- clear
+
+15- top
+
+16-
+nano form.py
+./form.py
+
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+nome = raw_input("nome:") 
+sobrenome = raw_input("sobrenome:")
+sexo = raw_input("sexo:")
+idade = int(input("idade:"))
+grau = raw_input("grau de instruçao:/n")
+print("nome: %s" %(nome))
+print("sobrenome: %s"%(sobrenome))
+print("sexo: %s" %(sexo))
+print("idade: %d" %(idade))
+print("grau de instruçao: %s" %(grau))
+
+Questões de 1 a 12 foram feitas com a aluna Leticia Morbeck, e da 13 a 16 juntamente com a dupla Matha meira e Zaira Oliveira.
+
